@@ -22,16 +22,15 @@ p{
 	background-color: yellow;
 	padding: 10px;
 	margin: 10px;
-	color: Midiuemseagreen;
+	color: mediumseagreen;
 	font-size: 15px;
+}
 
 #para{
-	border: 2px solid violet;
-	backgound-color: yellow;
-	padding: 20px;
-	margin: 30px;
-	color: red;
-	font-size: 20px;
+		padding: 20px;
+		margin: 30px;
+		background-color: aqua;
+		color: red;
 }
 
 	 
