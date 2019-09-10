@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Images Tutorial</title>
     <style>
         h1{
@@ -13,8 +12,14 @@
             text-align: center;
         }
 
+        h2{
+            color: blueviolet;
+            font-size: 115%;
+            font-family: Verdana;
+        }
+
         img.test{
-            
+            width: 100%;
         }
     
     </style>
@@ -23,14 +28,58 @@
 
     <h1>Practicing HTML Images and different shapes</h1>
     
-    <h2>Using Style or width/length attribute, That is the question</h2>
+    <h2>1. Using Style or width/length attribute, That is the question</h2>
 
     <p>This first image is using HTML internal attribute</p>
-    <img class="test" src="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\html5.gif" alt="HTML5 Logo" width="128" height="128">
+    <img class="test" src="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\html5.gif"
+    alt="HTML5 Logo" width="128" height="128">
+
     <p>This image is using style attribute for width and height</p>
-    <img class="test" src="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\html5.gif" alt="HTML5 Logo" style="width: 128px; height: 128px;">
+    <img class="test" src="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\html5.gif"
+    alt="HTML5 Logo" style="width: 128px; height: 128px;">
 
+    <h2>2. Using an animated gif in the img tag</h2>
+    <img src="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\programming.gif"
+    alt="an animated gif" width="48" height="48">
 
+    <h2>Using img mapping for the first time</h2>
+    <p>This is a clickable pic which will direct you to new pages</p>
+
+    <img src="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\workplace.jpg" 
+    alt="workplace" width="400" height="379" usemap="#workplace">
+
+    <map name="workplace">
+        <area shape="rect" coords="34,44,270,350"
+        href="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\HTML Images-computer.html"
+        alt="Coffee">
+        <area shape="rect" coords="290,172,333,250"
+        href="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\HTML Images-phone.html"
+        alt="Coffee">
+        <area shape="circle" coords="337,300,44"
+        href="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\HTML Images-Coffee.html"
+        alt="cup of coffee">
+    </map>
+
+    <h2>Resize the browser and see what is going to happen!</h2>
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\img_pink_flowers.jpg">
+        <source media="(min-width: 456px)" srcset="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\img_white_flower.jpg">
+        <img src="C:\Users\moravam\OneDrive - Tecnotree\workspace\html-css\apps\w3schools\assets\img\img_orange_flowers.jpg" alt="Flower" style="width: auto">
+    </picture>
+
+    <p>Resize the browser to see different versions of the picture loading at
+    different viewport sizes.The browser looks for the first source element
+    where the media query matches the user's current viewport width, and fetches
+    the image specified in the srcset attribute.</p>
+
+    <p>The img element is required as the last child tag of the picture
+    declaration block. The img element is used to provide backward compatibility
+    for browsers that do not support the picture element, or if none of the
+    source tags matched.</p>
+
+    <p><strong>Note:</strong> The picture element is not supported in IE12 and
+    earlier or Safari 9.0 and earlier.</p>
 
     
 </body>
