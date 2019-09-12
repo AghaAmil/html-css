@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML JavaScript Tutorial</title>
+    <style>
+        h1{
+            font-family: Verdana;
+            font-size: 160%;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           font-family: verdana;
+           color: dodgerblue;
+        }
+        p{
+            font-family: 'Times New Roman';
+            font-size: 110%;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript in HTML Web Page</h1><br>
+    <h2>1. Date and time presentation using JavaScript</h2>
+
+    <p>Click on the button below to see time and date.</p>
+    <button type="button" onclick="timeFunction()">CLICK ON ME!</button>
+    <p id="time">Time and Date will present here after you click the button</p>
+    <br>
+
+    <script>
+        function timeFunction(){
+            document.getElementById("time").innerHTML = Date();
+        }
+    </script>
+
+    <h2>2. Showing a text in a paragraph using JavaScript</h2>
+    <p>Click on the button below to see what is going to be changed.</p>
+    <button type="button" onclick="textFunction()">CLICK ON ME!</button>
+    <p id="text">Dont click! I'm gana die</p>
+    <br>
+
+    <script>
+        function textFunction(){
+            document.getElementById("text").innerHTML = "Hi I'm JavaScript! Thanks for making me free."
+        }
+    </script>
+
+    <h2>3. Changing HTML element's style by JavaScript</h2>
+    <p>Click on the button to see how powerful JavaScript is.</p>
+    <button type="button" onclick="styleFunction()">CLICK ON ME!</button>
+    <p id="style">Java Script is going to make me beautiful again.</p>
+    <br>
+
+    <script>
+        function styleFunction(){
+            document.getElementById("style").style.fontSize = "25px"
+            document.getElementById("style").style.backgroundColor = "Dodgerblue";
+            document.getElementById("style").style.fontFamily = "Verdana";
+            document.getElementById("style").style.color = "white";
+        }
+    </script>
+
+    <h2>4. Turning the lights ON/Off using JavaScript</h2>
+    <P>In fact JavaScript turns the light ON/OFF by change the picture. Its really Cool</P>
+
+    <img src="assets\img\pic_bulboff.gif"
+    alt="Light Bulb" width="100" height="180" id="bulb">
+    <p>
+        <button type="button" onclick="light(1)">Light ON</button>
+        <button type="button" onclick="light(0)">Light OFF</button>
+    </p>
+
+    <script>
+        function light(sw){
+            var pic;
+            if (sw == 0)
+            {pic = "assets\img\pic_bulboff.gif"}
+            else
+            {pic = "assets\img\pic_bulbon.gif"}
+
+            document.getElementById("bulb").src = pic;
+        }
+    </script>
+
+</body>
+</html>
