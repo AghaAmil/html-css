@@ -20,6 +20,31 @@
             font-family: 'Times New Roman';
             font-size: 110%;
         }
+        .menu{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333333;
+            overflow: hidden;
+        }
+        .menu li{
+            float: left;
+        }
+        .menu li a{
+            text-decoration: none;
+            font-family: Cambria;
+            font-size: 110%;
+            color:white;
+            display: block;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu li a:hover{
+            font-size: 120%;
+            background-color: #111111;
+            font-family: 'Courier New';
+            color: darkorange;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +80,16 @@
         <dt>torque</dt>
         <dd>-Is the turning force of an engine</dd>
     </dl>
+
+    <h2>3. Creating a simple navigation menu</h2>
+    <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
 
     
 </body>
