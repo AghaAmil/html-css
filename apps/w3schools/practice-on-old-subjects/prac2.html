@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prac2</title>
+    <style>
+        h1{
+            font-family: Verdana;
+            font-size: 160%;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           font-family: verdana;
+           color: dodgerblue; 
+        }
+        p{
+            font-family: 'Times New Roman';
+            font-size: 110%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Mapping</h1>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new
+    page and read more about the topic:</p>
+
+    <img src="..\assets\img\workplace.jpg" alt="workplace" usemap="#desk" style="width: 400px;height: 379px;">
+    <map name="desk">
+        <area shape="rect" coords="34,44,270,350" href="..\html-images-computer.html" alt="computer">
+        <area shape="rect" coords="290,172,333,250" href="..\html-images-phone.html" alt="phone">
+        <area shape="circle" coords="337,300,44" href="..\html-images-coffee.html" alt="coffee">
+    </map>
+</body>
+</html>
