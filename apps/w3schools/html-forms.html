@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Forms Tutorial</title>
+    <style>
+        h1{
+            font-family: Verdana;
+            font-size: 160%;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           font-family: verdana;
+           color: dodgerblue;
+        }
+        p{
+            font-size: 110%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <h2>1. Radio Form</h2>
+    <p>Radio buttons let a user select ONE of a limited number of choices:</p>
+    <form action="#">
+        <input type="radio" name="gender" value="male" checked>Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="bisexual">Bisexual
+    </form>
+    <br>
+
+    <h2>2. Text Form</h2>
+    <p>Text form set a one-line input field for text input:</p>
+    <form action="#">
+        First Name:<br>
+        <input type="text" name="firstname"><br>
+        Last Name:<br>
+        <input type="text" name="lastname"><br>
+    </form>
+    <br>
+
+    <h2>3. Submit Form</h2>
+    <p>Submit form set a button for submitting the form data to a form-handler</p>
+    <p>This form will be submitted using the POST method:</p>
+    <form action="#" method="POST">
+        First Name:<br>
+        <input type="text" name="firstname"><br>
+        Last Name:<br>
+        <input type="text" name="lastname"><br><br>
+        <input type="submit" value="Submit Form">
+    </form>
+    <br>
+
+    <h2>4. Grouping Form Data with Fieldset</h2>
+    <p>The fieldset element is used to group related data in a form, and the
+    legend element defines a caption for the fieldset element.</p>
+    <fieldset>
+        <legend>Personal Informantion</legend><br>
+        <form action="#" method="POST" target="_blank">
+            First Name:<br>
+            <input type="text" name="firstname" value="Amirhossein"><br>
+            Last Name:<br>
+            <input type="text" name="lastname" value="Moravveji"><br>
+            Age:<br>
+            <input type="text" name="age" value="26"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+
+</body>
+</html>

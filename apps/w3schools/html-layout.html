@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Auther" content="Amirhossein Moravveji">
+    <meta name="description" content="Learning Web Design">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Layout Tutorial</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #main{
+            font-family: Verdana;
+            font-size: 160%;
+            color: navy;
+            text-align: center;
+        }
+        p.comment{
+            font-size: 110%;
+            font-family: 'Times New Roman';
+        }
+        header{
+            background-color: #555;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+            color: dodgerblue;
+        }
+        nav{
+            width: 30%;
+            height: 200px;
+            padding: 20px;
+            float: left;
+            background-color: rgb(190, 190, 190);
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li a{
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            font: 110%;
+            color: black;
+        }
+        article{
+            background-color: #e2e2e2;
+            width: 70%;
+            height: 200px;
+            padding: 20px;
+            float: left;
+        }
+        section:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: #777;
+            text-align: center;
+            color: white;
+            font-size: 110%;
+            padding: 10px;
+        }
+        @media (max-width: 1000px){
+            nav, article{
+                width: 100%;
+                height: auto;
+            }
+            nav ul li{
+                float: left;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="main">CSS Layout Float</h1>
+    <p class="comment">In this example, we have created a header, two columns/boxes and a
+    footer. On smaller screens, the columns will stack on top of each other.</p>
+    <p class="comment">Resize the browser window to see the responsive effect (you will learn
+    more about this in our next chapter - HTML Responsive.)</p>
+    <br>
+
+    <header>
+        <h2>Listed Cities</h2>
+    </header>
+    
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Tehran</a></li>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Berlin</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous
+            city in the United Kingdom, with a metropolitan area of over 13
+            million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement
+            for two millennia, its history going back to its founding by the
+            Romans, who named it Londinium.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>This is the footer of the web page</p>
+    </footer>
+</body>
+</html>
