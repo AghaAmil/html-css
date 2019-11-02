@@ -33,5 +33,30 @@
         <area shape="rect" coords="290,172,333,250" href="..\html-images-phone.html" alt="phone">
         <area shape="circle" coords="337,300,44" href="..\html-images-coffee.html" alt="coffee">
     </map>
+
+    <br>
+    <br>
+
+    <h2>Resize the browser and see what is going to happen!</h2>
+
+    <picture>
+        <source media="(min-width: 1000px)" srcset="../assets\img\img_pink_flowers.jpg">
+        <source media="(min-width: 650px)" srcset="../assets\img\img_white_flower.jpg">
+        <img src="../assets\img\img_orange_flowers.jpg" alt="flower" style="width: auto;">
+    </picture>
+
+    <p>Resize the browser to see different versions of the picture loading at
+    different viewport sizes.The browser looks for the first source element
+    where the media query matches the user's current viewport width, and fetches
+    the image specified in the srcset attribute.</p>
+
+    <p>The img element is required as the last child tag of the picture
+    declaration block. The img element is used to provide backward compatibility
+    for browsers that do not support the picture element, or if none of the
+    source tags matched.</p>
+
+    <p><strong>Note:</strong> The picture element is not supported in IE12 and
+    earlier or Safari 9.0 and earlier.</p>
+
 </body>
 </html>
