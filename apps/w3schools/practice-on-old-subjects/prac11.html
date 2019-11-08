@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice on HTML Forms Elements</title>
+    <style>
+        body{
+            font-family: calibri;
+        }
+        h1{
+            font-size: 45px;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           color: dodgerblue; 
+           font-size: 120%;
+        }
+        p{
+            font-size: 110%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form Elements</h1>
+    <br>
+
+    <h2>1. The input element</h2>
+    <form action="#" method="post">
+        Enter your name:
+        <input type="text" name="firstname">
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>2. Select the element from the drop-down-list</h2>
+    <p>The select element defines a drop-down list:</p>
+    <form action="#" method="post">
+        <select name="cars">
+            <option value="Bugatti">Bugatti</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Mclaren">Mclaren</option>
+            <option value="Ferrari">Ferrari</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>3. Drop-down-list with pre-select option</h2>
+    <p>You can preselect an option with the selected attribute. In this case is the Lamborghini</p>
+    <form action="#" method="post">
+        <select name="cars">
+            <option value="Bugatti">Bugatti</option>
+            <option value="Lamborghini" selected>Lamborghini</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Mclaren">Mclaren</option>
+            <option value="Ferrari">Ferrari</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>4. Drop-down-list with visible values:</h2>
+    <p>Use the size attribute to specify the number of visible values:</p>
+    <form action="#" method="post">
+        <select name="cars" size="3">
+            <option value="Bugatti">Bugatti</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Mclaren">Mclaren</option>
+            <option value="Ferrari">Ferrari</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>5. Drop-down-list with multiple selection</h2>
+    <p>Use the multiple attribute to allow the user to select more than one value.</p>
+    <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+    <form action="#" method="post">
+        <select name="cars" size="5" multiple>
+            <option value="Bugatti">Bugatti</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Mclaren">Mclaren</option>
+            <option value="Ferrari">Ferrari</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>6. The textarea elements</h2>
+    <p>The textarea element defines a multi-line input field (a text area):</p>
+
+    <form action="#" method="post">
+        <textarea name="message" cols="50" rows="10">Please introduce yourselft...</textarea>
+        <br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>7. The textarea elements - part 2</h2>
+    <p>In this case, we are using style attribute to define the size of the textarea.</p>
+
+    <form action="#" method="post">
+        <textarea name="message" style="width: 300px;height: 300px;">Please introduce yourselft...</textarea>
+        <br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>8. The button element</h2>
+    <button type="button" onclick="alert('Goh khordi zadi dokme ro!!!')">Click on Me!</button>
+
+    <h2>9. The datalist element</h2>
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+    <p><strong>Note:</strong> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+    <form action="#" method="post">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Apple Safari"></option>
+            <option value="Google Chrome"></option>
+            <option value="Mozilla Firefox"></option>
+            <option value="Microsoft Edge"></option>
+            <option value="Microsoft IE"></option>
+            <option value="Opera"></option>
+        </datalist>
+        <input type="submit" value="Submit!">
+    </form>
+
+</body>
+</html>
