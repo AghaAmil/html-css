@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice on HTML</title>
+    <style>
+        body{
+            font-family: calibri;
+        }
+        h1{
+            font-size: 45px;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           color: dodgerblue; 
+           font-size: 150%;
+        }
+        p{
+            font-size: 110%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Input Attributes</h1>
+    <br>
+
+    <h2>1. The readonly Attribute</h2>
+    <p>The readonly attribute specifies that the input field is read only (cannot be changed):</p>
+    <form action="" method="post">
+        First name:<br>
+        <input type="text" name="fname" value="Amirhossein" readonly><br>
+        Last name:<br>
+        <input type="text" name="lname">
+    </form>
+    <br>
+
+    <h2>2. The disabled Attribute</h2>
+    <p>The disabled attribute specifies that the input field is disabled:</p>
+    <p>A disabled input field is unusable and un-clickable, and its value will
+    not be sent when submitting the form:</p>
+    <form action="#" method="post">
+        First name:<br>
+        <input type="text" name="fname" value="Amirhossein" disabled><br>
+        Last name:<br>
+        <input type="text" name="lname">
+    </form>
+    <br>
+
+    <h2>3. The size Attribute</h2>
+    <p>The size attribute specifies the size (in characters) for the input field:</p>
+    <form action="#" method="post">
+        First name:<br>
+        <input type="text" name="fname" value="Amirhossein" size="40"><br>
+        Last name:<br>
+        <input type="text" name="lname">
+    </form>
+    <br>
+
+    <h2>4. The maxlength Attribute</h2>
+    <p>The maxlength attribute specifies the maximum allowed length for the input field:</p>
+    <p>In this case maxlength is 10 characters.</p>
+    <form action="#" method="post">
+        First name:<br>
+        <input type="text" name="fname" maxlength="10"><br>
+        Last name:<br>
+        <input type="text" name="lname" maxlength="10">
+    </form>
+    <br>
+
+    <h2>5. The autocomplete Attribute</h2>
+    <p>The autocomplete attribute specifies whether a form or input field should
+    have autocomplete on or off.</p>
+    <p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+    <p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field.</p>
+    <form action="#" method="post" autocomplete="on">
+        First name:<br>
+        <input type="text" name="fname"><br>
+        Last name:<br>
+        <input type="text" name="lname"><br>
+        E-mail:<br>
+        <input type="email" name="email" autocomplete="off"><br><br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>6. The novalidate Attribute</h2>
+    <p>The novalidate attribute specifies that the form data should not be
+    validated when submitted.</p>
+    <form action="#" method="POST" novalidate>
+        E-mail:
+        <input type="email" name="email">
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>7. The autofocus Attribute</h2>
+    <p>The autofocus attribute specifies that the input field should
+    automatically get focus when the page loads.</p>
+    <form action="#" method="POST">
+        First name:<br>
+        <input type="text" name="fname" autofocus><br>
+        Last name:<br>
+        <input type="text" name="lname">
+    </form>
+    <br>
+
+    <h2>8. The form Attribute</h2>
+    <p>The form attribute specifies one or more forms an input element belongs to.</p>
+    <form action="#" method="POST" id="test">
+        First name:
+        <input type="text" name="fname"><br><br>
+        <input type="submit" value="Submit!">
+
+        <p>The "Last name" field below is outside the form element, but still
+        part of the form.</p>
+
+        Last name: <input type="text" name="lname" form="text">
+    </form>
+    <br>
+
+    <h2>9. The formaction Attribute</h2>
+    <p>The formaction attribute specifies the URL of a file that will process
+    the input control when the form is submitted.</p>
+    <form action="#" method="POST">
+        First name:<br>
+        <input type="text" name="fname"><br>
+        Last name:<br>
+        <input type="text" name="lname"><br><br>
+        <input type="submit" value="Submit!"><br>
+        <input type="submit" value="Submit To Another Page" formaction="#">
+    </form>
+    <br>
+
+    <h2>10. The formenctype Attribute</h2>
+    <p>The formenctype attribute specifies how the form data should be encoded
+    when submitted (only for forms with method="post").</p>
+    <form action="#" method="POST">
+        First name:
+        <input type="text" name="fname"><br><br>
+        <input type="submit" value="Submit!"><br>
+        <input type="submit" value="Submit as multipart/form-data" formenctype="multipart/form-data">
+    </form>
+
+    <h2>11. The formmethod Attribute</h2>
+    <p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+    <form action="#" method="GET">
+        First name:
+        <input type="text" name="fname"><br>
+        Last name:<br>
+        <input type="text" name="lname"><br><br>
+        <input type="submit" value="Submit!"><br>
+        <input type="submit" value="Submit as multipart/form-data" formmethod="POST">
+    </form>
+    <br>
+
+    <h2>12. The formnovalidate Attribute</h2>
+    <p>The formnovalidate attribute overrides the novalidate attribute of the form element.</p>
+    <form action="#" method="post">
+        Email:
+        <input type="email" name="email"><br><br>
+        <input type="submit" value="Submit"><br>
+        <input type="submit" value="Submit Without Validation" formnovalidate><br>
+    </form>
+    <br>
+
+    <h2>13. The formtarget Attribute</h2>
+    <p>The formtarget attribute specifies a name or a keyword that indicates
+    where to display the response that is received after submitting the
+    form.</p>
+    <form action="#" method="POST">
+        First name:<br>
+        <input type="text" name="fname"><br>
+        Last name:<br>
+        <input type="text" name="lname"><br><br>
+        <input type="submit" value="Submit As Normal"><br>
+        <input type="submit" value="Submit To A New Window/View" formtarget="_blank">
+    </form>
+    <br>
+
+    <h2>14. The height and width Attributes</h2>
+    <p>The height and width attributes specify the height and width of an input type="image" element.</p>
+    <form action="#" method="post">
+        First name:
+        <input type="text" name="fname"><br>
+        Last name:
+        <input type="text" name="lname"><br><br>
+        <input type="image" src="../assets/img/img_submit.gif" alt="submit button"  height="">
+    </form>
+
+    <h2>15. The list Attribute</h2>
+    <p>The list attribute refers to a datalist element that contains pre-defined
+    options for an input element.</p>
+    <form action="#" method="post">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Apple Safari"></option>
+            <option value="Google Chrome"></option>
+            <option value="Mozilla Firefox"></option>
+            <option value="Microsoft Edge"></option>
+            <option value="Microsoft IE"></option>
+            <option value="Opera"></option>
+        </datalist>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>16. The placeholder Attribute</h2>
+    <p>The placeholder attribute specifies a hint that describes the expected
+    value of an input field (a sample value or a short description of the
+    format).</p>
+    <form action="#" method="post">
+        <input type="text" name="fname" placeholder="First Name"><br>
+        <input type="text" name="lname" placeholder="Last Name"><br><br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+
+    <h2>17. The required Attribute</h2>
+    <p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+    <form action="#" method="post">
+        User Name:
+        <input type="text" name="username" required>
+        <input type="submit" value="Submit!">
+    </form>
+    <br>
+    
+</body>
+</html>
