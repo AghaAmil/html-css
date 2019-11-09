@@ -67,7 +67,7 @@
     <h2>4. Turning the lights ON/Off using JavaScript</h2>
     <P>In fact JavaScript turns the light ON/OFF by change the picture. Its really Cool</P>
 
-    <img src="assets\img\pic_bulboff.gif"
+    <img src="assets/img/pic_bulboff.gif"
     alt="Light Bulb" width="100" height="180" id="bulb">
     <p>
         <button type="button" onclick="light(1)">Light ON</button>
@@ -78,9 +78,9 @@
         function light(sw){
             var pic;
             if (sw == 0)
-            {pic = "assets\img\pic_bulboff.gif"}
+            {pic = "assets/img/pic_bulboff.gif"}
             else
-            {pic = "assets\img\pic_bulbon.gif"}
+            {pic = "assets/img/pic_bulbon.gif"}
 
             document.getElementById("bulb").src = pic;
         }
