@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Canvas Tutorial</title>
+    <style>
+        body{
+            font-family: calibri;
+        }
+        h1{
+            font-size: 45px;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           color: dodgerblue; 
+           font-size: 150%;
+        }
+        p{
+            font-size: 110%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 Canvas Tag</h1>
+    <br>
+    <p>The HTML canvas element is used to draw graphics, on the fly, via JavaScript.</p>
+    <p>The canvas element is only a container for graphics. You must use
+    JavaScript to actually draw the graphics.</p>
+    <p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+    <br>
+
+    <h2>1. Simple canvas example</h2>
+    <canvas id="canvas1" width="300" height="300" style="border: 1px solid black;">
+    your browser does not support HTML5 canvas</canvas>
+    <br>
+
+    <h2>2. Gredient canvas example</h2>
+    <canvas id="canvas2" width="200" height="100" style="border: 1px solid darkgrey;">
+    our browser does not support HTML5 canvas</canvas>
+
+    <script>
+        var c = document.getElementById("canvas2");
+        var ctx = c.getContext("2d");
+        // Create gradient
+        var grd = ctx.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"dodgerblue");
+        grd.addColorStop(1,"white");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+    </script>
+</body>
+</html>
