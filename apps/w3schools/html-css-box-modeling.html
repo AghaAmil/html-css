@@ -27,6 +27,12 @@
             border: 15px solid powderblue;
             background-color: lightgrey;
         }
+        .caption{
+            width: 320px;
+            border: 5px solid darkgrey;
+            background-color: lightblue;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -42,5 +48,28 @@
     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
     in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+    <br><br>
+
+    <h2>Calculate the total width:</h2>
+    <p><strong>Important:</strong> When you set the width and height properties
+    of an element with CSS, you just set the width and height of
+    the<br><strong>content area</strong>. To calculate the full size of an
+    element, you must also add padding, borders and margins.</p>
+
+    <br>
+
+    <img src="assets/img/klematis4_big.jpg" alt="Flowers" width="350" height="262">
+    <p class="caption">The picture above is 350px wide. The total width of this element is also 350px.</p>
+    <br>
+
+    <p>
+        <b>Here is the calculation:</b><br>
+        320px (width)<br>
+        + 20px (left + right padding)<br>
+        + 10px (left + right border)<br>
+        + 0px (left + right margin)<br>
+        = 350px
+    </p>
 </body>
 </html>
