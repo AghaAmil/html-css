@@ -21,17 +21,36 @@
         p{
             font-size: 110%;
         }
+        .a1{
+            font-size: 2em;
+        }
         .a1 a:link{
             color: red;
+            text-decoration: none;
         }
         .a1 a:visited{
-            color: dodgerblue;
+            color: tomato;
+            text-decoration: none;
         }
         .a1 a:hover{
             color: green;
+            text-decoration: underline;
         }
         .a1 a:active{
-            color: yellow;
+            color: blue;
+            text-decoration: underline;
+        }
+        .a2 a:link, .a2 a:visited{
+            font-size: 1.5em;
+            color: white;
+            padding: 15px 25px;
+            display: inline-block;
+            background-color: rgb(115, 196, 223);    
+            text-decoration: none;
+            text-align: center;
+        }
+        .a2 a:hover, .a2 a:active{
+            background-color: blue;
         }
     </style>
 </head>
@@ -40,6 +59,13 @@
     <br>
 
     <h2>1. Styling Links</h2>
-    <p class="a1"><a href="#">This is a link</a></p>
+    <p class="a1"><a href="html-css-links.html" target="_blank">This is a link</a></p>
+
+    <br><br>
+
+    <h2>2. An advance link with khafan property</h2>
+    <h3>Button like link</h3>
+
+    <a class="a2" href="html-css-links.html" target="_blank">This Is a Clinkable Link</a>
 </body>
 </html>
