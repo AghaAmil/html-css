@@ -21,6 +21,39 @@
         p{
             font-size: 110%;
         }
+        .color{
+            background: #f7ac0a;
+            padding: 20px 30px;
+            list-style-position: inside;
+        }
+        .color li{
+            background: #ffdb7a;
+            padding: 5px;
+        }
+        .color2{
+            background: dodgerblue;
+            padding: 20px 30px;
+        }
+        .color2 li{
+            background: lightblue;
+            padding: 3px;
+            margin: 5px;
+        }
+        .border{
+            list-style: none;
+            border-left: 5px solid red;
+            background: lightgrey;
+            padding: 10px 20px;
+        }
+        .border2{
+            list-style: none;
+            padding: 10px;
+        }
+        .border2 li{
+            border: 1px solid darkgrey;
+            border-collapse: collapse; /*This code is not working, ask mohammad haji*/
+            padding: 3px;
+        }
     </style>
 </head>
 <body>
@@ -48,7 +81,7 @@
         <li>Tea</li>
         <li>Milk</li>
     </ol>
-    <ol style="list-style-type: upper-alpha;">
+    <ol style="list-style-type: upper-roman;">
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
@@ -68,5 +101,90 @@
         <li>Milk</li>
         <li>Tea</li>
     </ul>
+
+    <br><br>
+
+    <h2>3. Position The List Item Markers</h2>
+    <p>The list-style-position property specifies the position of the list-item markers (bullet points).</p>
+    <h3>list-style-position: outside (default):</h3>
+    <ul style="list-style-position: outside;">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which
+        are the seeds of berries from the Coffea plant</li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or
+        boiling water over cured leaves of the Camellia sinensis, an evergreen
+        shrub (bush) native to Asia </li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola
+        Company. The drink's name refers to two of its original ingredients,
+        which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+    <h3>list-style-position: inside:</h3>
+      <ul style="list-style-position: inside;">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which
+        are the seeds of berries from the Coffea plant</li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or
+        boiling water over cured leaves of the Camellia sinensis, an evergreen
+        shrub (bush) native to Asia </li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola
+        Company. The drink's name refers to two of its original ingredients,
+        which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+
+    <br><br>
+
+    <h2>4. Remove Default Settings</h2>
+    <p>The list-style-type:none property can also be used to remove the
+    markers/bullets. Note that the list also has default margin and padding. To
+    remove this, add margin:0 and padding:0 to ul or ol:</p>
+    <p>Default List</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>Remove bullets, margin and padding:</p>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <br><br>
+
+    <h2>5. List - Shorthand property</h2>
+    <p>The list-style property is a shorthand property. It is used to set all
+    the list properties in one declaration:</p>
+    <ul style="list-style: square inside url('assets/img/sqpurple.gif');">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <br><br>
+
+    <h2>6. Different styling lists</h2>
+    <ol class="color">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <br>
+    <ul class="color2">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <br>
+    <ul class="border">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <br>
+     <ul class="border2">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
 </body>
 </html>
