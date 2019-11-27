@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Layout - The Display Property</title>
+    <style>
+        body{
+            font-family: calibri;
+        }
+        .main{
+            font-size: 45px;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           color: dodgerblue; 
+           font-size: 150%;
+        }
+        p{
+            font-size: 110%;
+        }
+        ul{
+            background-color: #cccccc;
+            padding: 20px;
+        }
+        li{
+            display: inline;
+            padding: 10px;
+            color: black;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        .test{
+            display: block;
+        }
+        .block-a{
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main">CSS Layout - The Display Property</h1>
+    <br>
+
+    <h2>1. Display a list of links as a horizontal menu:</h2>
+    <ul>
+        <li><a href="#">Main</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+
+    <br><br>
+
+    <p><strong>Note:</strong> Setting the display property of an element only changes how the
+    element is displayed, NOT what kind of element it is. So, an inline element
+    with <span style="color: red; font-weight: bold;">display: block;</span> is not allowed to have other block elements inside
+    it.</p>
+    <span>A display property with a value of "block" results in <span
+    class="test"></span> a line break between the two elements.</span>
+
+    <br><br>
+
+    <h2>2. Display links as block elements:</h2>
+
+    <a href="html-css-links.html" target="_blank" class="block-a">CSS Links Property</a>
+    <a href="html-css-lists.html" target="_blank" class="block-a">CSS Lists Property</a>
+    <a href="html-css-icons.html" target="_blank" class="block-a">CSS icons Property</a>
+
+    <br><br>
+
+    <h2>Hide an Element - display:none or visibility:hidden?</h2>
+    <h1>This is a visible heading</h1>
+    <h1 style="display: none;">This is a visible heading</h1>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+    <br><br>
+
+    <h1>This is a visible heading</h1>
+    <h1 style="visibility: hidden;">This is a visible heading</h1>
+    <p>Notice that the hidden heading still takes up space.</p>
+
+</body>
+</html>
