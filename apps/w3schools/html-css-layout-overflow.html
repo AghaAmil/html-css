@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Layout - Overflow Tutorial</title>
+    <style>
+        body{
+            font-family: calibri;
+        }
+        h1{
+            font-size: 45px;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           color: dodgerblue; 
+           font-size: 160%;
+        }
+        p{
+            font-size: 110%;
+        }
+        span{
+            font-weight: bold;
+            color: red;
+        }
+        .div1{
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            border: 1px dotted black;
+            background-color: #dddddd;
+            overflow: visible;
+        }
+        .div2{
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            border: 1px dotted black;
+            background-color: #dddddd;
+            overflow: hidden;
+        }
+        .div3{
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border: 1px dotted black;
+            background-color: #dddddd;
+            overflow: scroll; 
+        }
+        .div4{
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border: 1px dotted black;
+            background-color: #dddddd;
+            overflow: auto; 
+        }
+        .div5{
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border: 1px dotted black;
+            background-color: #dddddd;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        .div6{
+            width: 350px;
+            height: 200px;
+            padding: 10px;
+            text-align: justify;
+            background-color: lightblue;
+            overflow: scroll;
+            border: 2px ridge tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Layout - Overflow</h1>
+    <br>
+
+    <h2>1. CSS Overflow</h2>
+    <p>The overflow property specifies whether to clip the content or to add
+    scrollbars when the content of an element is too big to fit in the specified
+    area.</p>
+    <p>The overflow property has the following values:</p>
+    <ul style="list-style-type: circle;">
+        <li><span>visible</span> - Default. The overflow is not clipped. The content renders outside the element's box</li>
+        <li><span>hidden</span> - The overflow is clipped, and the rest of the content will be invisible</li>
+        <li><span>scroll</span> - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+        <li><span>auto</span> - Similar to scroll, but it adds scrollbars only when necessary</li>
+    </ul>
+
+    <br><br>
+
+    <h2>2. overflow: visible</h2>
+    <p>By default, the overflow is visible, meaning that it is not clipped and
+    it renders outside the element's box:</p>
+    <div class="div1">You can use the overflow property when you want to have
+    better control of the layout. The overflow property specifies what happens
+    if content overflows an element's box.</div>
+
+    <br><br>
+
+    <h2>3. overflow: hidden</h2>
+    <p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+    <div class="div2">You can use the overflow property when you want to have
+    better control of the layout. The overflow property specifies what happens
+    if content overflows an element's box.</div>
+
+    <br><br>
+
+    <h2>4. overflow: scroll</h2>
+    <p>Setting the value to scroll, the overflow is clipped and a scrollbar is
+    added to scroll inside the box. Note that this will add a scrollbar both
+    horizontally and vertically (even if you do not need it):</p>
+    <div class="div3">You can use the overflow property when you want to have
+    better control of the layout. The overflow property specifies what happens
+    if content overflows an element's box.</div>
+
+    <br><br>
+
+    <h2>5. overflow: auto</h2>
+    <p>The auto value is similar to scroll, but it adds scrollbars only when necessary:</p>
+    <div class="div4">You can use the overflow property when you want to have
+    better control of the layout. The overflow property specifies what happens
+    if content overflows an element's box.</div>
+
+    <br><br>
+
+    <h2>6. overflow-x and overflow-y</h2>
+    <p>The overflow-x and overflow-y properties specifies whether to change the
+    overflow of content just horizontally or vertically (or both):</p>
+    <p>overflow-x specifies what to do with the left/right edges of the content.<br>
+    overflow-y specifies what to do with the top/bottom edges of the content.</p>
+    <div class="div5">You can use the overflow property when you want to have
+    better control of the layout. The overflow property specifies what happens
+    if content overflows an element's box.</div>
+
+    <br><br>
+
+    <h2>7. More example on CSS layout overflow</h2>
+    <div class="div6">This text is really long and the height of its container
+    is only 100 pixels. Therefore, a scrollbar is added to help the reader to
+    scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing
+    elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+    tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+    esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum
+    soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+    placerat facer possim assum. Typi non habent claritatem insitam; est usus
+    legentis in iis qui facit eorum claritatem.</div>
+
+    <br><br>
+
+</body>
+</html>
