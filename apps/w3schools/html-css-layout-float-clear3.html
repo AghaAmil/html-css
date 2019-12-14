@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Layout - Float and Clear Properties Tutorial - Part3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: calibri;
+        }
+        .topmenu{
+            background-color: #555;
+            overflow: hidden;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .topmenu li{
+            float: left;
+        }
+        .topmenu li a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-family: verdana;
+            font-size: 1.1em;
+            padding: 16px;
+        }
+        .topmenu li a:hover{
+            background-color: #222;
+        }
+        nav{
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+        nav .menu{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav .menu li a{
+            background-color: #eee;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+            padding: 10px;
+            color: rgb(59, 59, 59);
+            text-decoration: none;
+            display: block;
+        }
+        nav .menu li a:hover{
+            background-color: #777;
+            color: white;
+        }
+        article{
+            width: 75%;
+            float: left;
+            padding: 20px;
+        }
+        article header{
+            color: white;
+            font-size: 2em;
+            background-color: #2196F3;
+            padding: 40px 10px;
+            text-align: center;
+        }
+        article h1{
+            font-size: 1.5em;
+        }
+        article p{
+            font-size: 1.1em;
+        }
+        .clearfix{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        footer{
+            font-size: 1.1em;
+            background-color: #444;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="topmenu">
+        <li><a href="#" style="background-color: slateblue;">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <section class="clearfix">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">The Flight</a></li>
+                <li><a href="#" style="background: #46bae0; color: black;">The City</a></li>
+                <li><a href="#">The Island</a></li>
+                <li><a href="#">The Food</a></li>
+                <li><a href="#">The People</a></li>
+                <li><a href="#">The History</a></li>
+                <li><a href="#">The Oceans</a></li>
+            </ul>
+        </nav>
+        <article>
+            <header>
+                The City Information
+            </header>
+
+            <h1>Chania</h1>
+            <p>Chania is the capital of the Chania region on the island of
+            Crete. The city can be divided in two parts, the old town and the
+            modern city.</p>
+            <p>You will learn more about responsive web pages in a later chapter.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy;This website belongs to AghaAmil</p>
+    </footer>
+
+
+
+</body>
+</html>
