@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Layout - Display: inline-block Tutorial</title>
+    <style>
+        h1{
+            font-size: 45px;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           color: dodgerblue; 
+           font-size: 165%;
+        }
+        p{
+            font-size: 105%;
+        }
+        strong{
+            color: red;
+        }
+        .a{
+            background-color: lightblue;
+            display: inline;
+            /* width: 100px; width will be ignored due to display property */
+            /* height: 100px; height will be ignored due to display property */
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .b{
+            background-color: lightblue;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            padding: 5px; 
+        }
+        .c{
+            background-color: lightblue;
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            padding: 5px; 
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: lightblue;
+            text-align: center;
+        }
+        ul li{
+            display: inline-block;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Layout - Different Display Property Value</h1>
+    <br>
+
+    <h2>The display: inline, block, inline-block Value</h2>
+    <p>Compared to <strong>display: inline</strong>, the major difference is that <strong>display:
+    inline-block</strong> allows to set a width and height on the element.</p>
+    <p>Also, with <strong>display: inline</strong>, the top and bottom margins/paddings are
+    respected, but with <strong>display: inline</strong> they are not.</p>
+    <p>Compared to <strong>display: block</strong>, the major difference is that <strong>display:
+    inline</strong> does not add a line-break after the element, so the element
+    can sit next to other elements.</p>
+    <br>
+    <p>The following example shows the different behavior of <strong>display: inline</strong>,
+    <strong>display: inline-block</strong> and <strong>display: block</strong></p>
+
+    <h2>1. display: inline</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+    consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+    <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum
+    velit sed laoreet.</p>
+    <br>
+
+    <h2>2. display: inline-block</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+    consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+    <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum
+    velit sed laoreet.</p>
+    <br>
+
+    <h2>3. display: block</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+    consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+    <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum
+    velit sed laoreet.</p>
+    <br><br>
+
+    <h2>Horizontal Navigation Links using Display Property</h2>
+    <p>By default, list items are displayed vertically. In this example we use
+    display: inline-block to display them horizontally (side by side).</p>
+    <p>Note: If you resize the browser window, the links will automatically
+    break when it becomes too crowded.</p>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Clients</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>
