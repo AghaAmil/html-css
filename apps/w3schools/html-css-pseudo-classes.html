@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Pseudo-classes Tutorial</title>
+    <style>
+        body{
+            font-family: calibri;
+        }
+        h1{
+            font-size: 45px;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+           color: dodgerblue; 
+           font-size: 165%;
+        }
+        p{
+            font-size: 105%;
+        }
+        .p1{
+            font-size: 1.2em;
+            font-family: Verdana;
+        }
+        .p1 a:link{
+            color: fuchsia;
+        }
+        .p1 a:visited{
+            color: greenyellow;
+        }
+        .p1 a:hover{
+            color: indigo;
+        }
+        .p1 a:active{
+            color: aqua;
+        }
+        div{
+            background-color: blueviolet;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        div .divp2{
+            display: none;
+        }
+        div:hover{
+            background-color: #d840b7;
+        }
+        div:hover .divp1{
+            display: None;
+        }
+        div:hover .divp2{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-classes</h1>
+    <br>
+
+    <h2>1. Anchor Pseudo-classes</h2>
+    <p>Links can be displayed in different ways:</p>
+
+    <p class="p1"><a href="#">This is a clickable link</a></p>
+
+    <br><br>
+
+    <h2>2. Hover On Div</h2>
+    <p>Mouse over the div element below to change its background color:</p>
+
+    <div>
+        <p class="divp1">Move The Mouse Over My Body</p>
+        <p class="divp2">Oh Yes! Joooooon. Oh Yes!</p>
+    </div>
+</body>
+</html>
