@@ -97,6 +97,39 @@
             width: 320px;
             margin: 0;
         }
+        .div4{
+            padding: 10px;
+            border: solid palevioletred 3px;
+            outline: groove yellow 5px;
+            outline-offset: 10px;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .div5{
+            padding: 15px;
+            border: solid black 3px;
+        }
+        .div5 h3{
+            font-family: verdana;
+            font-size: 2em;
+            color: crimson;
+            text-shadow: 4px 3px yellow;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .div5 p{
+            font-family: 'Times New Roman';
+            text-align: justify;
+            text-transform: capitalize;
+            word-spacing: 5px;
+            letter-spacing: -0.5px;
+            text-indent: 50px;
+        }
+        .div5 p a{
+            color: blue;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -168,6 +201,27 @@
     element is also 350px.</p>
     
     <br><br>
+
+    <h2>CSS Outline</h2>
+    <p>The outline-offset property adds space between an outline and the
+    edge/border of an element. The space between an element and its outline is
+    transparent.</p>
+    <br>
+
+    <div class="div4">This paragraph has an outline 15px outside the border edge.</div>
+
+    <br><br>
+
+    <h2>CSS Text</h2>
+
+    <div class="div5">
+        <h3>Text Formatting</h3>
+        <p>This text is styled with some of the text formatting properties. The
+        heading uses the text-align, text-transform, and color properties. The
+        paragraph is indented, aligned, and the space between characters is
+        specified. The underline is removed from this colored <a href="#">"Try it Yourself"</a>
+        link.</p>
+    </div>
 
 </body>
 </html>
