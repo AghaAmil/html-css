@@ -54,22 +54,37 @@
     <p><b>display:none</b> removes the element from the document. It does not take up any space.</p>
 
     <div class="container">
-        <div class="box">
-            <h3>Box1</h3>
+        <div class="box" id="imgbox1">
+            <h3>display:none; Property</h3>
             <img src="../assets/img/img_5terre.jpg" alt="pic1">
-            <button>Remove</button>
+            <button onclick="removeElement()">Remove</button>
         </div>
-        <div class="box">
-            <h3>Box2</h3>
+        <div class="box" id="imgbox2">
+            <h3>visibility:hidden; Property</h3>
             <img src="../assets/img/img_forest.jpg" alt="pic2">
-            <button>Hide</button>
+            <button onclick="changeVisibility()">Hide</button>
         </div>
         <div class="box">
-            <h3>Box3</h3>
+            <h3>Reset</h3>
             <img src="../assets/img/img_lights.jpg" alt="pic3">
-            <button on>Reset All</button>
+            <button onclick="resetElement()">Reset All</button>
         </div>
     </div>
+
+    <script>
+        function removeElement() {
+          document.getElementById("imgbox1").style.display = "none";
+        }
+        
+        function changeVisibility() {
+          document.getElementById("imgbox2").style.visibility = "hidden";
+        }
+        
+        function resetElement() {
+          document.getElementById("imgbox1").style.display = "block";
+          document.getElementById("imgbox2").style.visibility = "visible";
+        }
+        </script>
 
 
 </body>
