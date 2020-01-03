@@ -68,6 +68,29 @@
             position: -webkit-sticky; /* for safari browser */
             top: 10px;
         }
+        img{
+            opacity: 0.5;
+            width: 100%;
+            height: auto;
+        }
+        .imgcontainer{
+           position: relative;
+             
+        }
+        .topleft{
+            position: absolute;
+            left: 10px; /* Eventhough left and top are 10px, position is different in page layout. */
+            top: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+        .topright{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
     </style>
 </head>
 <body>
@@ -111,7 +134,22 @@
     <h2>Sticky Position</h2>
     <p>Try to scroll inside this frame to understand how sticky positioning works.</p>
     <div class="div6">I am Sticky div and not easily go away</div>
-    <p style="padding-bottom: 2000px;">In this example, the sticky element sticks to the top of the page (top: 10), when you reach its scroll position.</p>
+    <p style="padding-bottom: 2000px;">In this example, the sticky element
+    sticks to the top of the page (top: 10), when you reach its scroll
+    position.</p>
+
+    <br><br>
+
+    <h2>Image Text</h2>
+    <p>Adding some text in different positions of the picture.</p>
+    <div class="imgcontainer">
+        <img src="../assets/img/img_5terre.jpg" alt="pic1">
+        <p class="topleft">Top Left</p>
+        <p class="topright">Top Right</p>
+        <p class="bottomleft">Bottom Left</p>
+        <p class="bottomright">Bottom Right</p>
+        <p class="center">Centered</p>
+    </div>
 
 </body>
 </html>
