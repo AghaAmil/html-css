@@ -66,6 +66,104 @@
             background-color: lightgrey;
             text-align: justify;
         }
+        .div6, .div7{
+            text-align: justify;
+        }
+        .div6 img{
+            float: right;
+            margin-left: 30px;
+            width: 170px;
+        }
+        .div7 img{
+            float: left;
+            width: 170px; 
+            margin-right: 15px;
+        }
+        .div8, .div10{
+            padding: 10px;
+            margin: 10px;
+            border: solid blue 3px;
+            float: left;
+            width: 200px;
+            height: 100px;
+        }
+        .div9{
+            padding: 10px;
+            border: solid red 3px;
+        }
+        .div11{
+            padding: 10px;
+            border: solid red 3px;
+            clear: left; 
+        }
+        .div12, .div13{
+            padding: 10px;
+            border: solid salmon 3px;
+        }
+        .div12 img, .div13 img{
+            float: right;
+            width: 170px;
+        }
+        .div13::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .maindiv div{
+            width: 50%;
+            float: left;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .maindiv::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .maindiv2 div{
+            width: 33.33%;
+            float: left;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .maindiv2::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .imgcontainer div{
+            width: 33.33%;
+            float: left;
+            padding: 5px;
+        }
+        .imgcontainer div img{
+            width: 100%;
+        }
+        .imgcontainer::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .boxcontainer{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .boxcontainer div{
+            border: solid #8c32f3 3px;
+            background-color: lightgrey;
+            padding: 20px;
+            width: 50%;
+            line-height: 1.5;
+            font-size: 2em;
+            float: left;
+        }
+        .khas span{
+            float: left;
+            font-family: algerian, courier;
+            font-size: 400%;
+            width: 0.7em;
+            line-height: 80%;
+        }
     </style>
 </head>
 <body>
@@ -73,8 +171,8 @@
     <br>
 
     <h2>CSS Overflow: Visible</h2>
-    <p>By default, the overflow is visible, meaning that it is not clipped and
-    it renders outside the element's box:</p>
+    <p>In this example, the image will float to the left in the paragraph, and
+    the text in the paragraph will wrap around the image.</p>
 
     <div class="div1">You can use the overflow property when you want to have better control
     of the layout. The overflow property specifies what happens if content
@@ -127,6 +225,136 @@
     overflows an element's box.You can use the overflow property when you want to have better control
     of the layout. The overflow property specifies what happens if content
     overflows an element's box.</div>
+
+    <br><br>
+
+    <h2>CSS Float: Right</h2>
+    <p>In this example, the image will float to the right in the paragraph, and
+    the text in the paragraph will wrap around the image.</p>
+
+    <div class="div6">
+        <img src="../assets/img/pineapple.jpg" alt="pineapple">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+        scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+        congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+        aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+        Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
+        sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
+        sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+        tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+        Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
+        diam velit.</p>
+    </div>
+
+    <br><br>
+
+    <h2>CSS Float: Left</h2>
+    <p>In this example, the image will float to the right in the paragraph, and
+    the text in the paragraph will wrap around the image.</p>
+
+    <div class="div7">
+        <img src="../assets/img/pineapple.jpg" alt="pineapple">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+        scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+        congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+        aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+        Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
+        sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
+        sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+        tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+        Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
+        diam velit.</p>
+    </div>
+
+    <br><br>
+
+    <h2>The clear Property</h2>
+    <h3>Without clear</h3>
+
+    <div class="div8">This Is Div One</div>
+    <div class="div9">div2 - Notice that div2 is after div1 in the HTML code.
+    However, since div1 floats to the left, the text in div2 flows around
+    div1.</div>
+    <br><br>
+
+    <h3>With clear</h3>
+
+    <div class="div10">This Is Div Three</div>
+    <div class="div11">div4 - Here, clear: left; moves div4 down below the
+    floating div3. The value "left" clears elements floated to the left. You can
+    also clear "right" and "both".</div>
+
+    <br>
+
+    <h2>Repeating the Pineapple Exampling Using Clearfix Hack</h2>
+    <p>In this example, the image is taller than the element containing it, and
+    it is floated, so it overflows outside of its container:</p>
+
+    <div class="div12">
+        <h3>Without Clearfix</h3>
+        <img src="../assets/img/pineapple.jpg" alt="pineapple">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet, nulla et dictum interdum...</p>
+    </div>
+
+    <p style="clear: both;">Add the clearfix hack to the containing element, to fix this problem:</p>
+
+    <div class="div13">
+        <h3>Without Clearfix</h3>
+        <img src="../assets/img/pineapple.jpg" alt="pineapple">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet, nulla et dictum interdum...</p>
+    </div>
+
+    <br><br>
+
+    <h2>Grid of Boxes / Equal Width Boxes</h2>
+
+    <div class="maindiv">
+        <div style="background-color: darkgrey;">Box 1</div>
+        <div style="background-color: lightgray;">Box 2</div>
+    </div>
+
+    <br>
+
+    <div class="maindiv2">
+        <div style="background-color: #999;">Box 1</div>
+        <div style="background-color: #bbb;">Box 2</div>
+        <div style="background-color: #ddd;">Box 3</div>
+    </div>
+
+    <br><br>
+
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+
+    <div class="imgcontainer">
+        <div><img src="../assets/img/img_5terre.jpg" alt="pic1"></div>
+        <div><img src="../assets/img/img_forest.jpg" alt="pic2"></div>
+        <div><img src="../assets/img/img_mountains.jpg" alt="pic3"></div>
+    </div>
+
+    <br><br>
+
+    <h2>Equal Height Boxes</h2>
+
+    <div class="boxcontainer">
+        <div>Box 1 - This is some text to make sure that the content gets really
+        tall. This is some text to make sure that the content gets really tall.
+        This is some text to make sure that the content gets really tall.</div>
+        <div>Box 2 - My height will follow Box 1.</div>
+    </div>
+
+    <br><br>
+
+    <p class="khas"><span>T</span> is some text. This is some text. This is some text. This is some
+    text. This is some text. This is some text. This is some text. This is some
+    text. This is some text. This is some text. This is some text. This is some
+    text. This is some text. This is some text. This is some text. This is some
+    text. This is some text. This is some text. This is some text. This is some
+    text. This is some text.</p>
 
 </body>
 </html>
