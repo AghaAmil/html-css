@@ -31,12 +31,38 @@
             overflow: visible;
             background-color: lightgrey;
             text-align: justify;
+            margin-bottom: 200px;
         }
         .div2{
             width: 200px;
             height: 100px;
             padding: 10px;
             overflow: hidden;
+            background-color: lightgrey;
+            text-align: justify;
+        }
+        .div3{
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            overflow: scroll;
+            background-color: lightgrey;
+            text-align: justify;
+        }
+        .div4{
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            overflow: auto;
+            background-color: lightgrey;
+            text-align: justify;
+        }
+        .div5{
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            overflow-x: hidden;
+            overflow-y: scroll;
             background-color: lightgrey;
             text-align: justify;
         }
@@ -67,7 +93,40 @@
     of the layout. The overflow property specifies what happens if content
     overflows an element's box.</div>
 
+    <br>
 
+    <h2>CSS Overflow: Scroll</h2>
+    <p>Setting the overflow value to scroll, the overflow is clipped and a
+    scrollbar is added to scroll inside the box. Note that this will add a
+    scrollbar both horizontally and vertically (even if you do not need it):</p>
+
+    <div class="div3">You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.</div>
+
+    <br>
+
+    <h2>CSS Overflow: Auto</h2>
+    <p>The auto value is similar to scroll, only it add scrollbars when necessary:</p>
+
+    <div class="div4">You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.</div>
+
+    <br>
+
+    <h2>CSS Overflow-x, Overflow-y</h2>
+    <p>You can also change the overflow of content horizontally or vertically.</p>
+
+    <div class="div5">You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.</div>
 
 </body>
 </html>
