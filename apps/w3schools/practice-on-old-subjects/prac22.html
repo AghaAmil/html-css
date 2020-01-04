@@ -21,12 +21,67 @@
            color: dodgerblue; 
            font-size: 2em;
         }
-        p{
-            font-size: 105%;
+        .container{
+            position: relative;
+        }
+        .container img{
+            width: 100%;
+            height: auto;
+            opacity: 0.4;
+        }
+        .container .topleft{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+        .container .topright{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+        .container .bottomleft{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+        .container .bottomright{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+        .container .center{
+            position: absolute;
+            bottom: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.3em;
         }
     </style>
 </head>
 <body>
-    
+    <h1>Practice on previous subjects</h1>
+    <br>
+
+    <h2>Image Text</h2>
+    <p>Some text positioned around an image</p>
+
+    <div class="container">
+        <img src="../assets/img/img_5terre.jpg" alt="pic1">
+        <div class="topleft">Top Left</div >
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Center</div>
+    </div>
 </body>
 </html>

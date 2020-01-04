@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Practice on previous subjects</title>
     <style>
-        *{
-            box-sizing: border-box;
-        }
         body{
             font-family: Calibri;
         }
@@ -68,7 +65,7 @@
             position: -webkit-sticky; /* for safari browser */
             top: 10px;
         }
-        img{
+        .imgcontainer img{
             opacity: 0.5;
             width: 100%;
             height: auto;
@@ -77,17 +74,40 @@
            position: relative;
              
         }
-        .topleft{
+        .imgcontainer .topleft{
             position: absolute;
             left: 10px; /* Eventhough left and top are 10px, position is different in page layout. */
             top: 10px;
             font-weight: bolder;
             font-size: 1.3em;
         }
-        .topright{
+        .imgcontainer .topright{
             position: absolute;
             right: 10px;
             top: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+        .imgcontainer .bottomleft{
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+        .imgcontainer .bottomright{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+        .imgcontainer .center{
+            position: absolute;
+            left: 0;
+            top: 50%; /* Ask haji about this */
+            width: 100%;
+            text-align: center;
             font-weight: bolder;
             font-size: 1.3em;
         }
@@ -144,11 +164,11 @@
     <p>Adding some text in different positions of the picture.</p>
     <div class="imgcontainer">
         <img src="../assets/img/img_5terre.jpg" alt="pic1">
-        <p class="topleft">Top Left</p>
-        <p class="topright">Top Right</p>
-        <p class="bottomleft">Bottom Left</p>
-        <p class="bottomright">Bottom Right</p>
-        <p class="center">Centered</p>
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Centered</div>
     </div>
 
 </body>
