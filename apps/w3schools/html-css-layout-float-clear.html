@@ -1,223 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Layout - Float and Clear Properties Tutorial - Part1</title>
     <style>
-        *{
-            font-family: calibri;
-            box-sizing: border-box;
-        }
-        .main-head{
-            font-size: 45px;
-            color: navy;
-            text-align: center;
-        }
-        .heading{
-           color: dodgerblue; 
-           font-size: 165%;
-        }
-        p{
-            font-size: 105%;
-        }
-        strong{
-            color: red;
-        }
-        .img1{
-            float: right;
-            margin-left: 20px;
-        }
-        .img2{
-            float: left;
-            margin-right: 20px;
-        }
-        .div1{
-            border: 2px dotted red;
-            padding: 10px;
-            width: 150px;
-            height: 80px;
-            margin: 20px;
-        }
-        .div2{
-            border: 3px solid royalblue;
-            padding: 10px;
-        }
-        .div4{
-           padding: 10px;
-           border: 2px solid gold; 
-        }
-        .auto{
-            overflow: auto;
-        }
-        .clearfix::after{
-            content: "";
-            clear: both;
-            display: table;
-        }
+      * {
+        font-family: calibri;
+        box-sizing: border-box;
+      }
+      .main-head {
+        font-size: 45px;
+        color: navy;
+        text-align: center;
+      }
+      .heading {
+        color: dodgerblue;
+        font-size: 165%;
+      }
+      p {
+        font-size: 105%;
+      }
+      strong {
+        color: red;
+      }
+      .img1 {
+        float: right;
+        margin-left: 20px;
+      }
+      .img2 {
+        float: left;
+        margin-right: 20px;
+      }
+      .div1 {
+        border: 2px dotted red;
+        padding: 10px;
+        width: 150px;
+        height: 80px;
+        margin: 20px;
+      }
+      .div2 {
+        border: 3px solid royalblue;
+        padding: 10px;
+      }
+      .div4 {
+        padding: 10px;
+        border: 2px solid gold;
+      }
+      .auto {
+        overflow: auto;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="main-head">CSS Layout - Float and Clear</h1>
-    <br>
+    <br />
 
     <h2 class="heading">1. The float property</h2>
-    <p>The  property is used for positioning and formatting content e.g.
-    let an image float left to the text in a container.</p>
-    <p>The <strong>float</strong> property can have one of the following values:</p>
+    <p>
+      The property is used for positioning and formatting content e.g. let an
+      image float left to the text in a container.
+    </p>
+    <p>
+      The <strong>float</strong> property can have one of the following values:
+    </p>
     <ul>
-        <li>left - The element floats to the left of its container</li>
-        <li>right - The element floats to the right of its container</li>
-        <li>none - The element does not float (will be displayed just where it
-        occurs in the text). This is default</li>
-        <li>inherit - The element inherits the float value of its parent</li>
+      <li>left - The element floats to the left of its container</li>
+      <li>right - The element floats to the right of its container</li>
+      <li>
+        none - The element does not float (will be displayed just where it
+        occurs in the text). This is default
+      </li>
+      <li>inherit - The element inherits the float value of its parent</li>
     </ul>
-    <p>In its simplest use, the float property can be used to wrap text around images.</p>
-    <br>
+    <p>
+      In its simplest use, the float property can be used to wrap text around
+      images.
+    </p>
+    <br />
 
     <h2>Example float right</h2>
-    <p>In this example, the image will float to the right in the paragraph, and
-    the text in the paragraph will wrap around the image.</p>
-
-    <p style="text-align: justify;">
-        <img src="assets/img/pineapple.jpg" alt="pineapple" width="170" height="170" class="img1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
-        scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
-        congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
-        aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
-        Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
-        sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
-        sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-        tellus gravida venenatis. Integer fringilla congue eros non fermentum.
-        Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
-        diam velit.
+    <p>
+      In this example, the image will float to the right in the paragraph, and
+      the text in the paragraph will wrap around the image.
     </p>
 
-    <br><br>
+    <p style="text-align: justify;">
+      <img
+        src="assets/img/pineapple.jpg"
+        alt="pineapple"
+        width="170"
+        height="170"
+        class="img1"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+      scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+      congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+      Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+      convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+      dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+      venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+      venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+      pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+
+    <br /><br />
 
     <h2>Example - float: left;</h2>
-    <p>In this example, the image will float to the right in the paragraph, and
-    the text in the paragraph will wrap around the image.</p>
-
-    <p style="text-align: justify;">
-        <img src="assets/img/pineapple.jpg" alt="pineapple" width="170" height="170" class="img2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
-        scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
-        congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
-        aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
-        Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
-        sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
-        sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-        tellus gravida venenatis. Integer fringilla congue eros non fermentum.
-        Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
-        diam velit.
+    <p>
+      In this example, the image will float to the right in the paragraph, and
+      the text in the paragraph will wrap around the image.
     </p>
 
-    <br><br>
+    <p style="text-align: justify;">
+      <img
+        src="assets/img/pineapple.jpg"
+        alt="pineapple"
+        width="170"
+        height="170"
+        class="img2"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+      scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+      congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+      Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+      convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+      dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+      venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+      venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+      pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+
+    <br /><br />
 
     <h2>Example - No float</h2>
-    <p>In this example, the image will be displayed just where it occurs in the text (float: none;).</p>
-
-    <p style="text-align: justify;">
-        <img src="assets/img/pineapple.jpg" alt="pineapple" width="170" height="170">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
-        scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
-        congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
-        aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
-        Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
-        sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
-        sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-        tellus gravida venenatis. Integer fringilla congue eros non fermentum.
-        Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
-        diam velit.
+    <p>
+      In this example, the image will be displayed just where it occurs in the
+      text (float: none;).
     </p>
 
-    <br><br>
+    <p style="text-align: justify;">
+      <img
+        src="assets/img/pineapple.jpg"
+        alt="pineapple"
+        width="170"
+        height="170"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+      scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+      congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+      Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+      convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+      dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+      venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+      venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+      pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+
+    <br /><br />
 
     <h2 class="heading">1. The clear property</h2>
-    <p>The <strong>clear</strong> property specifies what elements can float
-    beside the cleared element and on which side.</p>
-    <p>The <Strong>clear</Strong> property can have one of the following values:</p>
+    <p>
+      The <strong>clear</strong> property specifies what elements can float
+      beside the cleared element and on which side.
+    </p>
+    <p>
+      The <strong>clear</strong> property can have one of the following values:
+    </p>
     <ul>
-        <li>none - Allows floating elements on both sides. This is default</li>
-        <li>left - No floating elements allowed on the left side</li>
-        <li>right- No floating elements allowed on the right side</li>
-        <li>both - No floating elements allowed on either the left or the right side</li>
-        <li>inherit - The element inherits the clear value of its parent</li>
+      <li>none - Allows floating elements on both sides. This is default</li>
+      <li>left - No floating elements allowed on the left side</li>
+      <li>right- No floating elements allowed on the right side</li>
+      <li>
+        both - No floating elements allowed on either the left or the right side
+      </li>
+      <li>inherit - The element inherits the clear value of its parent</li>
     </ul>
-    <p>The most common way to use the <strong>clear</strong> property is after
-    you have used a <strong>float</strong> property on an element.</p>
-    <p>When clearing floats, you should match the clear to the float: If an
-    element is floated to the left, then you should clear to the left. Your
-    floated element will continue to float, but the cleared element will appear
-    below it on the web page.</p>
-    <br>
+    <p>
+      The most common way to use the <strong>clear</strong> property is after
+      you have used a <strong>float</strong> property on an element.
+    </p>
+    <p>
+      When clearing floats, you should match the clear to the float: If an
+      element is floated to the left, then you should clear to the left. Your
+      floated element will continue to float, but the cleared element will
+      appear below it on the web page.
+    </p>
+    <br />
 
     <h2>Example without clear property</h2>
 
     <div class="div1" style="float: left">Div1</div>
-    <div class="div2">Div2 - Notice that Div2 is after Div1 in the HTML code.
-    However, since Div1 floats to the left, the text in Div2 flows around
-    Div1.</div>
-    <br><br>
+    <div class="div2">
+      Div2 - Notice that Div2 is after Div1 in the HTML code. However, since
+      Div1 floats to the left, the text in Div2 flows around Div1.
+    </div>
+    <br /><br />
 
     <h2>Example with clear property</h2>
 
     <div class="div1" style="clear: both;">Div3</div>
-    <div class="div2">Div4 - Here, clear: left; moves Div4 down below the
-    floating Div3. The value "left" clears elements floated to the left. You can
-    also clear "right" and "both".</div>
+    <div class="div2">
+      Div4 - Here, clear: left; moves Div4 down below the floating Div3. The
+      value "left" clears elements floated to the left. You can also clear
+      "right" and "both".
+    </div>
 
-    <br><br>
+    <br /><br />
 
     <h2 class="heading">3. The clearfix Hack</h2>
-    <p>In this example, the image is taller than the element containing it, and
-    it is floated, so it overflows outside of its container:</p>
+    <p>
+      In this example, the image is taller than the element containing it, and
+      it is floated, so it overflows outside of its container:
+    </p>
 
     <div class="div4">
-        <img src="assets/img/pineapple.jpg" alt="pineapple" width="170" height="170" style="float: right;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum...
+      <img
+        src="assets/img/pineapple.jpg"
+        alt="pineapple"
+        width="170"
+        height="170"
+        style="float: right;"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum...
     </div>
 
-    <p style="clear: right;">Add a clearfix class with overflow: auto; to the
-    containing element, to fix this problem:</p>
+    <p style="clear: right;">
+      Add a clearfix class with overflow: auto; to the containing element, to
+      fix this problem:
+    </p>
 
     <div class="div4 auto">
-        <img src="assets/img/pineapple.jpg" alt="pineapple" width="170" height="170" style="float: right;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum...
+      <img
+        src="assets/img/pineapple.jpg"
+        alt="pineapple"
+        width="170"
+        height="170"
+        style="float: right;"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum...
     </div>
-    <br>
+    <br />
 
     <h2>We repeat the same scenario, using Clearfix Hack</h2>
 
     <div class="div4">
-        <h3>Without Clearfix Hack</h3>
-        <img src="assets/img/pineapple.jpg" alt="pineapple" width="170" height="170" style="float: right;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum...<br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum...
+      <h3>Without Clearfix Hack</h3>
+      <img
+        src="assets/img/pineapple.jpg"
+        alt="pineapple"
+        width="170"
+        height="170"
+        style="float: right;"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum...<br />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum...
     </div>
 
-    <p style="clear: right;">Add a clearfix class with overflow: auto; to the
-    containing element, to fix this problem:</p>
+    <p style="clear: right;">
+      Add a clearfix class with overflow: auto; to the containing element, to
+      fix this problem:
+    </p>
 
     <div class="div4 clearfix">
-        <h3>Without Clearfix Hack</h3>
-        <img src="assets/img/pineapple.jpg" alt="pineapple" width="170" height="170" style="float: right;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum...<br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        imperdiet, nulla et dictum interdum...
+      <h3>Without Clearfix Hack</h3>
+      <img
+        src="assets/img/pineapple.jpg"
+        alt="pineapple"
+        width="170"
+        height="170"
+        style="float: right;"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum...<br />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum...
     </div>
 
-    <br><br>
-
-</body>
+    <br /><br />
+  </body>
 </html>
