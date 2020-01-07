@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Pseudo Elements Property Tutorial</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: calibri;
+      }
+      h1 {
+        font-size: 3em;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 1.9em;
+      }
+      p {
+        font-size: 105%;
+      }
+      .p1::first-line {
+        color: lightseagreen;
+        font-size: 1.2em;
+        font-variant: small-caps;
+      }
+      .p2::first-letter {
+        font-size: xx-large;
+        font-family: arial;
+        text-shadow: 2px 3px mediumspringgreen;
+      }
+      .p3::first-letter {
+        font-size: xx-large;
+        font-family: arial;
+        text-shadow: 2px 3px mediumspringgreen;
+      }
+      .p3::first-line {
+        color: lightseagreen;
+        font-size: 1.2em;
+        font-variant: small-caps;
+      }
+      .before::before {
+        content: url(assets/img/smiley-1.gif);
+      }
+      .after::after {
+        content: url(assets/img/smiley-1.gif);
+      }
+      .selection::selection {
+        color: blue;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Pseudo Elements</h1>
+    <p></p>
+
+    <h2>1. What are Pseudo-Elements?</h2>
+    <p>A CSS pseudo-element is used to style specified parts of an element.</p>
+    <p>For example, it can be used to:</p>
+    <ul>
+      <li>Style the first letter, or line, of an element</li>
+      <li>Insert content before, or after, the content of an element</li>
+    </ul>
+
+    <br /><br />
+
+    <h2>2. The ::first-line Pseudo-element</h2>
+    <p>
+      The ::first-line pseudo-element is used to add a special style to the
+      first line of a text.
+    </p>
+    <p>The following example formats the first line of the text in all</p>
+    <p class="p1">
+      You can use the ::first-line pseudo-element to add a special effect to the
+      first line of a text. Some more text. And even more, and more, and more,
+      and more, and more, and more, and more, and more, and more, and more, and
+      more, and more.
+    </p>
+
+    <br /><br />
+
+    <h2>3. The ::first-letter Pseudo-element</h2>
+    <p class="p2">
+      The ::first-letter pseudo-element is used to add a special style to the
+      first letter of a text.
+    </p>
+
+    <br />
+
+    <h3>Mixing all posibilities on pseudo elements</h3>
+
+    <p class="p3">
+      You can combine the ::first-letter and ::first-line pseudo-elements to add
+      a special effect to the first letter and the first line of a text!. You
+      can combine the ::first-letter and ::first-line pseudo-elements to add a
+      special effect to the first letter and the first line of a text!
+    </p>
+
+    <br /><br />
+
+    <h2>4. CSS - The ::before Pseudo-element</h2>
+    <p>
+      The ::before pseudo-element can be used to insert some content before the
+      content of an element.
+    </p>
+    <h3 class="before">This is a heading</h3>
+
+    <br /><br />
+
+    <h2>5. CSS - The ::after Pseudo-element</h2>
+    <p>
+      The ::after pseudo-element can be used to insert some content after the
+      content of an element.
+    </p>
+    <h3 class="after">This is a heading</h3>
+
+    <br /><br />
+
+    <h2>6. CSS - The ::selection Pseudo-element</h2>
+    <p>
+      The ::selection pseudo-element matches the portion of an element that is
+      selected by a user.
+    </p>
+    <p>
+      The following CSS properties can be applied to ::selection: color,
+      background, cursor, and outline.
+    </p>
+    <p>
+      The following example makes the selected text blue on a lightblue
+      background:
+    </p>
+
+    <br />
+
+    <h3 class="selection">Select some text on this page:</h3>
+    <p class="selection">
+      This is a paragraph.<br />
+      This is some text in a div element.<br />
+      <b>Note:</b> ::selection is not supported in Internet Explorer 8 and
+      earlier versions.<br />
+      <b>Note:</b> Firefox supports an alternative, the ::-moz-selection
+      property.
+    </p>
+  </body>
+</html>
