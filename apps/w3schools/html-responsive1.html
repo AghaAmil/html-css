@@ -1,94 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Responsive Tutorial</title>
-</head>
-<style>
-    *{
-        box-sizing: border-box;
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
     }
-    .head{
-        font-family: Verdana;
-        font-size: 160%;
-        color: navy;
-        text-align: center;
+    .head {
+      font-family: Verdana;
+      font-size: 160%;
+      color: navy;
+      text-align: center;
     }
-    .head2{
-        font-family: verdana;
-        color: dodgerblue;
+    .head2 {
+      font-family: verdana;
+      color: dodgerblue;
     }
-    .par{
-        font-family: 'Times New Roman';
-        font-size: 110%;
+    .par {
+      font-family: "Times New Roman";
+      font-size: 110%;
     }
-    .left{
-        float: left;
-        width: 25%;
-        padding: 30px;
-        background-color: #2196F3;
-        font-size: 20px;
+    .left {
+      float: left;
+      width: 25%;
+      padding: 30px;
+      background-color: #2196f3;
+      font-size: 20px;
     }
-    .center{
-        float: left;
-        width: 50%;
-        padding: 30px;
-        background-color: #f1f1f1;
-        font-size: 20px; 
+    .center {
+      float: left;
+      width: 50%;
+      padding: 30px;
+      background-color: #f1f1f1;
+      font-size: 20px;
     }
-    .right{
-        float: left;
-        width: 25%;
-        padding: 30px;
-        background-color: #4CAF50;
-        font-size: 20px; 
+    .right {
+      float: left;
+      width: 25%;
+      padding: 30px;
+      background-color: #4caf50;
+      font-size: 20px;
     }
     /* Use a media query to add a break point at 800px: */
-    @media screen and (max-width:1000px){
-        .left, .center, .right{
-            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-        }
+    @media screen and (max-width: 1000px) {
+      .left,
+      .center,
+      .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
     }
-</style>
-<body>
+  </style>
+  <body>
     <h1 class="head">HTML Responsive Web Design</h1>
-    <p class="par">Responsive Web Design is about using HTML and CSS to
-    automatically resize, hide, shrink, or enlarge, a website, to make it look
-    good on all devices (desktops, tablets, and phones)</p>
-    
-    <h2 class="head2">1. Responsive Img</h2>
-    <img src="assets\img\img_girl.jpg" alt="girl" style="width: 100%">
-    <p>Below img is responsive as well, however there is a limit in how it can stretch</p>
-    <img src="assets\img\img_girl.jpg" alt="girl" style="max-width: 100%; height: auto;">
+    <p class="par">
+      Responsive Web Design is about using HTML and CSS to automatically resize,
+      hide, shrink, or enlarge, a website, to make it look good on all devices
+      (desktops, tablets, and phones)
+    </p>
 
-    <h2 class="head2">2. Responsive property to display an img based on the display size</h2>
+    <h2 class="head2">1. Responsive Img</h2>
+    <img src="assets\img\img_girl.jpg" alt="girl" style="width: 100%" />
+    <p>
+      Below img is responsive as well, however there is a limit in how it can
+      stretch
+    </p>
+    <img
+      src="assets\img\img_girl.jpg"
+      alt="girl"
+      style="max-width: 100%; height: auto;"
+    />
+
+    <h2 class="head2">
+      2. Responsive property to display an img based on the display size
+    </h2>
     <p>Resize the screen to see what is going to happen</p>
     <picture>
-        <source srcset="assets\img\img_white_flower.jpg" media="(max-width: 600px)">
-        <source srcset="assets\img\img_pink_flowers.jpg" media="(max-width: 1200px)">
-        <source srcset="assets\img\flowers.jpg">
-        <img src="assets\img\flowers.jpg" alt="img of a flower" style="max-width:auto; height:auto">
+      <source
+        srcset="assets\img\img_white_flower.jpg"
+        media="(max-width: 600px)"
+      />
+      <source
+        srcset="assets\img\img_pink_flowers.jpg"
+        media="(max-width: 1200px)"
+      />
+      <source srcset="assets\img\flowers.jpg" />
+      <img
+        src="assets\img\flowers.jpg"
+        alt="img of a flower"
+        style="max-width:auto; height:auto"
+      />
     </picture>
 
     <h2 class="head2">3. Responsive texts</h2>
     <h2 style="font-size: 8vw">This is a responsive heading</h2>
-    <p style="font-size: 4vw">Use the "vw" unit when sizing the text. 10vw will
-    set the size to 10% of the viewport width.</p>
+    <p style="font-size: 4vw">
+      Use the "vw" unit when sizing the text. 10vw will set the size to 10% of
+      the viewport width.
+    </p>
 
     <h2 class="head2">4. Responsive elements</h2>
-    <p>Make sure you reach the breakpoint at 1000px when resizing this frame.</p>
+    <p>
+      Make sure you reach the breakpoint at 1000px when resizing this frame.
+    </p>
     <div class="left">
-        <p>Left Menu</p>
+      <p>Left Menu</p>
     </div>
     <div class="center">
-        <p>Main Menu</p>
+      <p>Main Menu</p>
     </div>
     <div class="right">
-        <p>Right Menu</p>
+      <p>Right Menu</p>
     </div>
-
-
-</body>
+  </body>
 </html>

@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Selector Property Tutorial</title>
     <style>
-        .class1{
-            color: red;
-            text-align: center;
-        }
+      .class1 {
+        color: red;
+        text-align: center;
+      }
 
-        p.class2{
-            color: blue;
-            text-align: center;
-        }
-        p.center{
-            color: lawngreen;
-            text-align: right;
-        }
-        p.large{
-            font-size: 50px;
-        }
+      p.class2 {
+        color: blue;
+        text-align: center;
+      }
+      p.center {
+        color: lawngreen;
+        text-align: right;
+      }
+      p.large {
+        font-size: 50px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="class1">Red and center-aligned heading</h1>
     <p class="class1">Red and center-aligned paragraph</p>
 
-    <br><br>
+    <br /><br />
 
     <h1 class="class2">This heading will not be affected</h1>
     <p class="class2">This paragraph will be blue and center-aligned.</p>
 
-    <br><br>
+    <br /><br />
 
     <h1 class="center">This heading will not be affected</h1>
     <p class="center">This paragraph will be green and right-aligned.</p>
-    <p class="center large">This paragraph will be green, right-aligned, and in a large font-size.</p>
-</body>
+    <p class="center large">
+      This paragraph will be green, right-aligned, and in a large font-size.
+    </p>
+  </body>
 </html>

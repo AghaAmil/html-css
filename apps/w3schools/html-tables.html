@@ -1,105 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Amirhossein Moravveji">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Amirhossein Moravveji" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Tables Tutorial</title>
     <style>
-        h1{
-            font-family: Verdana;
-            font-size: 150%;
-            color: navy;
-            text-align: center;
-        }
-        p{
-            font-family: 'Times New Roman';
-            font-size: 115%;
-        }
-        table, td, th{
-            border: 2px solid black;
-            border-collapse: collapse;
-            padding: 6.5px;
-            text-align: center;
-        }
-        caption{
-            font-family: 'Times New Roman';
-            color: grey;
-            font-size: 25px;
-            margin: 15px;
-        }
-        th{
-            background-color: dodgerblue;
-            color: white;
-            font-family: 'Courier New';
-            font-size: 20px;
-        }
-        td{
-            font-family: calibri;
-            font-size: 15px;
-        }
-        tr:nth-child(odd){
-            background-color: rgb(220, 220, 220);
-        }
-        tr:nth-child(Even){
-            background-color: rgb(150, 150, 150);
-        }
-        td.lastcol{
-            text-align: left;
-        }
-        table{
-            margin-left: auto;
-            margin-right: auto;
-            border: 3px solid black;
-        }
+      h1 {
+        font-family: Verdana;
+        font-size: 150%;
+        color: navy;
+        text-align: center;
+      }
+      p {
+        font-family: "Times New Roman";
+        font-size: 115%;
+      }
+      table,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 6.5px;
+        text-align: center;
+      }
+      caption {
+        font-family: "Times New Roman";
+        color: grey;
+        font-size: 25px;
+        margin: 15px;
+      }
+      th {
+        background-color: dodgerblue;
+        color: white;
+        font-family: "Courier New";
+        font-size: 20px;
+      }
+      td {
+        font-family: calibri;
+        font-size: 15px;
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(220, 220, 220);
+      }
+      tr:nth-child(Even) {
+        background-color: rgb(150, 150, 150);
+      }
+      td.lastcol {
+        text-align: left;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid black;
+      }
     </style>
-</head>
-<body>
-    <h1>Service Management Performance Table</h1><br>
-    <p>The table below represent the Service Management team members' performance and rating.</p>
+  </head>
+  <body>
+    <h1>Service Management Performance Table</h1>
+    <br />
+    <p>
+      The table below represent the Service Management team members' performance
+      and rating.
+    </p>
     <p>The information in this table is reviewed and checked by MSO Head</p>
 
     <table style="width: 1000px">
-        <caption>Service Management Staff Review</caption>
-        <tr>
-            <th rowspan="2">#</th>
-            <th rowspan="2">Name</th>
-            <th rowspan="2">Employee ID</th>
-            <th colspan="2">Overal Performance</th>
-        </tr>
-        <tr>
-            <th>Score</th>
-            <th>MSO Head Feedback</th>
-        </tr>
-        <tr>
-            <th>1</th>
-            <td>Soheil Asi</td>
-            <td>CON439</td>
-            <td>2</td>
-            <td class="lastcol">He only can show-off, just trash talking and not protective of team</td>
-        </tr>
-        <tr>
-            <th>2</th>
-            <td>Amirhossein Moravveji</td>
-            <td>CON476</td>
-            <td>5</td>
-            <td class="lastcol">Nominated as the emplyee of the month, increase in salary</td>
-        </tr>
-        <tr>
-            <th rowspan="2">3</th>
-            <td rowspan="2">Nozhan Nezam</td>
-            <td>SM-CON410</td>
-            <td>5</td>
-            <td class="lastcol">Decrease in number of problems and issues, has lots of free times</td>
-        </tr>
-        <tr>
-            <td>MNP-CON310</td>
-            <td>N/A</td>
-            <td class="lastcol">Frech technical support, just supporting in free time</td>
-        </tr>
+      <caption>
+        Service Management Staff Review
+      </caption>
+      <tr>
+        <th rowspan="2">#</th>
+        <th rowspan="2">Name</th>
+        <th rowspan="2">Employee ID</th>
+        <th colspan="2">Overal Performance</th>
+      </tr>
+      <tr>
+        <th>Score</th>
+        <th>MSO Head Feedback</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>Soheil Asi</td>
+        <td>CON439</td>
+        <td>2</td>
+        <td class="lastcol">
+          He only can show-off, just trash talking and not protective of team
+        </td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Amirhossein Moravveji</td>
+        <td>CON476</td>
+        <td>5</td>
+        <td class="lastcol">
+          Nominated as the emplyee of the month, increase in salary
+        </td>
+      </tr>
+      <tr>
+        <th rowspan="2">3</th>
+        <td rowspan="2">Nozhan Nezam</td>
+        <td>SM-CON410</td>
+        <td>5</td>
+        <td class="lastcol">
+          Decrease in number of problems and issues, has lots of free times
+        </td>
+      </tr>
+      <tr>
+        <td>MNP-CON310</td>
+        <td>N/A</td>
+        <td class="lastcol">
+          Frech technical support, just supporting in free time
+        </td>
+      </tr>
     </table>
-   
-    
-</body>
+  </body>
 </html>

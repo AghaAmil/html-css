@@ -1,116 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Responsive Tutorial</title>
     <style>
-        *{
-            box-sizing: border-box;
-            font-family: Verdana;
+      * {
+        box-sizing: border-box;
+        font-family: Verdana;
+      }
+      .head {
+        font-size: 160%;
+        color: navy;
+        text-align: center;
+      }
+      .header {
+        background-color: #666;
+        text-align: center;
+        font-size: 35px;
+        padding: 30px;
+        color: bisque;
+      }
+      .menu {
+        width: 20%;
+        float: left;
+      }
+      .menulist {
+        padding: 8px;
+        margin-top: 7px;
+        border-bottom: 1px solid #f1f1f1;
+      }
+      .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+        overflow: hidden;
+      }
+      .side {
+        background-color: lightblue;
+        padding: 10px 15px;
+        float: left;
+        width: 20%;
+      }
+      .footer {
+        background-color: #999;
+        text-align: center;
+        padding: 15px;
+        font-size: 15px;
+        margin-top: 7px;
+      }
+      @media only screen and (max-width: 1000px) {
+        .main {
+          width: 80%;
         }
-        .head{
-            font-size: 160%;
-            color: navy;
-            text-align: center;
+        .side {
+          width: 100%;
         }
-        .header{
-            background-color: #666;
-            text-align: center;
-            font-size: 35px;
-            padding: 30px;
-            color: bisque;
+      }
+      @media only screen and (max-width: 600px) {
+        .menu,
+        .main,
+        .side {
+          width: 100%;
         }
-        .menu{
-            width: 20%;
-            float: left;
+        .main {
+          padding: 0;
         }
-        .menulist{
-            padding: 8px;
-            margin-top: 7px;
-            border-bottom: 1px solid #f1f1f1;
+        .side {
+          margin-top: 7px;
         }
-        .main{
-            float: left;
-            width: 60%;
-            padding: 0 20px;
-            overflow: hidden;
-        }
-        .side{
-            background-color: lightblue;
-            padding: 10px 15px;
-            float: left;
-            width: 20%;
-        }
-        .footer{
-            background-color: #999;
-            text-align: center;
-            padding: 15px;
-            font-size: 15px;
-            margin-top: 7px;
-        }
-        @media only screen and (max-width: 1000px) {
-            .main{
-                width: 80%;
-            }
-            .side{
-                width: 100%;
-            }    
-        }
-        @media only screen and (max-width: 600px){
-            .menu, .main, .side{
-                width: 100%;
-            }
-            .main{
-                padding: 0;
-            }
-            .side{
-                margin-top: 7px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="head">HTML Responsive Web Design</h1>
-    <br>
+    <br />
 
     <div class="header">
-        <h1>Cinque Terre</h1>
-        <h3>Resize the browser window</h3>
+      <h1>Cinque Terre</h1>
+      <h3>Resize the browser window</h3>
     </div>
     <div style="overflow: hidden">
-        <div class="menu">
-            <div class="menulist">The Walk</div>
-            <div class="menulist">Transport</div>
-            <div class="menulist">History</div>
-            <div class="menulist">Gallery</div>
-        </div>
-        <div class="main">
-            <h2>The Walk</h2>
-            <p>The walk from Monterosso to Riomaggiore will take you
-            approximately two hours, give or take an hour depending on the
-            weather conditions and your physical shape.</p>
-            <img src="assets\img\img_5terre.jpg" alt="beautiful pic" style="width: 100%;">
-        </div>
-        <div class="side">
-            <h2>What?</h2>
-            <p>Cinque Terre comprises five villages: Monterosso, Vernazza,
-            Corniglia, Manarola, and Riomaggiore.</p>
-            <h2>Where?</h2>
-            <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
-            <h2>Price?</h2>
-            <p>The Walk is free!</p>
-        </div>
+      <div class="menu">
+        <div class="menulist">The Walk</div>
+        <div class="menulist">Transport</div>
+        <div class="menulist">History</div>
+        <div class="menulist">Gallery</div>
+      </div>
+      <div class="main">
+        <h2>The Walk</h2>
+        <p>
+          The walk from Monterosso to Riomaggiore will take you approximately
+          two hours, give or take an hour depending on the weather conditions
+          and your physical shape.
+        </p>
+        <img
+          src="assets\img\img_5terre.jpg"
+          alt="beautiful pic"
+          style="width: 100%;"
+        />
+      </div>
+      <div class="side">
+        <h2>What?</h2>
+        <p>
+          Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia,
+          Manarola, and Riomaggiore.
+        </p>
+        <h2>Where?</h2>
+        <p>
+          On the northwest cost of the Italian Riviera, north of the city La
+          Spezia.
+        </p>
+        <h2>Price?</h2>
+        <p>The Walk is free!</p>
+      </div>
     </div>
 
     <div class="footer">
-        <p>This web page is a part of a demonstration of fluid web design made
-        by w3schools.com. Resize the browser window to see the content respond
-        to the resizing.</p>
+      <p>
+        This web page is a part of a demonstration of fluid web design made by
+        w3schools.com. Resize the browser window to see the content respond to
+        the resizing.
+      </p>
     </div>
-
-
-    
-</body>
+  </body>
 </html>

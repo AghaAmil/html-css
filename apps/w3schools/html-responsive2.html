@@ -1,96 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Responsive Tutorial</title>
     <style>
-        *{
-            box-sizing: border-box;
-            font-family: Verdana;
+      * {
+        box-sizing: border-box;
+        font-family: Verdana;
+      }
+      .head {
+        font-size: 160%;
+        color: navy;
+        text-align: center;
+      }
+      .heading {
+        background-color: #cecaca;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(128, 128, 128);
+      }
+      .menu {
+        width: 20%;
+        float: left;
+        text-align: center;
+      }
+      .menu a {
+        background-color: #cecaca;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        color: black;
+      }
+      .main {
+        padding: 0 20px;
+        width: 55%;
+        float: left;
+        color: black;
+      }
+      .side {
+        width: 25%;
+        float: left;
+        padding: 5px 10px;
+        margin-top: 7px;
+        background-color: #cecaca;
+        color: black;
+      }
+      .footer {
+        background-color: #cecaca;
+        text-align: center;
+        color: bisque;
+        padding: 15px;
+        margin-top: 7px;
+      }
+      @media only screen and (max-width: 800px) {
+        .menu,
+        .main,
+        .side {
+          width: 100%;
         }
-        .head{
-            font-size: 160%;
-            color: navy;
-            text-align: center;
-        }
-        .heading{
-            background-color: #cecaca;
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-            color: rgb(128, 128, 128);
-        }
-        .menu{
-            width: 20%;
-            float: left;
-            text-align: center;
-        }
-        .menu a{
-            background-color: #cecaca;
-            padding: 8px;
-            margin-top: 7px;
-            display: block;
-            text-decoration: none;
-            width: 100%;
-            color: black;
-        }
-        .main{
-            padding: 0 20px;
-            width: 55%;
-            float: left;
-            color: black;
-        }
-        .side{
-            width: 25%;
-            float: left;
-            padding: 5px 10px;
-            margin-top: 7px;
-            background-color: #cecaca;
-            color: black;
-        }
-        .footer{
-            background-color: #cecaca;
-            text-align: center;
-            color: bisque;
-            padding: 15px;
-            margin-top: 7px;
-        }
-        @media only screen and (max-width: 800px){
-            .menu, .main, .side{
-                width: 100%;
-            }
-        }
-
-
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="head">HTML Responsive Web Design</h1>
-    <br>
+    <br />
 
     <div class="heading">Hello World!</div>
     <div style="overflow: auto">
-        <div class="menu">
-            <a href="#">Menulist 1</a>
-            <a href="#">Menulist 2</a>
-            <a href="#">Menulist 3</a>
-            <a href="#">Menulist 4</a>
-        </div>
-        <div class="main">
-            <h1>Lorum Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat.</p>
-        </div>
-        <div class="side">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        </div>
+      <div class="menu">
+        <a href="#">Menulist 1</a>
+        <a href="#">Menulist 2</a>
+        <a href="#">Menulist 3</a>
+        <a href="#">Menulist 4</a>
+      </div>
+      <div class="main">
+        <h1>Lorum Ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+      </div>
+      <div class="side">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
     </div>
     <div class="footer">
-        <p>© copyright w3schools.com</p>
+      <p>© copyright w3schools.com</p>
     </div>
-</body>
+  </body>
 </html>

@@ -1,249 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Input Types Tutorial</title>
     <style>
-        body{
-            background-color: rgb(245, 245, 245);
-        }
-        h1{
-            font-family: Verdana;
-            font-size: 160%;
-            color: navy;
-            text-align: center;
-        }
-        h2{
-           font-family: verdana;
-           color: dodgerblue;
-        }
-        p{
-            font-size: 110%;
-        }
+      body {
+        background-color: rgb(245, 245, 245);
+      }
+      h1 {
+        font-family: Verdana;
+        font-size: 160%;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        font-family: verdana;
+        color: dodgerblue;
+      }
+      p {
+        font-size: 110%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>HTML Input Types</h1>
-    <br>
+    <br />
 
     <h2>1. Revision on previous lesson (HTML5 Datalist Element)</h2>
-    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+    <p>
+      The datalist element specifies a list of pre-defined options for an input
+      element.
+    </p>
 
     <form action="#">
-        <input list="browsers" name="browser">
-        <datalist id="browsers">
-            <option value="Google Chrome"></option>
-            <option value="Apple Safari"></option>
-            <option value="Mozila Firefox"></option>
-            <option value="Microsoft Edge"></option>
-            <option value="Opera"></option>
-        </datalist>
-        <input type="submit" value="Submit!">
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Google Chrome"></option>
+        <option value="Apple Safari"></option>
+        <option value="Mozila Firefox"></option>
+        <option value="Microsoft Edge"></option>
+        <option value="Opera"></option>
+      </datalist>
+      <input type="submit" value="Submit!" />
     </form>
-    <br>
+    <br />
 
     <h2>2. Input Type Password</h2>
     <p>The <strong>input type="password"</strong> defines a password field:</p>
 
     <form action="#">
-        User name:<br>
-        <input type="text" name="username"><br>
-        Password:<br>
-        <input type="password" name="pwd"><br>
+      User name:<br />
+      <input type="text" name="username" /><br />
+      Password:<br />
+      <input type="password" name="pwd" /><br />
     </form>
-    <p>The characters in a password field are masked (shown as asterisks or circles).</p>
-    <br>
+    <p>
+      The characters in a password field are masked (shown as asterisks or
+      circles).
+    </p>
+    <br />
 
     <h2>3. Input Type Reset</h2>
-    <p>The <strong>input type="reset"</strong> defines a reset button that will
-    reset all form values to their default values:</p>
+    <p>
+      The <strong>input type="reset"</strong> defines a reset button that will
+      reset all form values to their default values:
+    </p>
 
     <form action="#">
-        First name:<br>
-        <input type="text" name="firstname" value="Amirhossein"><br>
-        Last Name:<br>
-        <input type="text" name="sirname" value="Moravveji"><br><br>
-        <input type="submit" value="Submit!">
-        <input type="reset" value="Reset!">
+      First name:<br />
+      <input type="text" name="firstname" value="Amirhossein" /><br />
+      Last Name:<br />
+      <input type="text" name="sirname" value="Moravveji" /><br /><br />
+      <input type="submit" value="Submit!" />
+      <input type="reset" value="Reset!" />
     </form>
 
-    <p>If you change the input values and then click the "Reset" button, the
-    form-data will be reset to the default values.</p>
-    <br>
+    <p>
+      If you change the input values and then click the "Reset" button, the
+      form-data will be reset to the default values.
+    </p>
+    <br />
 
     <h2>4. Input Type Checkbox</h2>
     <p><strong>input type="checkbox"</strong> defines a checkbox.</p>
 
     <form action="#">
-        <input type="checkbox" name="vehicle1" value="bike"> I have a bike<br>
-        <input type="checkbox" name="vehicle2" value="car"> I have a Porche<br>
-        <input type="checkbox" name="vehicle3" value="boat"> I have a yat<br><br>
-        <input type="submit">
+      <input type="checkbox" name="vehicle1" value="bike" /> I have a bike<br />
+      <input type="checkbox" name="vehicle2" value="car" /> I have a Porche<br />
+      <input type="checkbox" name="vehicle3" value="boat" /> I have a yat<br /><br />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>5. Input Type Button</h2>
     <p><strong>input type="button"</strong> defines a button:</p>
 
     <form action="#">
-        <input type="button" onclick="alert('Suck My Dick!')" value="Click on Me :))">
+      <input
+        type="button"
+        onclick="alert('Suck My Dick!')"
+        value="Click on Me :))"
+      />
     </form>
-    <br>
+    <br />
 
     <h2>6. Input Type Color</h2>
-    <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+    <p>
+      The <strong>input type="color"</strong> is used for input fields that
+      should contain a color.
+    </p>
 
     <form action="#">
-        Select my favorite color: 
-        <input type="color" name="favcolor" value="#fff">
-        <input type="submit">
+      Select my favorite color:
+      <input type="color" name="favcolor" value="#fff" />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>7. Input Type Date</h2>
-    <p> - The <strong>input type="date" </strong> is used for input fields that should contain a date.</p>
-    
-    <form action="#">
-        Birthday:
-        <input type="date"  name="birthday">
-        <input type="submit">
-    </form>
-    <br>
-    <br>
+    <p>
+      - The <strong>input type="date" </strong> is used for input fields that
+      should contain a date.
+    </p>
 
-    <p> - Use the min and max attributes to add restrictions to dates:</p>
     <form action="#">
-        Enter a date before 1980-01-01:
-        <input type="date" name="selected_date" max="1979-12-31"><br><br>
-        Enter a date after 2000-01-01:
-        <input type="date" name="selected_date" min="2000-01-02"><br><br>
-        <input type="submit">
+      Birthday:
+      <input type="date" name="birthday" />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
+    <br />
+
+    <p>- Use the min and max attributes to add restrictions to dates:</p>
+    <form action="#">
+      Enter a date before 1980-01-01:
+      <input type="date" name="selected_date" max="1979-12-31" /><br /><br />
+      Enter a date after 2000-01-01:
+      <input type="date" name="selected_date" min="2000-01-02" /><br /><br />
+      <input type="submit" />
+    </form>
+    <br />
 
     <h2>8. Input Type Datetime-local</h2>
-    <p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+    <p>
+      The <strong>input type="datetime-local"</strong> specifies a date and time
+      input field, with no time zone.
+    </p>
 
     <form action="#">
-        Birthday (Date and Time): 
-        <input type="datetime-local" name="birthday">
-        <input type="submit" value="Send!">
+      Birthday (Date and Time):
+      <input type="datetime-local" name="birthday" />
+      <input type="submit" value="Send!" />
     </form>
-    <br>
+    <br />
 
     <h2>9. Input Type Email</h2>
-    <p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address.</p>
+    <p>
+      The <strong>input type="email"</strong> is used for input fields that
+      should contain an e-mail address.
+    </p>
 
     <form action="#">
-        E-mail: 
-        <input type="Email" name="input">
-        <input type="submit">
+      E-mail:
+      <input type="Email" name="input" />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>10. Input Type File</h2>
-    <p>The <Strong>input type="file"</Strong> defines a file-select field and a "Browse" button for file uploads.</p>
+    <p>
+      The <strong>input type="file"</strong> defines a file-select field and a
+      "Browse" button for file uploads.
+    </p>
 
     <form action="#">
-        Select file: 
-        <input type="file" name="attchment"><br><br>
-        <input type="submit">
+      Select file:
+      <input type="file" name="attchment" /><br /><br />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>11. Input Type Month</h2>
-    <p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
-    
+    <p>
+      The <strong>input type="month"</strong> allows the user to select a month
+      and year.
+    </p>
+
     <form action="#">
-        Birthday (Month and Year): 
-        <input type="month" name="birthmonth">
-        <input type="submit">
+      Birthday (Month and Year):
+      <input type="month" name="birthmonth" />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>12. Input Type Number</h2>
-    <p> - The <strong>input type="number"</strong> defines a numeric input field.</p>
+    <p>
+      - The <strong>input type="number"</strong> defines a numeric input field.
+    </p>
 
     <form action="#">
-        Quantity (between 1 and 5): 
-        <input type="number" name="quantity" min="1" max="5">
-        <input type="submit">
+      Quantity (between 1 and 5):
+      <input type="number" name="quantity" min="1" max="5" />
+      <input type="submit" />
     </form>
-    <br>
-    <br>
+    <br />
+    <br />
 
-    <p>The following example displays a numeric input field, where you can enter
-    a value from 0 to 100, in steps of 10. The default value is 30:</p>
+    <p>
+      The following example displays a numeric input field, where you can enter
+      a value from 0 to 100, in steps of 10. The default value is 30:
+    </p>
     <form action="#">
-        Quantity: 
-        <input type="number" name="quantity" min="0" max="100" step="10" value="50">
-        <input type="submit">
+      Quantity:
+      <input
+        type="number"
+        name="quantity"
+        min="0"
+        max="100"
+        step="10"
+        value="50"
+      />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>13. Input Type Range</h2>
-    <p>The <strong>input type="range"</strong> defines a control for entering a number whose
-    exact value is not important (like a slider control).</p>
+    <p>
+      The <strong>input type="range"</strong> defines a control for entering a
+      number whose exact value is not important (like a slider control).
+    </p>
 
     <form action="#">
-        Application Rating: 
-        <input type="range" name="rating" min="0" max="10">
-        <input type="submit">
+      Application Rating:
+      <input type="range" name="rating" min="0" max="10" />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>14. Input Type Search</h2>
-    <p>The <strong>input type="search"</strong> is used for search fields (behaves like a regular text field):</p>
+    <p>
+      The <strong>input type="search"</strong> is used for search fields
+      (behaves like a regular text field):
+    </p>
 
     <form action="#">
-        Search Google: 
-        <input type="search" name="googlesearch">
-        <input type="submit">
+      Search Google:
+      <input type="search" name="googlesearch" />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>15. Input Type Tel</h2>
-    <p>The <strong>input type="tel"</strong> input type="tel" is used for input
-    fields that should contain a telephone number:</p>
+    <p>
+      The <strong>input type="tel"</strong> input type="tel" is used for input
+      fields that should contain a telephone number:
+    </p>
 
     <form action="#">
-        Telephone:
-        <input type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-        <input type="submit">
-        <span>Format Tel Number: 123-45-678</span>
+      Telephone:
+      <input
+        type="tel"
+        name="phone-number"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        required
+      />
+      <input type="submit" />
+      <span>Format Tel Number: 123-45-678</span>
     </form>
-    <br>
+    <br />
 
     <h2>16. Input Type Time</h2>
-    <p>The <strong>input type="time"</strong> allows the user to select a time (no time zone):</p>
+    <p>
+      The <strong>input type="time"</strong> allows the user to select a time
+      (no time zone):
+    </p>
 
     <form action="#">
-        Select a time:
-        <input type="time"  name="time">
-        <input type="submit">
+      Select a time:
+      <input type="time" name="time" />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>17. Input Type URL</h2>
-    <p>The <strong>input type="url"</strong> is used for input fields that should contain a URL address:</p>
+    <p>
+      The <strong>input type="url"</strong> is used for input fields that should
+      contain a URL address:
+    </p>
 
     <form action="#">
-        Add your homepage:
-        <input type="url"  name="homepage">
-        <input type="submit">
+      Add your homepage:
+      <input type="url" name="homepage" />
+      <input type="submit" />
     </form>
-    <br>
+    <br />
 
     <h2>18. Input Type Week</h2>
-    <p>The <strong>input type="week"</strong> allows the user to select a week and year:</p>
+    <p>
+      The <strong>input type="week"</strong> allows the user to select a week
+      and year:
+    </p>
 
     <form action="#">
-        Add your homepage:
-        <input type="week"  name="week_year">
-        <input type="submit">
+      Add your homepage:
+      <input type="week" name="week_year" />
+      <input type="submit" />
     </form>
-    <br>
-</body>
+    <br />
+  </body>
 </html>

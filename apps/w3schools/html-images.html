@@ -1,75 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Images Tutorial</title>
     <style>
-        h1{
-            color: dodgerblue;
-            font: 130%;
-            font-family: Arial;
-            text-align: center;
-        }
+      h1 {
+        color: dodgerblue;
+        font: 130%;
+        font-family: Arial;
+        text-align: center;
+      }
 
-        h2{
-            color: blueviolet;
-            font-size: 115%;
-            font-family: Verdana;
-        }
+      h2 {
+        color: blueviolet;
+        font-size: 115%;
+        font-family: Verdana;
+      }
 
-        img.test{
-            width: 100%;
-        }
-    
+      img.test {
+        width: 100%;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Practicing HTML Images and different shapes</h1>
-    
+
     <h2>1. Using Style or width/length attribute, That is the question</h2>
 
     <p>This first image is using HTML internal attribute</p>
-    <img class="test" src="assets\img\html5.gif" alt="HTML5 Logo" width="128" height="128">
+    <img
+      class="test"
+      src="assets\img\html5.gif"
+      alt="HTML5 Logo"
+      width="128"
+      height="128"
+    />
 
     <p>This image is using style attribute for width and height</p>
-    <img class="test" src="assets\img\html5.gif" alt="HTML5 Logo" style="width: 128px; height: 128px;">
+    <img
+      class="test"
+      src="assets\img\html5.gif"
+      alt="HTML5 Logo"
+      style="width: 128px; height: 128px;"
+    />
 
     <h2>2. Using an animated gif in the img tag</h2>
-    <img src="assets\img\programming.gif" alt="an animated gif" width="48" height="48">
+    <img
+      src="assets\img\programming.gif"
+      alt="an animated gif"
+      width="48"
+      height="48"
+    />
 
     <h2>Using img mapping for the first time</h2>
     <p>This is a clickable pic which will direct you to new pages</p>
 
-    <img src="assets\img\workplace.jpg" alt="workplace" width="400" height="379" usemap="#workplace">
+    <img
+      src="assets\img\workplace.jpg"
+      alt="workplace"
+      width="400"
+      height="379"
+      usemap="#workplace"
+    />
 
     <map name="workplace">
-        <area shape="rect" coords="34,44,270,350" href="html-images-computer.html" alt="Coffee">
-        <area shape="rect" coords="290,172,333,250" href="html-images-phone.html" alt="Coffee">
-        <area shape="circle" coords="337,300,44" href="html-images-coffee.html" alt="cup of coffee">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        href="html-images-computer.html"
+        alt="Coffee"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        href="html-images-phone.html"
+        alt="Coffee"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        href="html-images-coffee.html"
+        alt="cup of coffee"
+      />
     </map>
 
     <h2>Resize the browser and see what is going to happen!</h2>
 
     <picture>
-        <source media="(min-width: 1000px)" srcset="assets\img\img_pink_flowers.jpg">
-        <source media="(min-width: 700px)" srcset="assets\img\img_white_flower.jpg">
-        <img src="assets\img\img_orange_flowers.jpg" alt="Flower" style="width: auto">
+      <source
+        media="(min-width: 1000px)"
+        srcset="assets\img\img_pink_flowers.jpg"
+      />
+      <source
+        media="(min-width: 700px)"
+        srcset="assets\img\img_white_flower.jpg"
+      />
+      <img
+        src="assets\img\img_orange_flowers.jpg"
+        alt="Flower"
+        style="width: auto"
+      />
     </picture>
 
-    <p>Resize the browser to see different versions of the picture loading at
-    different viewport sizes.The browser looks for the first source element
-    where the media query matches the user's current viewport width, and fetches
-    the image specified in the srcset attribute.</p>
+    <p>
+      Resize the browser to see different versions of the picture loading at
+      different viewport sizes.The browser looks for the first source element
+      where the media query matches the user's current viewport width, and
+      fetches the image specified in the srcset attribute.
+    </p>
 
-    <p>The img element is required as the last child tag of the picture
-    declaration block. The img element is used to provide backward compatibility
-    for browsers that do not support the picture element, or if none of the
-    source tags matched.</p>
+    <p>
+      The img element is required as the last child tag of the picture
+      declaration block. The img element is used to provide backward
+      compatibility for browsers that do not support the picture element, or if
+      none of the source tags matched.
+    </p>
 
-    <p><strong>Note:</strong> The picture element is not supported in IE12 and
-    earlier or Safari 9.0 and earlier.</p>
-
-</body>
+    <p>
+      <strong>Note:</strong> The picture element is not supported in IE12 and
+      earlier or Safari 9.0 and earlier.
+    </p>
+  </body>
 </html>

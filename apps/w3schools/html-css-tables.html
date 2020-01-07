@@ -1,204 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Table Property Tutorial</title>
-    <Style>
-        body{
-            font-family: calibri;
-        }
-        h1{
-            font-size: 45px;
-            color: navy;
-            text-align: center;
-        }
-        h2{
-           color: dodgerblue; 
-           font-size: 150%;
-        }
-        p{
-            font-size: 110%;
-        }
-        .t1{
-            width: 60%;
-            border-collapse: collapse;
-        }
-        .t1 caption{
-            color: #4CAF50;
-            margin: 20px 0;
-            font-size: 1.8em;
-            font-weight: bold;
-        }
-        .t1 th, .t1 td{
-            border: 1px solid rgb(102, 102, 102);
-            padding: 10px;
-        }
-        .t1 th{
-            background-color: #4CAF50;
-            font-size: 1.2em;
-        }
-        .t1 tr:nth-child(even){
-            background-color: #eee;
-        }
-        .t1 tr:hover{
-            background-color: #ccc;
-        }
-        .t2 {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .t2 caption{
-            margin: 10px 0;
-            color: darkorange;
-            font-size: 1.3em;
-        }
-        .t2 th, .t2 td{
-            border: 1px solid darkgrey;
-            padding: 10px;
-            text-align: center;
-        }
-        .t2 tr:nth-child(even){
-            background-color: #eee;
-        }
-    </Style>
-</head>
-<body>
+    <style>
+      body {
+        font-family: calibri;
+      }
+      h1 {
+        font-size: 45px;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 150%;
+      }
+      p {
+        font-size: 110%;
+      }
+      .t1 {
+        width: 60%;
+        border-collapse: collapse;
+      }
+      .t1 caption {
+        color: #4caf50;
+        margin: 20px 0;
+        font-size: 1.8em;
+        font-weight: bold;
+      }
+      .t1 th,
+      .t1 td {
+        border: 1px solid rgb(102, 102, 102);
+        padding: 10px;
+      }
+      .t1 th {
+        background-color: #4caf50;
+        font-size: 1.2em;
+      }
+      .t1 tr:nth-child(even) {
+        background-color: #eee;
+      }
+      .t1 tr:hover {
+        background-color: #ccc;
+      }
+      .t2 {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .t2 caption {
+        margin: 10px 0;
+        color: darkorange;
+        font-size: 1.3em;
+      }
+      .t2 th,
+      .t2 td {
+        border: 1px solid darkgrey;
+        padding: 10px;
+        text-align: center;
+      }
+      .t2 tr:nth-child(even) {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
     <h1>CSS Tables</h1>
-    <br>
+    <br />
 
     <h2>Sample table</h2>
 
     <table class="t1">
-        <caption>Company Information</caption>
-        <tr>
-            <th>Comapny</th>
-            <th>Contact</th>
-            <th>Country</th>
-        </tr>
-        <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
-        </tr>
-        <tr>
-          <td>Island Trading</td>
-          <td>Helen Bennett</td>
-          <td>UK</td>
-        </tr>
-        <tr>
-          <td>Königlich Essen</td>
-          <td>Philip Cramer</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Laughing Bacchus Winecellars</td>
-          <td>Yoshi Tannamuri</td>
-          <td>Canada</td>
-        </tr>
-        <tr>
-          <td>Magazzini Alimentari Riuniti</td>
-          <td>Giovanni Rovelli</td>
-          <td>Italy</td>
-        </tr>
-        <tr>
-          <td>North/South</td>
-          <td>Simon Crowther</td>
-          <td>UK</td>
-        </tr>
-        <tr>
-          <td>Paris spécialités</td>
-          <td>Marie Bertrand</td>
-          <td>France</td>
-        </tr>
+      <caption>
+        Company Information
+      </caption>
+      <tr>
+        <th>Comapny</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Königlich Essen</td>
+        <td>Philip Cramer</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+      <tr>
+        <td>North/South</td>
+        <td>Simon Crowther</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Paris spécialités</td>
+        <td>Marie Bertrand</td>
+        <td>France</td>
+      </tr>
     </table>
 
-    <br><br>
+    <br /><br />
 
     <h2>The vertical-align Property</h2>
-    <p>A responsive table will display a horizontal scroll bar if the screen is
-    too small to display the full content. Resize the browser window to see the
-    effect:</p>
-    <p>To create a responsive table, add a container element (like div) with
-    overflow-x:auto around the table element:</p>
+    <p>
+      A responsive table will display a horizontal scroll bar if the screen is
+      too small to display the full content. Resize the browser window to see
+      the effect:
+    </p>
+    <p>
+      To create a responsive table, add a container element (like div) with
+      overflow-x:auto around the table element:
+    </p>
 
     <div style="overflow-x: auto;">
-        <table class="t2">
-            <caption>A Responsive Table</caption>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-            </tr>
-            <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-            </tr>
-            <tr>
-                <td>Adam</td>
-                <td>Johnson</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-            </tr>
-        </table>
+      <table class="t2">
+        <caption>
+          A Responsive Table
+        </caption>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>Adam</td>
+          <td>Johnson</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+        </tr>
+      </table>
     </div>
-
-</body>
+  </body>
 </html>

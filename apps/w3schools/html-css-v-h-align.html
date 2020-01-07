@@ -1,175 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Layout - Horizontal & Vertical Align Tutorial</title>
     <style>
-        body{
-            font-family: calibri;
-        }
-        h1{
-            font-size: 45px;
-            color: navy;
-            text-align: center;
-        }
-        h2{
-           color: dodgerblue; 
-           font-size: 165%;
-        }
-        p{
-            font-size: 105%;
-        }
-        .div1{
-           width: 400px;
-           padding: 20px;
-           border: 5px solid #832ef3;
-           margin: auto; 
-        }
-        .div2{
-            border: 5px solid #832ef3;
-            text-align: center;
-            padding: 10px;
-        }
-        img{
-            display: block;
-            margin: auto;
-            width: 40%;
-        }
-        .div3{
-            border: 3px solid #832ef3;
-            padding: 10px;
-            position: absolute; /* Ask haji why position cannot be fixed */
-            right: 0;
-            width: 200px;
-        }
-        .div4{
-            border: 3px solid #832ef3;
-            width: 200px;
-            padding: 10px;
-            float: right;
-        }
-        .div5{
-            border: 3px solid #832ef3;
-            padding: 50px 0;
-        }
-        .div6{
-            border: 3px solid #832ef3;
-            padding: 50px 0;
-            text-align: center;
-        }
-        .div7{
-            border: 3px solid #832ef3;
-            height: 100px;
-            line-height: 100px;
-            
-        }
-        .div8{
-            border: 3px solid #832ef3;
-            height: 200px;
-            line-height: 200px;
-            text-align: center;
-        }
-        .div8 p{
-            line-height: 1.2;
-            vertical-align: middle;
-            display: inline-block;
-        }
-        .div9{
-            border: 3px solid #832ef3;
-            height: 200px;
-            position: relative;
-        }
-        .div9 p{
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
+      body {
+        font-family: calibri;
+      }
+      h1 {
+        font-size: 45px;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 165%;
+      }
+      p {
+        font-size: 105%;
+      }
+      .div1 {
+        width: 400px;
+        padding: 20px;
+        border: 5px solid #832ef3;
+        margin: auto;
+      }
+      .div2 {
+        border: 5px solid #832ef3;
+        text-align: center;
+        padding: 10px;
+      }
+      img {
+        display: block;
+        margin: auto;
+        width: 40%;
+      }
+      .div3 {
+        border: 3px solid #832ef3;
+        padding: 10px;
+        position: absolute; /* Ask haji why position cannot be fixed */
+        right: 0;
+        width: 200px;
+      }
+      .div4 {
+        border: 3px solid #832ef3;
+        width: 200px;
+        padding: 10px;
+        float: right;
+      }
+      .div5 {
+        border: 3px solid #832ef3;
+        padding: 50px 0;
+      }
+      .div6 {
+        border: 3px solid #832ef3;
+        padding: 50px 0;
+        text-align: center;
+      }
+      .div7 {
+        border: 3px solid #832ef3;
+        height: 100px;
+        line-height: 100px;
+      }
+      .div8 {
+        border: 3px solid #832ef3;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+      .div8 p {
+        line-height: 1.2;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .div9 {
+        border: 3px solid #832ef3;
+        height: 200px;
+        position: relative;
+      }
+      .div9 p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>CSS Layout - Horizontal & Vertical Align</h1>
-    <br>
+    <br />
 
     <h2>1. Center Align Elements</h2>
     <p>To horizontally center a block element (like div), use margin: auto;</p>
-    <div class="div1">Note: Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</div>
+    <div class="div1">
+      Note: Using margin:auto will not work in IE8, unless a !DOCTYPE is
+      declared.
+    </div>
 
-    <p><strong>Note:</strong> Center aligning has no effect if the width
-    property is not set (or set to 100%).</p>
+    <p>
+      <strong>Note:</strong> Center aligning has no effect if the width property
+      is not set (or set to 100%).
+    </p>
 
-    <br><br>
+    <br /><br />
 
     <h2>2. Center Align Text</h2>
     <p>To just center the text inside an element, use text-align: center;</p>
 
     <div class="div2">This text inside the div is center aligned.</div>
 
-    <br><br>
+    <br /><br />
 
     <h2>3. Center An Image</h2>
-    <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
-    <img src="assets/img/paris.jpg" alt="paris">
+    <p>
+      To center an image, set left and right margin to auto, and make it into a
+      block element.
+    </p>
+    <img src="assets/img/paris.jpg" alt="paris" />
 
-    <br><br>
+    <br /><br />
 
     <h2>4. Left and Right Align - Using position</h2>
     <p>An example of how to right align elements with the position property:</p>
-    <div class="div3">In my younger and more vulnerable years my father gave me
-    some advice that I've been turning over in my mind ever since.</div>
-    <p>Div position is defined as absolute. Therefore, the div is floating
-    according the view point of the webpage</p>
+    <div class="div3">
+      In my younger and more vulnerable years my father gave me some advice that
+      I've been turning over in my mind ever since.
+    </div>
+    <p>
+      Div position is defined as absolute. Therefore, the div is floating
+      according the view point of the webpage
+    </p>
 
-    <br><br>
+    <br /><br />
 
     <h2>5. Left and Right Align - Using float</h2>
     <p>An example of how to right align elements with the float property:</p>
-    <div class="div4">In my younger and more vulnerable years my father gave me
-    some advice that I've been turning over in my mind ever since.</div>
+    <div class="div4">
+      In my younger and more vulnerable years my father gave me some advice that
+      I've been turning over in my mind ever since.
+    </div>
 
-    <br><br>
+    <br /><br />
 
     <h2>6. Center Vertically - Using padding</h2>
-    <p>In this example, we use the padding property to center the div element vertically:</p>
+    <p>
+      In this example, we use the padding property to center the div element
+      vertically:
+    </p>
     <div class="div5">I am vertically centered</div>
 
-    <br>
-    <p>To center both vertically and horizontally, use padding and text-align: center:</p>
+    <br />
+    <p>
+      To center both vertically and horizontally, use padding and text-align:
+      center:
+    </p>
     <div class="div6">I am vertically and horizontally centered.</div>
 
-    <br><br>
+    <br /><br />
 
     <h2>7. Center Vertically - Using line-height</h2>
-    <p>In this example, we use the line-height property with a value that is
-    equal to the height property to center the div element:</p>
+    <p>
+      In this example, we use the line-height property with a value that is
+      equal to the height property to center the div element:
+    </p>
     <div class="div7">I am vertically centered.</div>
 
-    <br>
+    <br />
 
-    <p><strong>Note:</strong> If the text has multiple lines, add the following:</p>
+    <p>
+      <strong>Note:</strong> If the text has multiple lines, add the following:
+    </p>
 
     <div class="div8">
-        <p>
-            I am vertically and horizontally centered.<br>
-            I am vertically and horizontally centered.
-        </p>
+      <p>
+        I am vertically and horizontally centered.<br />
+        I am vertically and horizontally centered.
+      </p>
     </div>
 
-    <br><br>
+    <br /><br />
 
     <h2>8. Center Vertically - Using position & transform</h2>
-    <p>In this example, we use positioning and the transform property to
-    vertically and horizontally center the div element:</p>
-    <p>If padding and line-height are not options, a third solution is to use
-    positioning and the transform property:</p>
+    <p>
+      In this example, we use positioning and the transform property to
+      vertically and horizontally center the div element:
+    </p>
+    <p>
+      If padding and line-height are not options, a third solution is to use
+      positioning and the transform property:
+    </p>
 
     <div class="div9">
-        <p>I am vertically and horizontally centered.</p>
+      <p>I am vertically and horizontally centered.</p>
     </div>
-
-</body>
+  </body>
 </html>

@@ -1,115 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Form Elements Tutorial</title>
     <style>
-        h1{
-            font-family: Verdana;
-            font-size: 160%;
-            color: navy;
-            text-align: center;
-        }
-        h2{
-           font-family: verdana;
-           color: dodgerblue;
-        }
-        p{
-            font-size: 110%;
-        }
+      h1 {
+        font-family: Verdana;
+        font-size: 160%;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        font-family: verdana;
+        color: dodgerblue;
+      }
+      p {
+        font-size: 110%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>HTML Forms</h1>
 
     <h2>1. Select Element</h2>
     <p>The select element defines a drop-down list:</p>
 
     <form action="#">
-        <select name="cars">
-            <option value="Bugatti">Bugatti</option>
-            <option value="Lamborghini">Lamborghini</option>
-            <option value="Mclaren">Mclaren</option>
-            <option value="Aston Martin">Aston Martin</option>
-            <br>
-        </select>
+      <select name="cars">
+        <option value="Bugatti">Bugatti</option>
+        <option value="Lamborghini">Lamborghini</option>
+        <option value="Mclaren">Mclaren</option>
+        <option value="Aston Martin">Aston Martin</option>
+        <br />
+      </select>
     </form>
-    <br>
+    <br />
 
     <h2>2. Select Element (Selected)</h2>
     <p>The select element defines a drop-down list:</p>
 
     <form action="#">
-        <select name="cars">
-            <option value="Bugatti">Bugatti</option>
-            <option value="Lamborghini">Lamborghini</option>
-            <option value="Mclaren" selected>Mclaren</option>
-            <option value="Aston Martin">Aston Martin</option>
-            <br>
-        </select>
+      <select name="cars">
+        <option value="Bugatti">Bugatti</option>
+        <option value="Lamborghini">Lamborghini</option>
+        <option value="Mclaren" selected>Mclaren</option>
+        <option value="Aston Martin">Aston Martin</option>
+        <br />
+      </select>
     </form>
-    <br>
+    <br />
 
     <h2>3. Select Element (Shown items)</h2>
     <p>The select element defines a drop-down list:</p>
 
     <form action="#">
-        <select name="cars" size="3">
-            <option value="Bugatti">Bugatti</option>
-            <option value="Lamborghini">Lamborghini</option>
-            <option value="Mclaren" selected>Mclaren</option>
-            <option value="Aston Martin">Aston Martin</option>
-            <option value="Mercedes-Benz" selected>Mercedes-Benz</option>
-            <option value="Audi">Audi</option>
-            <br>
-        </select>
+      <select name="cars" size="3">
+        <option value="Bugatti">Bugatti</option>
+        <option value="Lamborghini">Lamborghini</option>
+        <option value="Mclaren" selected>Mclaren</option>
+        <option value="Aston Martin">Aston Martin</option>
+        <option value="Mercedes-Benz" selected>Mercedes-Benz</option>
+        <option value="Audi">Audi</option>
+        <br />
+      </select>
     </form>
-    <br>
+    <br />
 
     <h2>4. Textarea Element</h2>
     <p>The text area element defines a multi-line input field (a text area):</p>
     <p>Test area is defined by cols and rows attribute</p>
 
     <form action="#">
-        <textarea name="message" cols="30" rows="15">Please write your messages.</textarea>
-        <br>
-        <input type="submit" value="Submit!">
+      <textarea name="message" cols="30" rows="15">
+Please write your messages.</textarea
+      >
+      <br />
+      <input type="submit" value="Submit!" />
     </form>
-    <br>
+    <br />
 
     <h2>5. Textarea Element</h2>
     <p>The text area element defines a multi-line input field (a text area):</p>
     <p>Text area is defined by style attribute</p>
 
     <form action="#">
-        <textarea name="message" style="width:300px; height:300px">Please write your messages.</textarea>
-        <br>
-        <input type="submit" value="Submit!">
+      <textarea name="message" style="width:300px; height:300px">
+Please write your messages.</textarea
+      >
+      <br />
+      <input type="submit" value="Submit!" />
     </form>
-    <br>
+    <br />
 
     <h2>6. Button Element</h2>
     <p>The button element defines a clickable button:</p>
 
-    <button type="button" onclick="alert('Salam Chaghal!, Khoobi?')">Don't Click on Me!</button>
-    <br>
+    <button type="button" onclick="alert('Salam Chaghal!, Khoobi?')">
+      Don't Click on Me!
+    </button>
+    <br />
 
     <h2>7. HTML5 Datalist Element</h2>
-    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+    <p>
+      The datalist element specifies a list of pre-defined options for an input
+      element.
+    </p>
 
     <form action="#">
-        <input list="browsers" name="browser">
-        <datalist id="browsers">
-            <option value="Google Chrome">
-            <option value="Mozilla Firefox">
-            <option value="Apple Safari">
-            <option value="Microft Edge">
-            <option value="Opera">
-        </datalist>
-        <input type="submit" value="Submit!">
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Google Chrome"> </option>
+        <option value="Mozilla Firefox"> </option>
+        <option value="Apple Safari"> </option>
+        <option value="Microft Edge"> </option>
+        <option value="Opera"> </option>
+      </datalist>
+
+      <input type="submit" value="Submit!" />
     </form>
-    <br>
-</body>
+    <br />
+  </body>
 </html>
