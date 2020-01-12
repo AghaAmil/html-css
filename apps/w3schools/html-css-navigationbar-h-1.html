@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Navigation Bar Tutorial</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: calibri;
+      }
+      h1 {
+        font-size: 3em;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 1.9em;
+      }
+      p {
+        font-size: 105%;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        display: inline;
+      }
+      .nav1 {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        overflow: hidden;
+        /* overflow:hidden is added to the ul element to prevent li elements from going outside of the list. */
+      }
+      .nav1 li {
+        float: left;
+      }
+      .nav1 li a {
+        display: block;
+        background-color: lightgrey;
+        padding: 10px;
+      }
+      .nav2 {
+        list-style-type: none;
+        background-color: #444;
+        padding: none;
+        margin: 0;
+        overflow: hidden;
+      }
+      .nav2 li {
+        float: left;
+        border-right: solid darkgray 2px;
+      }
+      .nav2 li:last-child {
+        border-right: none;
+      }
+      .nav2 li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px 20px;
+        color: white;
+        text-align: center;
+      }
+      .nav2 li .active {
+        background-color: #05a88d;
+      }
+      .nav2 li a:hover:not(.active) {
+        background-color: #000000;
+      }
+      .nav2 .right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Navigation Bar (Horizantal)</h1>
+    <br />
+
+    <h2>1. Horizontal Navigation Bar</h2>
+    <p>
+      There are two ways to create a horizontal navigation bar. Using
+      <b>inline</b> or <b>floating</b> list items.
+    </p>
+    <p>Display:inline is used in below example.</p>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <br />
+
+    <p>
+      <b>Note:</b> overflow:hidden is added to the ul element to prevent li
+      elements from going outside of the list.
+    </p>
+    <p>
+      A background color is added to the links to show the link area. The whole
+      link area is clickable, not just the text.
+    </p>
+
+    <ul class="nav1">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <br /><br />
+
+    <h2>2. Horizontal Navigation Bar Examples</h2>
+    <p>
+      Create a basic horizontal navigation bar with a dark background color and
+      change the background color of the links when the user moves the mouse
+      over them:
+    </p>
+
+    <ul class="nav2">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="right"><a href="#">About</a></li>
+    </ul>
+
+    <br /><br />
+  </body>
+</html>
