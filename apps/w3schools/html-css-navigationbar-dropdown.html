@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Navigation Bar with DropDown Menu Tutorial</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: calibri;
+        margin: 0;
+      }
+      h1 {
+        font-size: 3em;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 1.9em;
+      }
+      p {
+        font-size: 105%;
+      }
+      ul {
+        list-style: none;
+        background-color: #444;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      ul li {
+        float: left;
+        position: relative;
+      }
+      ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 15px 20px;
+        font-size: 1.15em;
+      }
+      ul li a:hover:not(.active) {
+        background-color: #000000;
+      }
+      ul li .active {
+        background-color: #2cb609;
+      }
+      ul .right {
+        float: right;
+      }
+      div {
+        background-color: #1abc9c;
+        padding: 20px;
+        margin-top: 30px;
+        height: 1500px;
+      }
+      div h2 {
+        color: black;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .container {
+        position: absolute;
+        display: none;
+        z-index: 1;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        min-width: 300px;
+        background-color: #888;
+      }
+      .container a {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+      }
+      .dropdown:hover .container {
+        display: block;
+      }
+      .container a:hover {
+        background-color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Products</a>
+        <div class="container">
+          <a href="#">Macbook</a>
+          <a href="#">iPhone</a>
+          <a href="#">Apple Music</a>
+          <a href="#">Apple Music</a>
+        </div>
+      </li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="right"><a href="#">About</a></li>
+    </ul>
+
+    <div>
+      <h2>Fixed Top Navigation Bar</h2>
+      <h3>Scroll this page to see the effect</h3>
+      <h3>
+        The navigation bar will stay at the top of the page while scrolling
+      </h3>
+
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+    </div>
+  </body>
+</html>
