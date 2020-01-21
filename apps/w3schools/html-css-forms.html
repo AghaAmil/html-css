@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Forms Tutorial</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: calibri;
+      }
+      h1 {
+        font-size: 3em;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 1.9em;
+      }
+      p {
+        font-size: 105%;
+      }
+
+      label {
+        font-weight: bold;
+        font-size: 0.9em;
+        font-family: Verdana;
+      }
+
+      .form1 input[type="text"] {
+        width: 100%;
+      }
+      .form2 input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+      }
+      .form3 input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 2px solid royalblue;
+        border-radius: 5px;
+      }
+      .form4 input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-bottom: 2px solid royalblue;
+      }
+      .form5 input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        background-color: #88f9fd;
+      }
+      .form6 input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 2px solid royalblue;
+        outline: none;
+      }
+      .form6 input[type="text"]:focus {
+        background-color: lightblue;
+      }
+      .form7 input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 3px solid lightgrey;
+        border-radius: 5px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+      }
+      .form7 input[type="text"]:focus {
+        border: 3px solid darkgrey;
+      }
+      .form8 input[type="search"] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px 12px 40px;
+        border: 3px solid lightgrey;
+        border-radius: 5px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        background-image: url("assets/img/searchicon.png");
+        background-position: 10px;
+        background-repeat: no-repeat;
+      }
+      .form8 input[type="search"]:focus {
+        border: 3px solid darkgrey;
+      }
+      .form9 input[type="search"] {
+        width: 20%;
+        margin: 8px 0;
+        padding: 12px 20px 12px 40px;
+        border: 3px solid lightgrey;
+        border-radius: 5px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        outline: none;
+        background-image: url("assets/img/searchicon.png");
+        background-position: 10px;
+        background-repeat: no-repeat;
+      }
+      .form9 input[type="search"]:focus {
+        border: 3px solid darkgrey;
+        width: 100%;
+      }
+      .form10 textarea {
+        width: 80%;
+        height: 200px;
+        border: 3px #d3d3d3 solid;
+        background-color: #eee;
+        border-radius: 5px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        padding: 10px 15px;
+        outline: none;
+      }
+      .form10 textarea:focus {
+        border: 3px darkgrey solid;
+      }
+      .form11 select {
+        width: 100%;
+        padding: 15px;
+        margin: 8px 0;
+        border: 3px solid darkgrey;
+        background-color: lightgrey;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.1em;
+        outline: none;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+      .form11 select:focus {
+        border: 3px solid #555;
+      }
+      .form12 input[type="button"],
+      .form12 input[type="submit"],
+      .form12 input[type="reset"] {
+        background-color: #037fd1;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        margin: 5px;
+      }
+      .finalform {
+        background-color: #eee;
+        padding: 15px 30px;
+      }
+      .finalform input[type="text"],
+      .finalform select {
+        margin: 10px 0;
+        padding: 12px 20px;
+        width: 100%;
+        display: inline-block;
+        border: 3px solid darkgrey;
+        border-radius: 5px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+      }
+      .finalform input[type="text"]:focus,
+      .finalform select:focus {
+        border: 3px solid #666666;
+      }
+      .finalform input[type="submit"] {
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 15px;
+        font-size: 1em;
+        background-color: #871aee;
+        margin: 10px 0;
+        font-family: Verdana;
+      }
+      .finalform input[type="submit"]:hover {
+        background-color: #6513b1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Forms</h1>
+    <br />
+
+    <h2>1. Styling Input Fields</h2>
+    <p>A full-width input field:</p>
+    <br />
+
+    <form action="#" method="post" class="form1">
+      <label for="fname">Firstname: </label>
+      <input type="text" name="fname" />
+    </form>
+
+    <br /><br />
+
+    <h2>2. Padded Inputs</h2>
+    <p>Padded text fields:</p>
+    <p>
+      <b>Tip:</b> When you have many inputs after each other, you might also
+      want to add some margin, to add more space outside of them:
+    </p>
+    <br />
+
+    <form action="#" method="post" class="form2">
+      <label for="fname">Firstname: </label>
+      <input type="text" name="fname" />
+      <label for="fname">Lastname: </label>
+      <input type="text" name="lname" />
+    </form>
+
+    <h2>3. Bordered Inputs</h2>
+    <p>Text fields with borders:</p>
+
+    <form action="#" method="post" class="form3">
+      <label for="fname">Firstname: </label>
+      <input type="text" name="fname" />
+      <label for="fname">Lastname: </label>
+      <input type="text" name="lname" />
+    </form>
+
+    <br />
+
+    <p>Text fields with only a bottom border:</p>
+
+    <form action="#" method="post" class="form4">
+      <label for="fname">Firstname: </label>
+      <input type="text" name="fname" />
+      <label for="fname">Lastname: </label>
+      <input type="text" name="lname" />
+    </form>
+
+    <br /><br />
+
+    <h2>4. Colored Inputs</h2>
+    <p>Colored text fields:</p>
+
+    <form action="#" method="post" class="form5">
+      <label for="fname">Firstname: </label>
+      <input type="text" name="fname" value="Amirhossein" />
+      <label for="fname">Lastname: </label>
+      <input type="text" name="lname" value="Moravveji" />
+    </form>
+
+    <br /><br />
+
+    <h2>5. Focused Inputs</h2>
+    <p>
+      In this example, we use the :focus selector to add a background color to
+      the text field when it gets focused (clicked on):
+    </p>
+
+    <form action="#" method="post" class="form6">
+      <label for="fname">Firstname: </label>
+      <input type="text" name="fname" value="Amirhossein" />
+      <label for="fname">Lastname: </label>
+      <input type="text" name="lname" value="Moravveji" />
+    </form>
+
+    <br />
+
+    <p>
+      In this example, we use the :focus selector to add a black border color to
+      the text field when it gets focused (clicked on):
+    </p>
+    <p>
+      Note that we have added the CSS transition property to animate the border
+      color (takes 0.5 seconds to change the color on focus).
+    </p>
+
+    <form action="#" method="post" class="form7">
+      <label for="fname">Firstname: </label>
+      <input type="text" name="fname" value="Amirhossein" />
+      <label for="fname">Lastname: </label>
+      <input type="text" name="lname" value="Moravveji" />
+    </form>
+
+    <br /><br />
+
+    <h2>6. Input with icon/image</h2>
+    <p>
+      If you want an icon inside the input, use the background-image property
+      and position it with the background-position property. Also notice that we
+      add a large left padding to reserve the space of the icon:
+    </p>
+
+    <form action="#" method="post" class="form8">
+      <input type="search" name="search" value="Search.." />
+    </form>
+
+    <br />
+
+    <p>
+      In this example we use the CSS transition property to animate the width of
+      the search input when it gets focus. You will learn more about the
+      transition property later, in our CSS Transitions chapter.
+    </p>
+
+    <form action="#" method="post" class="form9">
+      <input type="search" name="search" value="Search.." />
+    </form>
+
+    <br /><br />
+
+    <h2>7. Styling Textareas</h2>
+    <p>
+      <b>Tip: </b>Use the resize property to prevent textareas from being
+      resized (disable the "grabber" in the bottom right corner):
+    </p>
+
+    <form action="#" method="post" class="form10">
+      <textarea name="sher">Some text...</textarea>
+    </form>
+
+    <br /><br />
+
+    <h2>8. Styling Select Menus</h2>
+    <p>A styled select menu.</p>
+
+    <form action="#" method="post" class="form11">
+      <select name="country" id="country">
+        <option value="au">Australia</option>
+        <option value="uk">United Kingdom</option>
+        <option value="usa">United State of America</option>
+      </select>
+    </form>
+
+    <br /><br />
+
+    <h2>9. Styling Input Buttons</h2>
+    <p>Styled input buttons.</p>
+
+    <form action="#" method="post" class="form12">
+      <input type="button" value="Button!" />
+      <input type="reset" value="Reset!" />
+      <input type="submit" value="Submit!" />
+    </form>
+
+    <h2>10. A Final Beautiful Form</h2>
+    <h3>Using CSS to style an HTML Form</h3>
+
+    <form action="#" method="post" class="finalform">
+      <label for="fname">Firstname:</label>
+      <input type="text" name="fname" placeholder="Your Name..." />
+      <label for="lname">Lastname:</label>
+      <input type="text" name="lname" placeholder="Your Last Name..." />
+      <label for="country">Country:</label>
+      <select name="country">
+        <option value="au">Australia</option>
+        <option value="uk">United Kingdom</option>
+        <option value="usa">United State of America</option>
+      </select>
+      <input type="submit" value="Submit Form" />
+    </form>
+
+    <br /><br />
+  </body>
+</html>
