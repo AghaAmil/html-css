@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Website Layout Tutorial</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightblue;
+        font-family: Calibri;
+      }
+
+      header {
+        background-color: lightgrey;
+        padding: 25px;
+        text-align: center;
+        font-size: 1.3em;
+        font-family: Verdana;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #555555;
+      }
+      nav ul li {
+        float: left;
+      }
+      nav ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        font-size: 1.2em;
+      }
+      nav ul li a:hover {
+        background-color: lightgrey;
+        color: black;
+      }
+      ul .right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Website</h1>
+      <p>Resize the browser window to see the effect.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">News</a></li>
+        <li class="right"><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <section class="left">
+        <div class="box">
+          <h2>TITLE HEADING ONE</h2>
+          <h4>Title description, Dec 7, 2017</h4>
+          <div class="image">Image</div>
+          <p>Some text..</p>
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </div>
+        <div class="box">
+          <h2>TITLE HEADING TWO</h2>
+          <h4>Title description, Sep 7, 2017</h4>
+          <div class="image">Image</div>
+          <p>Some text..</p>
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </div>
+      </section>
+      <section class="right">
+        <div class="box">
+          <h2>About Me</h2>
+          <div class="image"></div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="box">
+          <h2>Popular Post</h2>
+          <div class="image"><p>Image</p></div>
+          <div class="image"><p>Image</p></div>
+          <div class="image"><p>Image</p></div>
+        </div>
+        <div class="box">
+          <h2>Follow Me</h2>
+          <p>Some Text</p>
+        </div>
+      </section>
+    </article>
+
+    <br />
+  </body>
+</html>
