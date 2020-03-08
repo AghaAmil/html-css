@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Revision on HTML + CSS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: calibri;
+      }
+      h1 {
+        font-size: 3em;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 2em;
+      }
+      p {
+        font-size: 105%;
+      }
+
+      .but1 {
+        padding: 10px 18px;
+        background-color: #22d69a;
+        font-family: Verdana;
+        border: none;
+        box-shadow: 2px 2px lightgrey;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+      }
+
+      .link1 {
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .link1:link {
+        color: hotpink;
+      }
+      .link1:visited {
+        color: royalblue;
+      }
+      .link1:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      .link1:active {
+        color: turquoise;
+      }
+
+      .link2:link,
+      .link2:visited {
+        color: teal;
+        text-decoration: none;
+      }
+      .link2:hover,
+      .link2:active {
+        color: tomato;
+        font-size: 1.2em;
+        text-decoration: underline;
+      }
+
+      .link3:link,
+      .link3:visited {
+        background-color: #bacc14;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        box-shadow: 3px 3px lightgrey;
+      }
+
+      .link3:hover,
+      .link3:active {
+        font-size: 1.3em;
+        background-color: #8c9b02;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Final Revision on HTML + CSS</h1>
+    <br />
+
+    <h2>1. HTML Attributes</h2>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <br />
+    <br />
+
+    <img src="../assets/img/mac.jpg" alt="Macbook" width="1200" height="800" />
+    <br />
+
+    <p style="color: violet;">This is paragraph with style</p>
+    <br />
+
+    <p title="KIR">
+      This is a paragraph with tooltip on it. Just hover the mouse on it.
+    </p>
+
+    <br /><br />
+
+    <h2>2. HTML Headings</h2>
+    <hr />
+    <br />
+
+    <h3>This is a heading h3</h3>
+    <h4>This is a heading h4</h4>
+    <h5>This is a heading h5</h5>
+    <h6>This is a heading h6</h6>
+
+    <br /><br />
+
+    <h2>3. HTML Paragraph</h2>
+
+    <p>This is a paragraph and I know how to do it.</p>
+
+    <p>
+      My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies
+      over the ocean. Oh, bring back my Bonnie to me.
+    </p>
+    <br />
+
+    <pre>
+      My Bonnie lies over the ocean.
+    
+      My Bonnie lies over the sea.
+    
+      My Bonnie lies over the ocean.
+    
+      Oh, bring back my Bonnie to me.
+    </pre>
+
+    <br /><br />
+
+    <h2>3. HTML Styles</h2>
+
+    <p>I Already used different sytles in this tutorial</p>
+
+    <br /><br />
+
+    <h2>4. HTML Text Formatting</h2>
+
+    <p>
+      <b>This is a bold paragraph using b tag instead of using css style</b>
+    </p>
+
+    <p>
+      <i>This is an italic paragraph using i tag instead of using css style</i>
+    </p>
+
+    <p><strong>This paragraph is written is between strong tags.</strong></p>
+
+    <p><em>This paragraph is emphesized</em></p>
+
+    <p><mark>This is marked with HTML mark tags</mark></p>
+
+    <p><small>This text is written between HTML small tags</small></p>
+
+    <p>The best car in the world is <del>BMW</del> Mercedes-Benz</p>
+
+    <p>
+      I forgot how insert tag is working. Putting this <ins>WORD</ins> in it.
+    </p>
+
+    <p>The formula of the water: H<sub>2</sub>O</p>
+
+    <p>
+      This is a very sexy formula consider it: X<sup>2</sup> = a<sup>2</sup> +
+      b<sup>2</sup>
+    </p>
+
+    <br /><br />
+
+    <h2>5. HTML Quotation and Citation Elements</h2>
+
+    <p>This is a short quotation:</p>
+    <p>
+      WWF's goal is to:
+      <q>Build a future where people live in harmony with nature.</q>
+    </p>
+    <br />
+
+    <p>Here is a quote from WTF's website:</p>
+    <blockquote cite="www.Koso-nago.com">
+      For nearly 60 years, WWF has been protecting the future of nature. The
+      world's leading conservation organization, WWF works in 100 countries and
+      is supported by more than one million members in the United States and
+      close to five million globally.
+    </blockquote>
+
+    <br />
+
+    <p>
+      The <abbr title="Kir Khar Maghameh Ozama To Kon Melat">KKMOTKM</abbr> is
+      founded 41 years ago.
+    </p>
+
+    <br />
+
+    <p>
+      The HTML address element defines contact information (author/owner) of a
+      document or an article.
+    </p>
+    <address>
+      Written by John Doe.<br />
+      Visit us at:<br />
+      Example.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+
+    <br />
+
+    <p>The HTML cite element defines the title of a work.</p>
+
+    <p><cite>Kir e Khar</cite> written by Amirhossein Moravveji in 1998.</p>
+    <br />
+
+    <bdo dir="rtl">Salam o dorood be hame bache haye khob e maman.</bdo>
+    <br />
+
+    <br /><br />
+
+    <h2>6. HTML Links</h2>
+
+    <p>The target attribute can have one of the following values:</p>
+    <ul>
+      <li>_blank - Opens the linked document in a new window or tab</li>
+      <li>
+        _self - Opens the linked document in the same window/tab as it was
+        clicked (this is default)
+      </li>
+      <li>_parent - Opens the linked document in the parent frame</li>
+      <li>_top - Opens the linked document in the full body of the window</li>
+      <li>framename - Opens the linked document in a named frame</li>
+    </ul>
+
+    <a href="https://www.google.com" target="_self">This is a clickable link.</a
+    ><br />
+    <a href="https://www.google.com" target="_blank"
+      >This is a clickable link.</a
+    ><br />
+    <a href="https://www.google.com" target="_parent"
+      >This is a clickable link.</a
+    ><br />
+    <a href="https://www.google.com" target="_top">This is a clickable link.</a
+    ><br />
+
+    <br />
+
+    <p>
+      <a href="https://www.google.com" target="_blank">
+        <img
+          src="../assets/img/smiley-1.gif"
+          alt="Smily"
+          width="48px"
+          height="48px"
+        />
+      </a>
+    </p>
+
+    <br />
+
+    <p>
+      Using button as a link. By clicking this button you will be redirected to
+      google.com
+    </p>
+    <button class="but1" onclick="location.href = 'https:/www.google.com'">
+      Google
+    </button>
+
+    <p>
+      This button is defined as a link, however instead, it directs you into a
+      local link inside your folders.link
+    </p>
+
+    <button class="but1" onclick="document.location = 'prac29.html'">
+      Practice 29 File
+    </button>
+
+    <br /><br />
+
+    <p>HTML link with different colors</p>
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      title="Click Kon Rosh Kiri"
+      class="link1"
+      >This is a clickable link
+    </a>
+
+    <br />
+
+    <p>HTML link with different colors</p>
+
+    <a
+      href="https://www.google.com"
+      target="_top"
+      title="Click on me"
+      class="link2"
+      >This is another clickable link with different colors
+    </a>
+
+    <br /><br />
+
+    <p>This is a link styled like a button</p>
+
+    <a href="https://www.google.com" target="_top" class="link3"
+      >Button Like Link
+    </a>
+
+    <br /><br />
+
+    <h3>Using HTML a Tag as a bookmark</h3>
+    <a href="#C10">Jump to Chapter 10</a><br />
+    <a href="#C23">Jump to Chapter 23</a>
+
+    <h2>Chapter 1</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 2</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 3</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 5</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 6</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 7</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 8</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 9</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C10">Chapter 10</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 11</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 12</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 13</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 14</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 15</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 16</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 17</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 18</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 19</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 20</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 21</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 22</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C23">Chapter 23</h2>
+    <p>This chapter explains ba bla bla</p>
+
+
+    <br />
+  </body>
+</html>

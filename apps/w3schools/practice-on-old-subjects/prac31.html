@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Revision on HTML + CSS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: calibri;
+      }
+      h1 {
+        font-size: 3em;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 2em;
+      }
+      p {
+        font-size: 105%;
+      }
+
+      .img1 {
+        width: 100%;
+      }
+
+      .div1 {
+        background-image: url(../assets/img/img_girl.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        /* background-size: 100% 100%; */
+        height: 500px;
+        width: 100%;
+        padding: 5px 20px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Final Revision on HTML + CSS</h1>
+    <br />
+
+    <h2>1. HTML Images</h2>
+
+    <h3>1.1 Styling Images</h3>
+    <p>
+      The image below has the width attribute set to 128 pixels, but the
+      stylesheet overrides it, and sets the width to 100%.
+    </p>
+    <img
+      src="../assets/img/html5.gif"
+      alt="HTML5 Logo"
+      width="128"
+      height="128"
+      class="img1"
+    />
+
+    <br />
+
+    <p>
+      The image below uses the style attribute, where the width is set to 128
+      pixels which overrides the stylesheet:
+    </p>
+    <img
+      src="../assets/img/html5.gif"
+      alt="HTML5 Logo"
+      style="width: 128px; height: 128px;"
+      class="img1"
+    />
+
+    <br /><br />
+
+    <h3>1.2 Floating Images</h3>
+    <p>Float the image to the right:</p>
+    <p>
+      <img
+        src="../assets/img/smiley.gif"
+        alt="Smily"
+        width="48"
+        height="48"
+        style="float: right;"
+      />
+      A paragraph with a floating image. A paragraph with a floating image. A
+      paragraph with a floating image. A paragraph with a floating image. A
+      paragraph with a floating image.
+    </p>
+
+    <br />
+
+    <p>Float the image to the left:</p>
+    <p>
+      <img
+        src="../assets/img/smiley.gif"
+        alt="Smily"
+        width="48"
+        height="48"
+        style="float: left;"
+      />
+      A paragraph with a floating image. A paragraph with a floating image. A
+      paragraph with a floating image. A paragraph with a floating image. A
+      paragraph with a floating image.
+    </p>
+
+    <br />
+
+    <h3>Image Mapping</h3>
+    <p>
+      Click on the computer, the phone, or the cup of coffee to go to a new page
+      and read more about the topic:
+    </p>
+
+    <img
+      src="../assets/img/workplace.jpg"
+      alt="Desk"
+      width="400"
+      height="380"
+      usemap="#deskmap"
+    />
+
+    <map name="deskmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        href="../html-images-computer.html"
+        alt="Computer"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        href="../html-images-coffee.html"
+        alt="phone"
+      />
+      <area
+        shape="circle"
+        coords="337, 300, 44"
+        href="../html-images-coffee.html"
+        alt="Coffee"
+      />
+    </map>
+
+    <h3>HTML Background Image</h3>
+    <div class="div1">
+      <p>This background is covered all of the div element represented here.</p>
+      <p>
+        Set the background-size property to "cover" and the background image
+        will cover the entire element, in this case the BODY element.
+      </p>
+      <p>
+        Set the background-size property to "100% 100%r" and the background
+        image will be stretched to cover the entire element, in this case the
+        BODY element.
+      </p>
+    </div>
+
+    <br />
+
+    <h3>HTML Picture Elements</h3>
+    <p>
+      Resize the browser to see different versions of the picture loading at
+      different viewport sizes. The browser looks for the first source element
+      where the media query matches the user's current viewport width, and
+      fetches the image specified in the srcset attribute.
+    </p>
+    <p>
+      The img element is required as the last child tag of the picture
+      declaration block. The img element is used to provide backward
+      compatibility for browsers that do not support the picture element, or if
+      none of the source tags matched.
+    </p>
+    <p>
+      <b>Note:</b> The picture element is not supported in IE12 and earlier or
+      Safari 9.0 and earlier.
+    </p>
+
+    <picture>
+      <source media="(min-width: 1000px)" srcset="../assets/img/img_food.jpg" />
+      <source media="(min-width: 500px)" srcset="../assets/img/img_car.jpg" />
+      <img src="../assets/img/img_girl.jpg" alt="Girl" style="width: auto;" />
+    </picture>
+
+    <br />
+  </body>
+</html>
