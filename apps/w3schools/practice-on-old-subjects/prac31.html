@@ -39,6 +39,55 @@
         padding: 5px 20px;
         color: black;
       }
+
+      .t1 {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .t1 caption {
+        caption-side: bottom;
+        margin: 10px;
+        font-style: italic;
+      }
+      .t1 th,
+      .t1 td {
+        border: 1px solid #555;
+        padding: 10px;
+      }
+      .t1 th {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #a3c217;
+      }
+      .t1 tr:nth-child(odd) {
+        background-color: #cdebf5;
+      }
+      .t1 tr:hover {
+        background-color: lightblue;
+      }
+      .middle {
+        text-align: center;
+      }
+
+      .t2 {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .t2 caption {
+        caption-side: bottom;
+        margin: 10px;
+        font-style: italic;
+      }
+      .t2 th,
+      .t2 td {
+        border: 1px solid #555;
+        padding: 10px;
+      }
+      .t2 th {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .middle {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -179,9 +228,126 @@
 
     <picture>
       <source media="(min-width: 1000px)" srcset="../assets/img/img_food.jpg" />
-      <source media="(min-width: 500px)" srcset="../assets/img/img_car.jpg" />
+      <source media="(min-width: 600px)" srcset="../assets/img/img_car.jpg" />
       <img src="../assets/img/img_girl.jpg" alt="Girl" style="width: auto;" />
     </picture>
+
+    <br /><br /><br />
+
+    <h2>2. HTML Table</h2>
+
+    <table class="t1">
+      <caption>
+        1. Table of Customer Information
+      </caption>
+
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+        <th>Establishment date</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td class="middle">2000</td>
+        <td class="middle">20</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+        <td class="middle">1990</td>
+        <td class="middle">30</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+        <td class="middle">2010</td>
+        <td class="middle">10</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+        <td colspan="2" class="middle">New Company (2020)</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+        <td rowspan="2" class="middle">2005</td>
+        <td rowspan="2" class="middle">15</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <table class="t2">
+      <caption>
+        2. Table of Customer Information (Different Style)
+      </caption>
+
+      <colgroup>
+        <col span="3" style="background-color: dodgerblue;" />
+        <col span="2" style="background-color: tomato;" />
+      </colgroup>
+
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+        <th>Establishment date</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td class="middle">2000</td>
+        <td class="middle">20</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+        <td class="middle">1990</td>
+        <td class="middle">30</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+        <td class="middle">2010</td>
+        <td class="middle">10</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+        <td colspan="2" class="middle">New Company (2020)</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+        <td rowspan="2" class="middle">2005</td>
+        <td rowspan="2" class="middle">15</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
 
     <br />
   </body>
