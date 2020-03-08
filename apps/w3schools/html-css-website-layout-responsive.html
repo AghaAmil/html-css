@@ -44,8 +44,40 @@
         background-color: lightgrey;
         color: black;
       }
-      ul .right {
+      ul .khas {
         float: right;
+      }
+
+      .left {
+        width: 70%;
+        float: left;
+      }
+      .right {
+        width: 30%;
+        float: left;
+        padding-left: 20px;
+      }
+      .box {
+        background-color: #f1f1f1;
+        margin-top: 20px;
+        padding: 20px;
+      }
+      .image {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      article::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: lightgrey;
       }
     </style>
   </head>
@@ -60,7 +92,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Product</a></li>
         <li><a href="#">News</a></li>
-        <li class="right"><a href="#">About</a></li>
+        <li class="khas"><a href="#">About</a></li>
       </ul>
     </nav>
 
@@ -69,7 +101,7 @@
         <div class="box">
           <h2>TITLE HEADING ONE</h2>
           <h4>Title description, Dec 7, 2017</h4>
-          <div class="image">Image</div>
+          <div class="image" style="height: 200px;">Image</div>
           <p>Some text..</p>
           <p>
             Sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -81,7 +113,7 @@
         <div class="box">
           <h2>TITLE HEADING TWO</h2>
           <h4>Title description, Sep 7, 2017</h4>
-          <div class="image">Image</div>
+          <div class="image" style="height: 200px;">Image</div>
           <p>Some text..</p>
           <p>
             Sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -94,7 +126,7 @@
       <section class="right">
         <div class="box">
           <h2>About Me</h2>
-          <div class="image"></div>
+          <div class="image" style="height: 100px;">Image</div>
           <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
         </div>
         <div class="box">
@@ -109,6 +141,10 @@
         </div>
       </section>
     </article>
+
+    <footer>
+      <h3>&copy;All Rights Reserved for AghaAmil</h3>
+    </footer>
 
     <br />
   </body>
