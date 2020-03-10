@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Practicing HTML + CSS" />
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript" />
+    <meta name="auther" content="Amirhossein Moravveji" />
     <title>Final Revision on HTML + CSS</title>
     <style>
       * {
@@ -131,6 +134,15 @@
       .nav ul li a:hover {
         color: dodgerblue;
         background-color: black;
+      }
+
+      .but1 {
+        border: none;
+        padding: 10px;
+        background-color: #03943f;
+        color: white;
+        font-size: 14px;
+        text-transform: capitalize;
       }
     </style>
   </head>
@@ -529,6 +541,38 @@
         Click on this link to open a file in iframe
       </a>
     </p>
+
+    <br /><br />
+
+    <h2>5. JavaScript</h2>
+    <h3>My First JavaScript Code</h3>
+
+    <button
+      class="but1"
+      onclick="document.getElementById('place').innerHTML = Date()"
+    >
+      click on me to display the time for you
+    </button>
+    <p id="place">-- Time Will Be Displayed Here --</p>
+
+    <br />
+
+    <h3>My Second JavaScript Code</h3>
+    <p>JavaScript can change the content of an HTML element:</p>
+
+    <button class="but1" onclick="change()">Click Me!</button>
+
+    <script>
+      function change() {
+        document.getElementById("demo").innerHTML = "Hello, I'm JavaScript";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.fontSize = "20px";
+      }
+    </script>
+
+    <p id="demo">This is a demonstration of an element changed by JS.</p>
+
+    <br />
 
     <br />
   </body>
