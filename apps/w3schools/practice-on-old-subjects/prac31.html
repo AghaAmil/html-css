@@ -144,6 +144,71 @@
         font-size: 14px;
         text-transform: capitalize;
       }
+
+      header {
+        font-size: 2.5em;
+        color: white;
+        background-color: #555;
+        text-align: center;
+        padding: 40px;
+      }
+      section .nav1 {
+        float: left;
+        width: 30%;
+        background-color: #bbb;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+      .nav1 ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .nav1 ul li a {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        font-size: 1.5em;
+        color: #d31545;
+        font-weight: bold;
+      }
+      section article {
+        float: left;
+        width: 70%;
+        padding: 0 15px;
+        background-color: #ddd;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+      section article h4 {
+        font-size: 2em;
+      }
+      section:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+      footer {
+        font-size: 1.2em;
+        text-align: center;
+        background-color: #555;
+        padding: 10px;
+      }
+      @media (max-width: 700px) {
+        section .nav1,
+        section article {
+          width: 100%;
+          height: auto;
+        }
+        section .nav1 ul {
+          margin: 0;
+        }
+        section .nav1 ul li {
+          float: left;
+          text-align: center;
+          margin: 0;
+        }
+        section .nav1 ul li a {
+          padding: 15px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -572,7 +637,48 @@
 
     <p id="demo">This is a demonstration of an element changed by JS.</p>
 
-    <br />
+    <br /><br />
+
+    <h2>6. CSS Layout Float</h2>
+    <p>
+      In this example, we have created a header, two columns/boxes and a footer.
+      On smaller screens, the columns will stack on top of each other.
+    </p>
+    <p>
+      Resize the browser window to see the responsive effect (you will learn
+      more about this in our next chapter - HTML Responsive.)
+    </p>
+
+    <header>
+      <h3>The Cities</h3>
+    </header>
+
+    <section>
+      <nav class="nav1">
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h4>London</h4>
+        <p>
+          London is the capital city of England. It is the most populous city in
+          the United Kingdom, with a metropolitan area of over 13 million
+          inhabitants.
+        </p>
+        <p>
+          Standing on the River Thames, London has been a major settlement for
+          two millennia, its history going back to its founding by the Romans,
+          who named it Londinium.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; All Rights Reserved by AghaAmil</p>
+    </footer>
 
     <br />
   </body>
