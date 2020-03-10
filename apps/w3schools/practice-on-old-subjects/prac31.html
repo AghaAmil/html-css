@@ -110,6 +110,28 @@
         font-size: 1.2em;
         font-weight: bold;
       }
+
+      .nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #444444;
+        overflow: hidden;
+      }
+      .nav ul li {
+        float: left;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 12px 20px;
+        display: block;
+        font-size: 1.15em;
+      }
+      .nav ul li a:hover {
+        color: dodgerblue;
+        background-color: black;
+      }
     </style>
   </head>
   <body>
@@ -410,6 +432,84 @@
         </tr>
       </tfoot>
     </table>
+
+    <br /><br />
+
+    <h2>3. HTML Lists</h2>
+    <p>
+      The dl tag defines the description list, the dt tag defines the term
+      (name), and the dd tag describes each term:
+    </p>
+
+    <h3>A Description List</h3>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- Turkish Coffee</dd>
+      <dd>- Mocha</dd>
+      <dd>- Cappuccino Latte</dd>
+      <dd>- Latte</dd>
+      <dt>Tea</dt>
+      <dd>- black Tea</dd>
+      <dd>- Green Tea</dd>
+      <dd>- English Tea</dd>
+    </dl>
+
+    <br />
+
+    <h3>A Nested List</h3>
+    <ul style="list-style-type: square;">
+      <li>
+        Coffee
+        <ul style="list-style-type: circle;">
+          <li>Turkish Coffee</li>
+          <li>Mocha</li>
+          <li>Cappuccino Latte</li>
+        </ul>
+      </li>
+      <li>
+        Tea
+        <ul style="list-style-type: circle;">
+          <li>Green Tea</li>
+          <li>Black Tea</li>
+          <li>English Tea</li>
+        </ul>
+      </li>
+      <li>
+        Chocolate
+        <ul style="list-style-type: circle;">
+          <li>White Chocolate</li>
+          <li>Dark Chocolate</li>
+        </ul>
+      </li>
+    </ul>
+
+    <br />
+
+    <h3>Control List Counting</h3>
+    <ol start="10">
+      <li>Amir</li>
+      <li>Ali</li>
+      <li>Hassan</li>
+      <li>Massan</li>
+      <li>Berasan</li>
+    </ol>
+
+    <br />
+
+    <h3>Navigation Menu Using List</h3>
+    <p>
+      In this example, we use CSS to style the list horizontally, to create a
+      navigation menu:
+    </p>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
 
     <br />
   </body>
