@@ -191,7 +191,115 @@
         background-color: #555;
         padding: 10px;
       }
-      @media (max-width: 700px) {
+
+      .main {
+        text-align: center;
+      }
+      .main .left {
+        background-color: #42a2f0;
+        padding: 30px;
+        width: 25%;
+        float: left;
+      }
+      .main .center {
+        background-color: lightgrey;
+        padding: 30px;
+        width: 50%;
+        float: left;
+      }
+      .main .right {
+        background-color: #cf5959;
+        padding: 30px;
+        width: 25%;
+        float: left;
+      }
+      .main:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+
+      .head {
+        text-align: center;
+        background-color: #36963e;
+        color: white;
+        padding: 10px;
+      }
+      .head h3 {
+        font-size: 2em;
+      }
+      .div2 {
+        width: 33.33%;
+        padding: 0 10px;
+        float: left;
+      }
+      .div2 h3 {
+        font-size: 1.5em;
+      }
+      .main2:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+
+      .header1 {
+        text-align: center;
+        background-color: lightgrey;
+        color: #333;
+        padding: 30px;
+        font-size: 2.5em;
+      }
+      .main-main .nav-menu {
+        width: 20%;
+        float: left;
+      }
+      .main-main .nav-menu ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+      .main-main .nav-menu ul li a {
+        color: #333;
+        background-color: lightgrey;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+        margin-top: 8px;
+        text-align: center;
+        font-size: 1.1em;
+      }
+      .main-main .article {
+        width: 60%;
+        float: left;
+        padding: 0 15px;
+        color: #333;
+      }
+      .main-main .article h3 {
+        font-size: 1.2em;
+      }
+      .main-main .sider {
+        width: 20%;
+        float: left;
+        margin-top: 8px;
+        background-color: lightgrey;
+        color: #333;
+        padding: 0 10px;
+      }
+      .main-main:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+      .feet {
+        background-color: lightgrey;
+        color: #333;
+        font-size: 1em;
+        margin-top: 8px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 700px) {
         section .nav1,
         section article {
           width: 100%;
@@ -207,6 +315,20 @@
         }
         section .nav1 ul li a {
           padding: 15px;
+        }
+        .main .left,
+        .main .center,
+        .main .right {
+          width: 100%;
+          text-align: left;
+        }
+        .main2 .div2 {
+          width: 100%;
+        }
+        .main-main .nav-menu,
+        .main-main .article,
+        .main-main .sider {
+          width: 100%;
         }
       }
     </style>
@@ -679,6 +801,125 @@
     <footer>
       <p>&copy; All Rights Reserved by AghaAmil</p>
     </footer>
+
+    <br /><br />
+
+    <h2>7. HTML Responsive Web Design</h2>
+
+    <h3>Responsive Image</h3>
+    <p>
+      "max-width:100%" prevents the image from getting bigger than its original
+      size. However, if you make the browser window smaller, the image will
+      still scale down.
+    </p>
+    <p>Resize the browser window to see the effect.</p>
+
+    <img src="../assets/img/img_girl.jpg" alt="Girl" style="max-width: 100%;" />
+
+    <br /><br />
+
+    <h3>Show Different Images Depending on Browser Width</h3>
+    <p>
+      Resize the browser width and the image will change at 500px and 1000px.
+    </p>
+
+    <picture>
+      <source media="(min-width: 1000px)" srcset="../assets/img/flowers.jpg" />
+      <source
+        media="(min-width: 500px)"
+        srcset="../assets/img/img_pink_flowers.jpg"
+      />
+      <img
+        src="../assets/img/img_white_flower.jpg"
+        alt="Flower"
+        style="width: auto;"
+      />
+    </picture>
+
+    <br /><br />
+
+    <h3>Media Queries</h3>
+    <p>Resize the browser window.</p>
+    <p>Make sure you reach the breakpoint at 700px when resizing this frame.</p>
+
+    <div class="main">
+      <div class="left">Left Menu</div>
+      <div class="center">Main Menu</div>
+      <div class="right">Right Menu</div>
+    </div>
+
+    <br /><br />
+
+    <div class="head">
+      <h3>W3Schools Demo</h3>
+      <p>Resize this responsive page!</p>
+    </div>
+    <div class="main2">
+      <div class="div2">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        <p>
+          It is the most populous city in the United Kingdom, with a
+          metropolitan area of over 13 million inhabitants.
+        </p>
+      </div>
+      <div class="div2">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+        <p>
+          The Paris area is one of the largest population centers in Europe,
+          with more than 12 million inhabitants.
+        </p>
+      </div>
+      <div class="div2">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+        <p>
+          It is the center of the Greater Tokyo Area, and the most populous
+          metropolitan area in the world.
+        </p>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="header1">
+      Hello World!
+    </div>
+
+    <div class="main-main">
+      <div class="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+
+      <div class="article">
+        <h3>Lorum Ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+          <br />
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+      </div>
+
+      <div class="sider">
+        <h4>About</h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="feet">
+      &copy;All Reserved for AghaAmil
+    </div>
 
     <br />
   </body>
