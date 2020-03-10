@@ -44,11 +44,6 @@
         width: 100%;
         border-collapse: collapse;
       }
-      .t1 caption {
-        caption-side: bottom;
-        margin: 10px;
-        font-style: italic;
-      }
       .t1 th,
       .t1 td {
         border: 1px solid #555;
@@ -66,6 +61,11 @@
       }
       .middle {
         text-align: center;
+      }
+      caption {
+        caption-side: bottom;
+        margin: 10px;
+        font-style: italic;
       }
 
       .t2 {
@@ -85,8 +85,30 @@
       .t2 th {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
-      .middle {
+
+      .t3 {
+        border-collapse: collapse;
+        width: 50%;
+      }
+      .t3 th,
+      .t3 td {
+        border: 1px solid black;
+        padding: 10px;
         text-align: center;
+      }
+      .t3 thead {
+        background-color: #e7a428;
+        font-size: 1.2em;
+      }
+      .t3 tbody {
+        color: white;
+        background-color: #555555;
+      }
+      .t3 tfoot {
+        color: white;
+        background-color: #a16b07;
+        font-size: 1.2em;
+        font-weight: bold;
       }
     </style>
   </head>
@@ -347,6 +369,46 @@
         <td>Giovanni Rovelli</td>
         <td>Italy</td>
       </tr>
+    </table>
+
+    <br /><br />
+
+    <table class="t3">
+      <caption>
+        3. My Savings
+      </caption>
+
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Month</th>
+          <th>Saving</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>February</td>
+          <td>$200</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>March</td>
+          <td>$150</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>4</td>
+          <td>Sum</td>
+          <td>$350</td>
+        </tr>
+      </tfoot>
     </table>
 
     <br />
