@@ -13,19 +13,17 @@
       }
       body {
         font-family: calibri;
+        font-size: 105%;
       }
       h1 {
-        font-size: 3em;
+        font-size: 2.9em;
         color: navy;
         text-align: center;
       }
       h2 {
         color: dodgerblue;
-        font-size: 2em;
-      }
-      p {
-        font-size: 105%;
-      }
+        font-size: 1.9em;
+      }  
 
       .img1 {
         width: 100%;
@@ -1020,6 +1018,65 @@
       &#128507; &#128508; &#128509; &#128510; &#128511; &#128512; &#128513;
       &#128514; &#128515; &#128516; &#128517; &#128525; &#128151;
     </p>
+
+    <br /><br />
+
+    <h2>10. HTML Forms</h2>
+
+    <h3>Text input fields</h3>
+
+    <form action="#" method="post">
+      <label for="fname">First name:</label><br />
+      <input type="text" name="fname" id="fname" value="Amirhossein" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" name="lname" id="lname" value="Moravveji" />
+    </form>
+
+    <p>
+      Also note that the default width of text input fields is 20 characters.
+    </p>
+
+    <br />
+
+    <h3>Radio Buttons</h3>
+
+    <form action="#" method="post">
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label><br />
+    </form>
+
+    <br />
+
+    <h3>The Submit Button</h3>
+
+    <p>Normal form</p>
+
+    <form action="#" method="post">
+      <label for="fname">FirstName:</label><br />
+      <input type="text" name="fname" id="fname" value="...." /><br />
+      <label for="lname">LastName:</label><br />
+      <input type="text" name="lname" id="lname" value="...." /><br /><br />
+      <input type="submit" value="Submit Form!" />
+    </form>
+
+    <br />
+    <p>Radio form</p>
+
+    <form action="#" method="post">
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label><br /><br />
+      <input type="submit" value="Submit Gender" />
+    </form>
+
+    <br>
+
+    <h3></h3>
 
     <br />
   </body>
