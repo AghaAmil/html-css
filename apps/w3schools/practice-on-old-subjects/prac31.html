@@ -23,7 +23,7 @@
       h2 {
         color: dodgerblue;
         font-size: 1.9em;
-      }  
+      }
 
       .img1 {
         width: 100%;
@@ -1074,9 +1074,69 @@
       <input type="submit" value="Submit Gender" />
     </form>
 
-    <br>
+    <br />
 
-    <h3></h3>
+    <h3>The select Element</h3>
+    <p>The select element defines a drop-down list:</p>
+
+    <form action="#" method="post">
+      <label for="car">Choose a car:</label>
+      <select name="car" id="car">
+        <option value="bugatti">Bugatti</option>
+        <option value="mercedes-benz" selected>Mercedes-Benz</option>
+        <option value="lamborghini">Lamborghini</option>
+        <option value="ferrari">Ferrari</option>
+      </select>
+      <input type="submit" value="Submit Your Car" />
+    </form>
+
+    <br />
+
+    <h3>Visible Option Values</h3>
+    <p>Use the size attribute to specify the number of visible values.</p>
+
+    <form action="#" method="post">
+      <label for="cars">Choose Your Car:</label>
+      <select name="cars" id="cars" size="3">
+        <option value="bugatti">Bugatti</option>
+        <option value="mercedes-benz">Mercedes-Benz</option>
+        <option value="lamborghini">Lamborghini</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="porsche">Porsche</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit Your Car" />
+    </form>
+
+    <br />
+
+    <h3>Allow Multiple Seletcions</h3>
+    <p>
+      Use the multiple attribute to allow the user to select more than one
+      value.
+    </p>
+    <p>
+      Hold down the Ctrl (windows) / Command (Mac) button to select multiple
+      options.
+    </p>
+
+    <form action="#" method="post">
+      <label for="cars">Choose Your Car:</label>
+      <select name="cars" id="cars" size="5" multiple>
+        <option value="bugatti">Bugatti</option>
+        <option value="mercedes-benz">Mercedes-Benz</option>
+        <option value="lamborghini">Lamborghini</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="porsche">Porsche</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit Your Car" />
+    </form>
+
+    <br /><br />
+
+    <h3>Textarea</h3>
+    <p>The textarea element defines a multi-line input field.</p>
 
     <br />
   </body>
