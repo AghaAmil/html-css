@@ -180,7 +180,7 @@
       }
       section:after {
         clear: both;
-        content: "";
+        content: '';
         display: table;
       }
       footer {
@@ -213,7 +213,7 @@
       }
       .main:after {
         clear: both;
-        content: "";
+        content: '';
         display: table;
       }
 
@@ -236,7 +236,7 @@
       }
       .main2:after {
         clear: both;
-        content: "";
+        content: '';
         display: table;
       }
 
@@ -285,7 +285,7 @@
       }
       .main-main:after {
         clear: both;
-        content: "";
+        content: '';
         display: table;
       }
       .feet {
@@ -295,6 +295,16 @@
         margin-top: 8px;
         padding: 10px;
         text-align: center;
+      }
+
+      .form1 fieldset {
+        width: 80%;
+        padding: 20px 10px;
+        background-color: lightblue;
+      }
+      .form1 legend {
+        font-size: 1.2em;
+        font-family: Verdana;
       }
 
       @media screen and (max-width: 700px) {
@@ -339,22 +349,16 @@
 
     <h3>1.1 Styling Images</h3>
     <p>
-      The image below has the width attribute set to 128 pixels, but the
-      stylesheet overrides it, and sets the width to 100%.
+      The image below has the width attribute set to 128 pixels, but the stylesheet overrides it,
+      and sets the width to 100%.
     </p>
-    <img
-      src="../assets/img/html5.gif"
-      alt="HTML5 Logo"
-      width="128"
-      height="128"
-      class="img1"
-    />
+    <img src="../assets/img/html5.gif" alt="HTML5 Logo" width="128" height="128" class="img1" />
 
     <br />
 
     <p>
-      The image below uses the style attribute, where the width is set to 128
-      pixels which overrides the stylesheet:
+      The image below uses the style attribute, where the width is set to 128 pixels which overrides
+      the stylesheet:
     </p>
     <img
       src="../assets/img/html5.gif"
@@ -375,42 +379,28 @@
         height="48"
         style="float: right;"
       />
-      A paragraph with a floating image. A paragraph with a floating image. A
-      paragraph with a floating image. A paragraph with a floating image. A
-      paragraph with a floating image.
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a
+      floating image. A paragraph with a floating image. A paragraph with a floating image.
     </p>
 
     <br />
 
     <p>Float the image to the left:</p>
     <p>
-      <img
-        src="../assets/img/smiley.gif"
-        alt="Smily"
-        width="48"
-        height="48"
-        style="float: left;"
-      />
-      A paragraph with a floating image. A paragraph with a floating image. A
-      paragraph with a floating image. A paragraph with a floating image. A
-      paragraph with a floating image.
+      <img src="../assets/img/smiley.gif" alt="Smily" width="48" height="48" style="float: left;" />
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a
+      floating image. A paragraph with a floating image. A paragraph with a floating image.
     </p>
 
     <br />
 
     <h3>Image Mapping</h3>
     <p>
-      Click on the computer, the phone, or the cup of coffee to go to a new page
-      and read more about the topic:
+      Click on the computer, the phone, or the cup of coffee to go to a new page and read more about
+      the topic:
     </p>
 
-    <img
-      src="../assets/img/workplace.jpg"
-      alt="Desk"
-      width="400"
-      height="380"
-      usemap="#deskmap"
-    />
+    <img src="../assets/img/workplace.jpg" alt="Desk" width="400" height="380" usemap="#deskmap" />
 
     <map name="deskmap">
       <area
@@ -419,31 +409,20 @@
         href="../html-images-computer.html"
         alt="Computer"
       />
-      <area
-        shape="rect"
-        coords="290,172,333,250"
-        href="../html-images-coffee.html"
-        alt="phone"
-      />
-      <area
-        shape="circle"
-        coords="337, 300, 44"
-        href="../html-images-coffee.html"
-        alt="Coffee"
-      />
+      <area shape="rect" coords="290,172,333,250" href="../html-images-coffee.html" alt="phone" />
+      <area shape="circle" coords="337, 300, 44" href="../html-images-coffee.html" alt="Coffee" />
     </map>
 
     <h3>HTML Background Image</h3>
     <div class="div1">
       <p>This background is covered all of the div element represented here.</p>
       <p>
-        Set the background-size property to "cover" and the background image
-        will cover the entire element, in this case the BODY element.
+        Set the background-size property to "cover" and the background image will cover the entire
+        element, in this case the BODY element.
       </p>
       <p>
-        Set the background-size property to "100% 100%r" and the background
-        image will be stretched to cover the entire element, in this case the
-        BODY element.
+        Set the background-size property to "100% 100%r" and the background image will be stretched
+        to cover the entire element, in this case the BODY element.
       </p>
     </div>
 
@@ -451,20 +430,18 @@
 
     <h3>HTML Picture Elements</h3>
     <p>
-      Resize the browser to see different versions of the picture loading at
-      different viewport sizes. The browser looks for the first source element
-      where the media query matches the user's current viewport width, and
-      fetches the image specified in the srcset attribute.
+      Resize the browser to see different versions of the picture loading at different viewport
+      sizes. The browser looks for the first source element where the media query matches the user's
+      current viewport width, and fetches the image specified in the srcset attribute.
     </p>
     <p>
-      The img element is required as the last child tag of the picture
-      declaration block. The img element is used to provide backward
-      compatibility for browsers that do not support the picture element, or if
-      none of the source tags matched.
+      The img element is required as the last child tag of the picture declaration block. The img
+      element is used to provide backward compatibility for browsers that do not support the picture
+      element, or if none of the source tags matched.
     </p>
     <p>
-      <b>Note:</b> The picture element is not supported in IE12 and earlier or
-      Safari 9.0 and earlier.
+      <b>Note:</b> The picture element is not supported in IE12 and earlier or Safari 9.0 and
+      earlier.
     </p>
 
     <picture>
@@ -634,8 +611,8 @@
 
     <h2>3. HTML Lists</h2>
     <p>
-      The dl tag defines the description list, the dt tag defines the term
-      (name), and the dd tag describes each term:
+      The dl tag defines the description list, the dt tag defines the term (name), and the dd tag
+      describes each term:
     </p>
 
     <h3>A Description List</h3>
@@ -695,8 +672,7 @@
 
     <h3>Navigation Menu Using List</h3>
     <p>
-      In this example, we use CSS to style the list horizontally, to create a
-      navigation menu:
+      In this example, we use CSS to style the list horizontally, to create a navigation menu:
     </p>
 
     <nav class="nav">
@@ -713,12 +689,7 @@
     <h2>4. HTML iFrame</h2>
     <p>An iframe is used to display a web page within a web page.</p>
 
-    <iframe
-      src="../html-iframe.html"
-      width="600px"
-      height="500px"
-      name="frame"
-    ></iframe>
+    <iframe src="../html-iframe.html" width="600px" height="500px" name="frame"></iframe>
     <br />
 
     <p>
@@ -732,10 +703,7 @@
     <h2>5. JavaScript</h2>
     <h3>My First JavaScript Code</h3>
 
-    <button
-      class="but1"
-      onclick="document.getElementById('place').innerHTML = Date()"
-    >
+    <button class="but1" onclick="document.getElementById('place').innerHTML = Date()">
       click on me to display the time for you
     </button>
     <p id="place">-- Time Will Be Displayed Here --</p>
@@ -749,9 +717,9 @@
 
     <script>
       function change() {
-        document.getElementById("demo").innerHTML = "Hello, I'm JavaScript";
-        document.getElementById("demo").style.color = "red";
-        document.getElementById("demo").style.fontSize = "20px";
+        document.getElementById('demo').innerHTML = "Hello, I'm JavaScript";
+        document.getElementById('demo').style.color = 'red';
+        document.getElementById('demo').style.fontSize = '20px';
       }
     </script>
 
@@ -761,12 +729,12 @@
 
     <h2>6. CSS Layout Float</h2>
     <p>
-      In this example, we have created a header, two columns/boxes and a footer.
-      On smaller screens, the columns will stack on top of each other.
+      In this example, we have created a header, two columns/boxes and a footer. On smaller screens,
+      the columns will stack on top of each other.
     </p>
     <p>
-      Resize the browser window to see the responsive effect (you will learn
-      more about this in our next chapter - HTML Responsive.)
+      Resize the browser window to see the responsive effect (you will learn more about this in our
+      next chapter - HTML Responsive.)
     </p>
 
     <header>
@@ -784,14 +752,12 @@
       <article>
         <h4>London</h4>
         <p>
-          London is the capital city of England. It is the most populous city in
-          the United Kingdom, with a metropolitan area of over 13 million
-          inhabitants.
+          London is the capital city of England. It is the most populous city in the United Kingdom,
+          with a metropolitan area of over 13 million inhabitants.
         </p>
         <p>
-          Standing on the River Thames, London has been a major settlement for
-          two millennia, its history going back to its founding by the Romans,
-          who named it Londinium.
+          Standing on the River Thames, London has been a major settlement for two millennia, its
+          history going back to its founding by the Romans, who named it Londinium.
         </p>
       </article>
     </section>
@@ -806,9 +772,8 @@
 
     <h3>Responsive Image</h3>
     <p>
-      "max-width:100%" prevents the image from getting bigger than its original
-      size. However, if you make the browser window smaller, the image will
-      still scale down.
+      "max-width:100%" prevents the image from getting bigger than its original size. However, if
+      you make the browser window smaller, the image will still scale down.
     </p>
     <p>Resize the browser window to see the effect.</p>
 
@@ -823,15 +788,8 @@
 
     <picture>
       <source media="(min-width: 1000px)" srcset="../assets/img/flowers.jpg" />
-      <source
-        media="(min-width: 500px)"
-        srcset="../assets/img/img_pink_flowers.jpg"
-      />
-      <img
-        src="../assets/img/img_white_flower.jpg"
-        alt="Flower"
-        style="width: auto;"
-      />
+      <source media="(min-width: 500px)" srcset="../assets/img/img_pink_flowers.jpg" />
+      <img src="../assets/img/img_white_flower.jpg" alt="Flower" style="width: auto;" />
     </picture>
 
     <br /><br />
@@ -857,24 +815,24 @@
         <h3>London</h3>
         <p>London is the capital city of England.</p>
         <p>
-          It is the most populous city in the United Kingdom, with a
-          metropolitan area of over 13 million inhabitants.
+          It is the most populous city in the United Kingdom, with a metropolitan area of over 13
+          million inhabitants.
         </p>
       </div>
       <div class="div2">
         <h3>Paris</h3>
         <p>Paris is the capital of France.</p>
         <p>
-          The Paris area is one of the largest population centers in Europe,
-          with more than 12 million inhabitants.
+          The Paris area is one of the largest population centers in Europe, with more than 12
+          million inhabitants.
         </p>
       </div>
       <div class="div2">
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
         <p>
-          It is the center of the Greater Tokyo Area, and the most populous
-          metropolitan area in the world.
+          It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the
+          world.
         </p>
       </div>
     </div>
@@ -898,13 +856,11 @@
       <div class="article">
         <h3>Lorum Ipsum</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet dolore magna aliquam erat volutpat.
           <br />
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
       </div>
 
@@ -979,9 +935,8 @@
       <br />
       A non-breaking space is a space that will not break into a new line.
       <br />
-      Two words separated by a non-breaking space will stick together (not break
-      into a new line). This is handy when breaking the words might be
-      disruptive.
+      Two words separated by a non-breaking space will stick together (not break into a new line).
+      This is handy when breaking the words might be disruptive.
     </p>
     <p>Examples:</p>
     <ul>
@@ -1015,8 +970,8 @@
     <h3>Using Emojis in HTML</h3>
     <p>Creating my First Emojis</p>
     <p style="font-size: 50px;">
-      &#128507; &#128508; &#128509; &#128510; &#128511; &#128512; &#128513;
-      &#128514; &#128515; &#128516; &#128517; &#128525; &#128151;
+      &#128507; &#128508; &#128509; &#128510; &#128511; &#128512; &#128513; &#128514; &#128515;
+      &#128516; &#128517; &#128525; &#128151;
     </p>
 
     <br /><br />
@@ -1112,12 +1067,10 @@
 
     <h3>Allow Multiple Seletcions</h3>
     <p>
-      Use the multiple attribute to allow the user to select more than one
-      value.
+      Use the multiple attribute to allow the user to select more than one value.
     </p>
     <p>
-      Hold down the Ctrl (windows) / Command (Mac) button to select multiple
-      options.
+      Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.
     </p>
 
     <form action="#" method="post">
@@ -1137,6 +1090,68 @@
 
     <h3>Textarea</h3>
     <p>The textarea element defines a multi-line input field.</p>
+
+    <form action="#" method="post">
+      <textarea name="textfield" id="textfield" cols="50" rows="15">Start your text here</textarea>
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      <textarea name="textfield1" id="textfield1" style="width: 300px; height: 150px;">
+Another textarea with height and width defined in PX
+      </textarea>
+    </form>
+
+    <br />
+
+    <h3>The button element</h3>
+
+    <button type="button" onclick="alert('You have clicked on the button')">Click Me!</button>
+
+    <br />
+
+    <h3>Grouping Form Data with Fieldset</h3>
+    <p>
+      The fieldset element is used to group related data in a form, and the legend element defines a
+      caption for the fieldset element.
+    </p>
+
+    <form action="#" method="post" class="form1">
+      <fieldset>
+        <legend>Sign-in Information</legend>
+        <label for="fname">First Name:</label><br />
+        <input type="text" name="fname" id="fname" value="Amirhossein" /><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" name="lname" id="lname" value="Moravveji" /><br /><br />
+        <input type="submit" value="Submit Form!" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The datalist Element</h3>
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+    <form action="#" method="post">
+      <input type="text" name="browsers" id="browsers" list="browsers" />
+      <datalist id="browsers">
+        <option value="Mozilla Firefox"></option>
+        <option value="Apple Saffari"></option>
+        <option value="Microsoft Edge"></option>
+        <option value="Internet Explorer"></option>
+        <option value="Opera"></option>
+      </datalist>
+      <input type="submit" value="Submit Browser" />
+    </form>
+
+    <br />
+
+    <h1>
+      This Project remained incompleted here... Sry to say this. But again I didnt study programming
+      completely.
+    </h1>
+    <h1>ره رو ان است که اهسته و پیوسته رود</h1>
 
     <br />
   </body>
