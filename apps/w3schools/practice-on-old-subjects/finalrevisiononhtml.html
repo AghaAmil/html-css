@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Revision on HTML</title>
+    <link rel="stylesheet" href="../assets/css/test1.css" />
     <style>
       * {
         box-sizing: border-box;
@@ -23,6 +24,47 @@
       }
       h3 {
         font-size: 140%;
+      }
+      .sp1 {
+        color: red;
+        font-weight: bold;
+      }
+
+      .a1:link {
+        font-size: 110%;
+        font-weight: bold;
+        color: #a53907;
+      }
+      .a1:visited {
+        font-size: 110%;
+        font-weight: bold;
+        color: #7e0b7e;
+      }
+      .a1:hover {
+        font-size: 115%;
+        font-weight: bold;
+        color: #e9d200;
+      }
+      .a1:active {
+        font-size: 110%;
+        font-weight: bold;
+        color: #00e400;
+      }
+
+      .a2:link,
+      .a2:visited {
+        color: white;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        font-weight: bold;
+        background-color: #ff3974;
+        border: 1px solid red;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .a2:hover,
+      .a2:active {
+        background-color: red;
       }
     </style>
   </head>
@@ -113,7 +155,6 @@
     <br /><br />
 
     <h2>3. HTML Quotation and Citation Elements</h2>
-
     <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
     <br />
 
@@ -140,7 +181,7 @@
       <b>
         <q><cite>Service Management Management</cite></q>
       </b>
-      by Soheil Asi, written in 2020
+      by Soheil Asi, written in 2020.
     </p>
     <address>
       Written by Soheil Asi<br />
@@ -153,7 +194,155 @@
 
     <bdo dir="rtl">This line will be written from right to left</bdo>
 
-    
+    <br /><br />
+
+    <h2>4. HTML CSS</h2>
+    <p>External CSS</p>
+    <div class="div1">
+      <h4>This is a heading</h4>
+      <p>This is paragraph</p>
+    </div>
+
+    <br /><br />
+
+    <h2>5. HTML Links</h2>
+    <p><a href="https://www.w3schools.com/html/">Visit W3Schools HTML Tutorial</a></p>
+
+    <p>
+      This is a link <a href="../html-attribute.html" target="_blank">HTML Attributes</a> in our
+      local file list.
+    </p>
+    <br />
+
+    <h3>HTML Links - The Target Attribute</h3>
+    <p>
+      The <span class="sp1">target</span> attribute specifies where to open the linked document.
+    </p>
+    <p>The <span class="sp1">target</span> attribute can have one of the following values:</p>
+
+    <ul>
+      <li><span class="sp1">_blank</span> - Opens the linked document in a new window or tab</li>
+      <li>
+        <span class="sp1">_self</span> - Opens the linked document in the same window/tab as it was
+        clicked (this is default)
+      </li>
+      <li><span class="sp1">_parent</span> - Opens the linked document in the parent frame</li>
+      <li>
+        <span class="sp1">_top</span> - Opens the linked document in the full body of the window
+      </li>
+      <li><span class="sp1">framename</span> - Opens the linked document in a named frame</li>
+    </ul>
+
+    <h3>HTML Links - Image as a Link</h3>
+    <p>The image is a link. You can click on it.</p>
+
+    <a href="http://www.google.com" target="_blank">
+      <img src="../assets/img/smiley.gif" alt="smiley" width="42" height="42"
+    /></a>
+
+    <br />
+
+    <h3>Button as clickable Link</h3>
+    <p>Click the button to go to the default page.</p>
+    <p>
+      Please check the code!<br />
+      This method is called Loori.... Please check the other button as well.
+    </p>
+
+    <a href="https://www.w3schools.com/html/" target="_blank">
+      <button>W3Schools HTML Tutorial</button>
+    </a>
+
+    <p>Button onclick property is used for below example.</p>
+
+    <button onclick="document.location = '../html-links.html'">HTML Links Tutorial</button>
+    <br />
+
+    <h3>HTML Links Colors</h3>
+    <p>In this example we are overwriting the links default colors:</p>
+
+    <a href="http://www.google.com" target="_blank" class="a1"
+      >This is a link with customer colors
+    </a>
+    <br />
+
+    <h3>Another Button like links</h3>
+
+    <a href="http://www.google.com" target="_blank" class="a2">This Is A Clickable Link</a>
+    <br />
+
+    <h3>HTML Link Bookmarks</h3>
+
+    <a href="#sp1">Jump to Chapter Special 1</a>
+    <br />
+    <a href="#sp2">Jump to Chapter Special 2</a>
+
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4 id="sp1">Book Chapters Special 1</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4 id="sp2">Book Chapters Special 2</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
+    <h4>Book Chapters</h4>
+    <p>This chapter explains ba bla bla</p>
 
     <br />
   </body>
