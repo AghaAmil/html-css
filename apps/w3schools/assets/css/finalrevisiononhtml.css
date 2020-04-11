@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: calibri;
+  font-size: 105%;
+}
+h1 {
+  font-size: 2.8em;
+  color: navy;
+  text-align: center;
+}
+h2 {
+  color: dodgerblue;
+  font-size: 1.9em;
+}
+h3 {
+  font-size: 140%;
+}
+.sp1 {
+  color: red;
+  font-weight: bold;
+}
+
+.a1:link {
+  font-size: 110%;
+  font-weight: bold;
+  color: #a53907;
+}
+.a1:visited {
+  font-size: 110%;
+  font-weight: bold;
+  color: #7e0b7e;
+}
+.a1:hover {
+  font-size: 115%;
+  font-weight: bold;
+  color: #e9d200;
+}
+.a1:active {
+  font-size: 110%;
+  font-weight: bold;
+  color: #00e400;
+}
+
+.a2:link,
+.a2:visited {
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #ff3974;
+  border: 1px solid red;
+  text-decoration: none;
+  display: inline-block;
+}
+.a2:hover,
+.a2:active {
+  background-color: red;
+}
+
+.img1 {
+  width: 100%;
+}
+
+.div2 {
+  background-image: url('../img/img_girl.jpg');
+}
