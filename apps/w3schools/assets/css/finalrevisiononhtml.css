@@ -65,4 +65,17 @@ h3 {
 
 .div2 {
   background-image: url('../img/img_girl.jpg');
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 10px;
+}
+.cover {
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+.full {
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 500px;
 }
