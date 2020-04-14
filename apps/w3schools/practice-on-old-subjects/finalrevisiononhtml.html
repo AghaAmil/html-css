@@ -285,7 +285,7 @@
 
     <br /><br />
 
-    <h2>HTML Images</h2>
+    <h2>6. HTML Images</h2>
     <h3>Styling Images</h3>
     <p>
       The image below has the width attribute set to 128 pixels, but the stylesheet overrides it,
@@ -414,6 +414,199 @@
       <source media="(min-width: 500px)" srcset="../assets/img/klematis.jpg" />
       <img src="../assets/img/img_pink_flowers.jpg" alt="flower" style="width: auto;" />
     </picture>
+
+    <br /><br />
+
+    <h2>7. HTML Tables</h2>
+    <br />
+
+    <table class="tb1">
+      <caption>
+        1. Tecnotree Employees Information
+      </caption>
+
+      <tr>
+        <th>Full Name</th>
+        <th>Age</th>
+        <th>Department</th>
+        <th>Employee_ID</th>
+      </tr>
+      <tr>
+        <td>Amirhossein Moravveji</td>
+        <td>27</td>
+        <td rowspan="2" style="text-align: center;">QC</td>
+        <td>CON6969</td>
+      </tr>
+      <tr>
+        <td>Nafiseh Ghazi Moradi</td>
+        <td>36</td>
+        <td>CON753</td>
+      </tr>
+      <tr>
+        <td>Mansour Dianati</td>
+        <td>40</td>
+        <td>SM</td>
+        <td>CON345</td>
+      </tr>
+      <tr>
+        <td>Nima Mobini Nia</td>
+        <td>33</td>
+        <td>CBS</td>
+        <td>CON444</td>
+      </tr>
+      <tr>
+        <td>Hojatol Eslam e Val Moslemin Nozhan NezamOlama e Tehrani Far</td>
+        <td>35</td>
+        <td>MNP</td>
+        <td>CON123</td>
+      </tr>
+      <tr>
+        <td>Mehdi Pour Hadi</td>
+        <td>30</td>
+        <td colspan="2" style="text-align: center;">Ex-DBA</td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <table class="tb2">
+      <caption>
+        2. Second Table Using "colgroup"
+      </caption>
+      <colgroup>
+        <col span="2" style="background-color: skyblue;" />
+        <col style="background-color: tomato;" />
+      </colgroup>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+      </tr>
+      <tr>
+        <td>34ER5E54WCGWA2</td>
+        <td>iPhone</td>
+        <td>$1500</td>
+      </tr>
+      <tr>
+        <td>1F0V8S8RJHAL13G</td>
+        <td>iWatch</td>
+        <td>$600</td>
+      </tr>
+      <tr>
+        <td>1F0D8TK3J6K7921</td>
+        <td>iMac</td>
+        <td>$6000</td>
+      </tr>
+      <tr>
+        <td>GWE3R6S7R90LLA</td>
+        <td>iCard</td>
+        <td>$30</td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <table class="tb3">
+      <caption>
+        3. Shopping Cart
+      </caption>
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>34ER5E54WCGWA2</td>
+          <td>iPhone</td>
+          <td>$1500</td>
+        </tr>
+        <tr>
+          <td>1F0V8S8RJHAL13G</td>
+          <td>iWatch</td>
+          <td>$600</td>
+        </tr>
+        <tr>
+          <td>1F0D8TK3J6K7921</td>
+          <td>iMac</td>
+          <td>$6000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Sum</td>
+          <td>$8100</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br /><br /><br />
+
+    <h2>8. HTML Lists</h2>
+    <h3>An unordered list</h3>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      <li>Chocolate Milk</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      <li>Chocolate Milk</li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      <li>Chocolate Milk</li>
+    </ul>
+
+    <br />
+
+    <h3>An ordered list</h3>
+
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      <li>Chocolate Milk</li>
+    </ol>
+
+    <ol style="list-style-type: upper-alpha;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      <li>Chocolate Milk</li>
+    </ol>
+
+    <ol style="list-style-type: upper-alpha;" start="10">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      <li>Chocolate Milk</li>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      <li>Chocolate Milk</li>
+    </ol>
+
+    <br />
+
+    <h3>A Description List</h3>
+
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- Whitle cold drink</dd>
+    </dl>
 
     <br />
   </body>

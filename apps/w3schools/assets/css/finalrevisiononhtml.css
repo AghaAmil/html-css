@@ -79,3 +79,76 @@ h3 {
   background-attachment: fixed;
   height: 500px;
 }
+
+.tb1 {
+  width: 90%;
+  border-collapse: collapse;
+}
+.tb1 caption {
+  font-family: Verdana;
+  margin: 10px;
+  caption-side: bottom;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.tb1 th,
+.tb1 td {
+  border: 1px #444 solid;
+  padding: 6px 12px;
+}
+.tb1 th {
+  font-size: 110%;
+  background-color: #5ca730;
+  color: white;
+}
+.tb1 tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+.tb1 tr:hover {
+  background-color: darkgrey;
+}
+
+.tb2 {
+  width: 60%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.tb2 caption {
+  font-family: Verdana;
+  margin: 10px;
+  caption-side: bottom;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.tb2 th,
+.tb2 td {
+  border: 1px #444 solid;
+  padding: 6px 12px;
+}
+
+.tb3 {
+  width: 60%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.tb3 caption {
+  font-family: Verdana;
+  margin: 10px;
+  caption-side: bottom;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.tb3 th,
+.tb3 td {
+  border: 1px #444 solid;
+  padding: 6px 12px;
+}
+.tb3 thead {
+  background-color: #c317ee;
+}
+.tb3 tbody {
+  background-color: lightgray;
+}
+.tb3 tfoot {
+  background-color: #5817ee;
+}
