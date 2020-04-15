@@ -645,7 +645,94 @@
     <h2>9. HTML Iframe</h2>
     <p>An iframe is used to display a web page within a web page:</p>
 
-    <iframe src="../html." frameborder="0"></iframe>
+    <iframe
+      src="prac10.html"
+      frameborder="0"
+      style="width: 400px; height: 300px;"
+      name="frame"
+    ></iframe>
+
+    <p>
+      Click on this link to open W3Schools in the frame above.
+      <a href="https://www.w3schools.com" target="frame">W3School</a>
+    </p>
+
+    <h2>10. HTML JavaScript</h2>
+    <h3>Basic JavaScript</h3>
+
+    <button type="button" onclick="document.getElementById('time').innerHTML = Date()">
+      Click me to show you time & date
+    </button>
+    <p id="time">Time & Date</p>
+
+    <br />
+    <p>Another practice of JavaScript</p>
+
+    <button type="button" onclick="document.getElementById('time2').innerHTML = Date()">
+      Click Me!!!
+    </button>
+    <p id="time2">Time & Date</p>
+
+    <br />
+
+    <h3>JavaScript to change the text</h3>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+    <p id="text"></p>
+
+    <script>
+      document.getElementById('text').innerHTML = 'Hello JavaScript! Salaam Mashti!';
+    </script>
+
+    <br />
+
+    <p>JavaScript can change the content of an HTML element:</p>
+    <button type="button" onclick="text()">Click Me to Do Some Magic!</button>
+    <p id="text1">This is a demonstration.</p>
+
+    <script>
+      function text() {
+        document.getElementById('text1').innerHTML = 'Hello JavaScript! Salaam Mashti!';
+      }
+
+      function mystyle() {
+        document.getElementById('style1').style.fontSize = '30px';
+        document.getElementById('style1').style.color = 'Blue';
+        document.getElementById('style1').style.backgroundColor = 'lightblue';
+        document.getElementById('style1').innerHTML = 'JavaScript can change anything.';
+      }
+
+      function onoff(sw) {
+        var pic;
+        if (sw == 0) {
+          pic = '../assets/img/pic_bulboff.gif';
+        } else {
+          pic = '../assets/img/pic_bulbon.gif';
+        }
+        document.getElementById('bulb').src = pic;
+      }
+    </script>
+
+    <br />
+
+    <h3>JavaScript to change the style</h3>
+    <p id="style1">JavaScript can change the style of an HTML element</p>
+    <button type="button" onclick="mystyle()">Click Me to Do Some Magic!</button>
+
+    <br /><br /><br />
+
+    <img
+      src="../assets/img/pic_bulboff.gif"
+      alt="Bulb-off"
+      id="bulb"
+      style="width: 100px; height: 180px;"
+    />
+
+    <p>
+      <button type="button" onclick="onoff(1)">Light On</button>
+      <button type="button" onclick="onoff(0)">Light Off</button>
+    </p>
+
+    <br />
 
     <br />
   </body>
