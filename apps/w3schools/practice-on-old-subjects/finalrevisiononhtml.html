@@ -413,8 +413,8 @@
     </p>
 
     <picture>
-      <source media="(min-width: 850px)" srcset="../assets/img/img_white_flower.jpg" />
-      <source media="(min-width: 500px)" srcset="../assets/img/klematis.jpg" />
+      <source media="(min-width: 1000px)" srcset="../assets/img/img_white_flower.jpg" />
+      <source media="(min-width: 600px)" srcset="../assets/img/klematis.jpg" />
       <img src="../assets/img/img_pink_flowers.jpg" alt="flower" style="width: auto;" />
     </picture>
 
@@ -767,6 +767,107 @@
 
     <footer class="foot1">
       <p>&copy; Rights reserved by AghaAmil</p>
+    </footer>
+
+    <br />
+
+    <h2>12. HTML Responsive Web Design</h2>
+    <h3>Responsive Image</h3>
+    <p>
+      When the CSS width property is set in a percentage value, the image will scale up and down
+      when resizing the browser window. Resize the browser window to see the effect.
+    </p>
+
+    <img src="../assets/img/img_girl.jpg" alt="img_girl" style="max-width: 100%; height: auto;" />
+
+    <br />
+
+    <h3>Show Different Images Depending on Browser Width</h3>
+    <p>Resize the browser width and the image will change at 500px and 1000px.</p>
+
+    <picture>
+      <source media="(max-width: 500px)" srcset="../assets/img/img_white_flower.jpg" />
+      <source media="(max-width: 1000px)" srcset="../assets/img/img_pink_flowers.jpg" />
+      <source srcset="../assets/img/flowers.jpg" />
+      <img src="../assets/img/flowers.jpg" alt="flower" style="width: auto;" />
+    </picture>
+
+    <br />
+
+    <h3>Media Queries</h3>
+
+    <div class="div3">
+      <div class="lm">Left Menu</div>
+      <div class="mc">Main Content</div>
+      <div class="rc">Right Content</div>
+    </div>
+
+    <br />
+
+    <header class="head2">
+      <h3>W3Schools Demo</h3>
+      <h4>Resize this responsive page!</h4>
+    </header>
+
+    <section class="sec2">
+      <article class="art1">
+        <h4>London</h4>
+        <p>London is the capital city of England.</p>
+        <p>
+          It is the most populous city in the United Kingdom, with a metropolitan area of over 13
+          million inhabitants.
+        </p>
+      </article>
+      <article class="art2">
+        <h4>Paris</h4>
+        <p>Paris is the capital of France.</p>
+        <p>
+          The Paris area is one of the largest population centers in Europe, with more than 12
+          million inhabitants.
+        </p>
+      </article>
+      <article class="art3">
+        <h4>Tokyo</h4>
+        <p>Tokyo is the capital of Japan.</p>
+        <p>
+          It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the
+          world.
+        </p>
+      </article>
+    </section>
+
+    <br />
+
+    <header class="head3">
+      <h3>Hello World</h3>
+    </header>
+
+    <section class="sec3">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <article class="art4">
+        <h4>Lorum Ipsum</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+      </article>
+
+      <aside class="side1">
+        <h4>About</h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </aside>
+    </section>
+
+    <footer class="foot2">
+      <p><b>&copy;</b> All rights reserved for AghaAmil</p>
     </footer>
 
     <br />
