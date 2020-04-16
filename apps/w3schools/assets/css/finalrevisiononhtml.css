@@ -174,3 +174,53 @@ h3 {
   background-color: #01ece1;
   color: black;
 }
+
+.head1 {
+  background-color: #555555;
+  font-size: 2em;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.sec1 nav {
+  background-color: darkgrey;
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+}
+.sec1 nav ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+.sec1 nav ul li {
+  margin-top: 8px;
+}
+.sec1 nav ul li a {
+  font-size: 120%;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.sec1 article {
+  width: 70%;
+  padding: 10px 20px;
+  background-color: lightgrey;
+  float: left;
+  height: 300px; /* only for demonstration, should be removed */
+}
+.sec1 article h3 {
+  font-size: 1.8em;
+}
+.sec1::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.foot1 {
+  background-color: #555555;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
