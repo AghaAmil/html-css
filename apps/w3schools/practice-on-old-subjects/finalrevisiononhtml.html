@@ -927,9 +927,155 @@
       &#128516; &#128517; &#128151; &#128153; &#128525; &#129409; &#128169; &#128096; &#128089;
     </p>
 
-    <br><br>
+    <br /><br />
 
     <h2>15. HTML Forms</h2>
+    <h3>Text fields</h3>
+
+    <form action="#" method="post">
+      <label for="fname">First name:</label><br />
+      <input type="text" name="fname" id="fname" value="Amirhossein..." /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" name="lname" id="lname" value="Moravveji..." />
+    </form>
+    <br />
+
+    <h3>Radio Buttons</h3>
+
+    <form action="#" method="post">
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label>
+    </form>
+    <br />
+
+    <h3>The Submit Button</h3>
+
+    <form action="#" method="post">
+      <label for="fname">First name:</label><br />
+      <input type="text" name="fname" id="fname" value="Amirhossein..." /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" name="lname" id="lname" value="Moravveji..." /><br /><br />
+      <input type="submit" value="Submit!" />
+    </form>
+    <br />
+
+    <h3>The select Element</h3>
+
+    <form action="#" method="post">
+      <label for="vehicle">Choose a dearm Car: </label>
+      <select name="vehicle" id="vehicle">
+        <option value="Bugatti">Bugatti</option>
+        <option value="Koenigsegg">Koenigsegg</option>
+        <option value="Mercedes-Benz">Mercedes-Benz</option>
+        <option value="Lamborghini">Lamborghini</option>
+      </select>
+      <input type="submit" value="Submit Car!" />
+    </form>
+
+    <p>
+      By default, the first item in the drop-down list is selected. But this can be changed using
+      selected attribute.
+    </p>
+
+    <form action="#" method="post">
+      <label for="vehicle">Choose a car: </label>
+      <select name="vehicle" id="vehicle">
+        <option value="Aston-Martin">Aston-Martin</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Bentley" selected>Bentley</option>
+      </select>
+      <input type="submit" value="Submit Car!" />
+    </form>
+
+    <br />
+
+    <p>Use the size attribute to specify the number of visible values:</p>
+
+    <form action="#" method="post">
+      <label for="vehicle">Choose a dearm Car: </label>
+      <select name="vehicle" id="vehicle" size="3" multiple>
+        <option value="Bugatti">Bugatti</option>
+        <option value="Koenigsegg">Koenigsegg</option>
+        <option value="Mercedes-Benz">Mercedes-Benz</option>
+        <option value="Lamborghini">Lamborghini</option>
+        <option value="Aston-Martin">Aston-Martin</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Bentley">Bentley</option>
+      </select>
+      <input type="submit" value="Submit Car!" />
+    </form>
+
+    <br />
+
+    <h3>Textarea</h3>
+    <p>The textarea element defines a multi-line input field.</p>
+
+    <form action="#" method="post">
+      <textarea name="text" id="text" cols="30" rows="10">
+Please explain your issue with the system here...</textarea
+      ><br /><br />
+      <input type="submit" value="Submit Issue" />
+    </form>
+
+    <br />
+
+    <h3>Grouping Form Data with Fieldset</h3>
+    <p>
+      The fieldset element is used to group related data in a form, and the legend element defines a
+      caption for the fieldset element.
+    </p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Sign-in Menu</legend>
+        <br />
+        <label for="fname">First name: </label><br />
+        <input type="text" name="fname" id="fname" value="Amirhossein..." /><br />
+        <label for="lname">Last name: </label><br />
+        <input type="text" name="lname" id="lname" value="Moravveji..." /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The datalist Element</h3>
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+    <form action="#" method="post">
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Google Chrome">Google Chrome</option>
+        <option value="Mozilla Firefox">Mozilla Firefox</option>
+        <option value="Apple Safari">Apple Safari</option>
+        <option value="Microsoft Edge">Microsoft Edge</option>
+        <option value="Opera">Opera</option>
+      </datalist>
+      <input type="submit" value="Submit Browser!" />
+    </form>
+
+    <br />
+
+    <p>Another datalist</p>
+
+    <form action="#" method="post">
+      <input list="cars" name="car" />
+      <datalist id="cars">
+        <option value="Lexus">Lexus</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Kia">Kia</option>
+        <option value="Suzuki">Suzuki</option>
+      </datalist>
+      <input type="submit" value="Submit Car" />
+    </form>
+
+    <br />
 
     <br />
   </body>
