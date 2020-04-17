@@ -1298,9 +1298,108 @@ Please explain your issue with the system here...</textarea
           pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
           required
         />
+        <br />
+        <small>Format: 123-45-578</small>
+        <br /><br />
         <input type="submit" value="Submit" />
       </fieldset>
     </form>
+
+    <br />
+
+    <p>If the browser supports it, a time picker pops up when entering the input field.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Input Type Time</legend>
+        <br />
+        <label for="time">Select a time: </label>
+        <input type="time" name="time" id="time" />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <p>If the browser supports it, a date picker pops up when entering the input field.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Input Type Week</legend>
+        <br />
+        <label for="week">Select a week: </label>
+        <input type="week" name="week" id="week" />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Input Type Url</legend>
+        <br />
+        <label for="url">Add your homepage: </label>
+        <input type="url" name="url" id="url" />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The readonly Attribute</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>The input readonly attribute</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" value="Amirhossein" readonly /><br />
+        <label for="lname1">Last name:</label><br />
+        <input type="text" name="lname" id="lname1" placeholder="Family Name" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The disabled Attribute</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>The input disabled attribute</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" placeholder="First Name ..." size="30" /><br />
+        <label for="lname1">Last name:</label><br />
+        <input type="text" name="lname" id="lname1" placeholder="Family Name ..." size="30" /><br />
+        <label for="class">Class type: </label><br />
+        <input type="text" name="class" id="class" value="S Class" disabled /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The size Attribute & The maxlength Attribute</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>The input size attribute & The input maxlength attribute</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" placeholder="First Name" size="30" /><br />
+        <label for="lname1">Last name:</label><br />
+        <input type="text" name="lname" id="lname1" placeholder="Family Name" size="30" /><br />
+        <label for="code">PIN (4 digits): </label><br />
+        <input type="text" name="code" id="code" size="4" maxlength="4" /><br />
+        <label for="class">Class type: </label><br />
+        <input type="text" name="class" id="class" value="S Class" disabled /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
 
     <br />
   </body>
