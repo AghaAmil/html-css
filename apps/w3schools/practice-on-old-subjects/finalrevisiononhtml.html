@@ -1401,6 +1401,136 @@ Please explain your issue with the system here...</textarea
 
     <br />
 
+    <h3>The min and max Attributes</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>The min and max Attributes</legend>
+        <br />
+        <label for="maxdate1">Enter a date before 1980-01-01: </label>
+        <input type="date" name="maxdate" id="maxdate1" max="1979-12-31" /><br /><br />
+        <label for="mindate1">Enter a date after 2000-01-01: </label>
+        <input type="date" name="mindate" id="mindate1" min="2000-01-02" /><br /><br />
+        <label for="quantity">Quantity (between 1 and 10): </label>
+        <input type="number" name="quantity" id="quantity" min="1" max="10" /><br /><br />
+        <input type="submit" value="Submit!" />
+      </fieldset>
+    </form>
+
     <br />
+
+    <h3>The multiple Attribute</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>The input multiple attributes</legend>
+        <br />
+        <label for="file">Select multiple files: </label>
+        <input type="file" name="file" id="file" multiple /><br /><br />
+        <input type="submit" value="Submit!" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The pattern Attribute</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>The pattern Attribute</legend>
+        <br />
+        <label for="usern">Username: </label><br />
+        <input
+          type="text"
+          name="username"
+          id="usern"
+          placeholder="Enter your username..."
+          size="25"
+        /><br />
+        <label for="pawd">Password: </label><br />
+        <input
+          type="password"
+          name="pawd"
+          id="pawd"
+          placeholder="Enter your password"
+          size="25"
+        /><br /><br />
+        <label
+          for="eid"
+          title="Employee ID Sample: CON-*** (Starts with CON and followed with 3 digit number)"
+          >Employee ID:
+        </label>
+        <input
+          type="text"
+          name="eid"
+          id="eid"
+          pattern="[A-Za-z]{3}-[0-9]{3}"
+          title="Employee ID Sample: CON-*** (Starts with CON and followed with 3 digit number)"
+          required
+        /><br /><br />
+        <input type="submit" value="Enter" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The height and width Attributes</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>The input height and width attributes</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" placeholder="First Name" /><br />
+        <label for="lname1">Last name:</label><br />
+        <input type="text" name="lname" id="lname1" placeholder="Family Name" /><br /><br />
+        <input
+          type="image"
+          src="../assets/img/img_submit.gif"
+          alt="submit"
+          width="48"
+          height="48"
+        />
+      </fieldset>
+    </form>
+    <br />
+
+    <h3>The list Attribute</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>The input list attribute</legend>
+        <input list="gadgets" name="gadget" />
+        <datalist id="gadgets">
+          <option value="Macbook">Macbook</option>
+          <option value="Macbook Pro">Macbook Pro</option>
+          <option value="Mac Pro">Mac Pro</option>
+          <option value="iMac Pro">iMac Pro</option>
+        </datalist>
+        <input type="submit" value="Submit!" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The autocomplete Attribute</h3>
+
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>The autocomplete attribute</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" placeholder="First Name" /><br />
+        <label for="lname1">Last name:</label><br />
+        <input type="text" name="lname" id="lname1" placeholder="Family Name" /><br /><br />
+        <input
+          type="image"
+          src="../assets/img/img_submit.gif"
+          alt="submit"
+          width="48"
+          height="48"
+        />
+      </fieldset>
+    </form>
   </body>
 </html>
