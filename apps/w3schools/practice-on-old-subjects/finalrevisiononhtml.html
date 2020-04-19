@@ -1532,5 +1532,105 @@ Please explain your issue with the system here...</textarea
         />
       </fieldset>
     </form>
+
+    <br />
+
+    <h3>The input form attribute</h3>
+
+    <form action="#" method="post" id="form1">
+      <fieldset>
+        <legend>The autocomplete attribute</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" placeholder="First Name" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+
+    <label for="lname1">Last name:</label>
+    <input type="text" name="lname" id="lname1" placeholder="Family Name" form="form1" /><br />
+
+    <br />
+
+    <h3>The formaction Attribute</h3>
+    <p>
+      The input formaction attribute specifies the URL of the file that will process the input when
+      the form is submitted.
+    </p>
+    <p><strong>Note:</strong> This attribute overrides the action attribute of the form element.</p>
+
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>The input formaction attribute</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" placeholder="First Name" /><br />
+        <label for="lname1">Last name:</label><br />
+        <input type="text" name="lname" id="lname1" placeholder="Family Name" /><br /><br />
+        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit as Admin" formaction="#" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The formenctype Attribute</h3>
+    <p>
+      The input formenctype attribute specifies how the form-data should be encoded when submitted
+      (only for forms with method="post").
+    </p>
+    <p>
+      <strong>Note:</strong> This attribute overrides the enctype attribute of the form element.
+    </p>
+
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>The input formenctype attribute</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" placeholder="First Name" /><br />
+        <label for="lname1">Last name:</label><br />
+        <input type="text" name="lname" id="lname1" placeholder="Family Name" /><br /><br />
+        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit as Multipart/form-data" formenctype="#" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h3>The formmethod Attribute</h3>
+
+    <form action="#" method="post" autocomplete="on" target="_blank">
+      <fieldset>
+        <legend>The input formenctype attribute</legend>
+        <br />
+        <label for="fname1">First name:</label><br />
+        <input type="text" name="fname" id="fname1" placeholder="First Name" /><br />
+        <label for="lname1">Last name:</label><br />
+        <input type="text" name="lname" id="lname1" placeholder="Family Name" /><br /><br />
+        <input type="submit" value="Submit using GET" formmethod="GET" />
+        <input type="submit" value="Submit Using POST" />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <h2>16. HTML5 Canvas</h2>
+    <p>Sample Canvas</p>
+    <canvas id="can1" width="200" height="100" style="border: 1px solid black;"></canvas>
+
+    <h2>17. HTML5 SVG</h2>
+    <p>The HTML svg element is a container for SVG graphics.</p>
+
+    <svg width="100" height="100">
+      <circle circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="lightblue" />
+    </svg>
+
+    <h2>18. HTML Multimedia</h2>
+    
+
+    <br />
   </body>
 </html>
