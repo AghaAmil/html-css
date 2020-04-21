@@ -1645,7 +1645,71 @@ Please explain your issue with the system here...</textarea
       Your browser does not support the video tag.
     </video>
 
+    <p><b>Note:</b> The autoplay attribute does not work on some mobile devices.</p>
+
     <br />
+
+    <h3>HTML5 Audio</h3>
+
+    <audio controls>
+      <source src="../assets/videos/horse.ogg" type="audio/ogg" />
+      <source src="../assets/videos/horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <br />
+
+    <h3>HTML Plug-ins</h3>
+    <p>
+      The object element is supported by all browsers.<br />
+      The object element defines an embedded object within an HTML document.
+    </p>
+
+    <object data="../assets/img/audi.jpeg"></object>
+
+    <p>
+      The embed element is supported in all major browsers.<br />
+      The embed element also defines an embedded object within an HTML document.
+    </p>
+
+    <embed src="../assets/img/audi.jpeg" />
+
+    <br />
+
+    <h2>19. HTML YouTube Videos</h2>
+    <iframe
+      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      frameborder="0"
+      width="600px"
+      height="300px"
+    ></iframe>
+
+    <h3>YouTube Autoplay</h3>
+
+    <iframe
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"
+      frameborder="0"
+      width="600px"
+      height="300px"
+    ></iframe>
+
+    <h3>YouTube Loop</h3>
+
+    <iframe
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
+      frameborder="0"
+      width="600px"
+      height="300px"
+    ></iframe>
+
+    <h3>YouTube Controls - Off</h3>
+
+    <iframe
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+      frameborder="0"
+      width="600px"
+      height="300px"
+    ></iframe>
 
     <br />
   </body>
