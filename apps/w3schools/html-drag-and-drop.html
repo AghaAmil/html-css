@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML5 Geolocation Tutorial" />
+    <meta name="auther" content="Amirhossein Moravveji" />
+    <meta name="keywords" content="HTML, CSS, Javascript, HTML5 Drag and Drop" />
+    <title>HTML5 Drag and Drop Tutorial</title>
+    <style>
+      body {
+        font-family: calibri;
+        font-size: 105%;
+      }
+      h1 {
+        font-size: 2.8em;
+        color: navy;
+        text-align: center;
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 1.9em;
+      }
+      h3 {
+        font-size: 140%;
+      }
+      .sp1 {
+        color: red;
+        font-weight: bold;
+      }
+
+      #div1 {
+        width: 350px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid darkgrey;
+      }
+    </style>
+
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData('text', ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData('text');
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+  <body>
+    <h1>HTML5 Drag and Drop</h1>
+    <br />
+
+    <p>Drag the W3Schools image into the rectangle:</p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <br />
+
+    <img
+      src="assets/img/img_logo.gif"
+      alt="w3 Logo"
+      width="336"
+      height="69"
+      id="drag1"
+      draggable="true"
+      ondragstart="drag(event)"
+    />
+
+    <br />
+
+    <h3>Drag Image Back & Forth</h3>
+
+    <br />
+  </body>
+</html>

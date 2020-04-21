@@ -36,25 +36,20 @@
   <body>
     <h1>HTML5 Geolocation</h1>
     <br />
-
     <p>
       The HTML Geolocation API is used to locate a user's position.<br />
       Since this can compromise privacy, the position is not available unless the user approves it.
     </p>
-
     <h2>Using HTML Geolocation</h2>
     <p>
       The <span class="sp1">getCurrentPosition()</span> method is used to return the user's
       position.
     </p>
-
     <p>Click the below button to ger your current coordinates on planet Earth.</p>
     <button type="button" onclick="getLocation()">Geolocation Finder</button>
     <p id="demo"></p>
-
     <script>
       var x = document.getElementById('demo');
-
       function getLocation() {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -62,12 +57,10 @@
           x.innerHTML = 'Geolocation is not supported by this browser.';
         }
       }
-
       function showPosition(position) {
         x.innerHTML =
           'Latitude: ' + position.coords.latitude + '<br>Longitude: ' + position.coords.longitude;
       }
-
       function showError(error) {
         switch (error.code) {
           case error.PERMISSION_DENIED:
@@ -85,7 +78,6 @@
         }
       }
     </script>
-
     <br />
   </body>
 </html>
