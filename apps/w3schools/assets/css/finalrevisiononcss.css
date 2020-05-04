@@ -21,3 +21,51 @@ h3 {
   color: red;
   font-weight: bold;
 }
+
+.div1 {
+  width: 500px;
+  height: 200px;
+  padding: 5px;
+  background-color: lightblue;
+}
+
+.div2-container .box {
+  width: 25%;
+  padding: 50px;
+  text-align: center;
+  float: left;
+  background-color: #07d411;
+}
+.div2-container {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.div2 {
+  width: 500px;
+  height: 200px;
+  padding: 5px;
+  background-image: url(../img/paper.gif);
+}
+.repeat {
+  background-image: url(../img/gradient_bg.png);
+  background-repeat: repeat-x;
+}
+
+.div3 {
+  /* background-color: #eee;
+  background-image: url(../img/img_tree.png);
+  background-repeat: no-repeat;
+  background-position: top right; */
+  background: #eee url(../img/img_tree.png) no-repeat top right;
+  height: 400px;
+  width: 100%;
+  padding: 5px;
+  padding-right: 200px;
+}
+
+.fixed {
+  background-attachment: fixed;
+  height: 1000px;
+}
