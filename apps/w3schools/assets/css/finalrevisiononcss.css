@@ -28,7 +28,6 @@ h3 {
   padding: 5px;
   background-color: lightblue;
 }
-
 .div2-container .box {
   width: 25%;
   padding: 50px;
@@ -41,7 +40,6 @@ h3 {
   content: '';
   clear: both;
 }
-
 .div2 {
   width: 500px;
   height: 200px;
@@ -52,7 +50,6 @@ h3 {
   background-image: url(../img/gradient_bg.png);
   background-repeat: repeat-x;
 }
-
 .div3 {
   /* background-color: #eee;
   background-image: url(../img/img_tree.png);
@@ -63,9 +60,71 @@ h3 {
   width: 100%;
   padding: 5px;
   padding-right: 200px;
+  overflow: hidden;
 }
-
 .fixed {
   background-attachment: fixed;
   height: 1000px;
+}
+.div4 {
+  background: #4881a7 url(../img/img_tree.png) no-repeat top left;
+  padding: 10px;
+  width: 100%;
+  height: 400px;
+}
+.div4-child {
+  background: lightblue;
+  padding: 10px;
+  margin-left: 200px;
+}
+
+.brdr {
+  border-width: 10px;
+  border-color: slateblue;
+  padding: 15px;
+}
+.style1 {
+  border-style: solid;
+}
+.style2 {
+  border-style: dashed double;
+}
+.style3 {
+  border-style: ridge dashed groove;
+}
+.style4 {
+  border-style: solid dashed dotted double;
+}
+.brdr1 {
+  border-bottom: solid 5px dodgerblue;
+  border-radius: 15px;
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.div5 {
+  border: 2px solid #dbc608;
+  background: #e5f323;
+  padding: 10px;
+  margin-top: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+.div6 {
+  border: 2px solid blue;
+  margin-left: 100px;
+  padding: 10px;
+}
+.div6 p {
+  margin-left: inherit;
+}
+
+.div7 {
+  border: 2px solid darkgrey;
+  background: #d793ff;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 80px;
 }
