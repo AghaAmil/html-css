@@ -136,6 +136,33 @@ h3 {
   outline-offset: 10px;
 }
 
-.div8{
-  
+.div8 {
+  padding: 15px;
+  margin: auto;
+  border: 5px solid darkgreen;
+  outline: 10px solid #27a10e;
+}
+.div8 h3 {
+  font-family: Verdana;
+  text-transform: capitalize;
+  color: #196880;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+}
+.div8 p {
+  letter-spacing: 1.5;
+  word-spacing: 0.9;
+  line-height: 1.4;
+  text-indent: 50px;
+  text-align: justify;
+}
+.div8 p a {
+  color: #af057c;
+  font-style: italic;
+  text-decoration: none;
+}
+.p2 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
 }
