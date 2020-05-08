@@ -220,3 +220,41 @@ h3 {
   color: white;
   font-weight: bold;
 }
+
+.list1 {
+  background: #d19512;
+  list-style: inside;
+  padding: 12px;
+}
+.list1 li {
+  background: #e2c179;
+  padding: 7px;
+  margin-left: 20px;
+}
+.list2 {
+  background: #12699b;
+  padding: 20px;
+}
+.list2 li {
+  background: #04b6ec;
+  margin: 5px;
+  padding: 5px;
+}
+.list3 {
+  list-style: none;
+  background: darkgrey;
+  border-left: 8px solid tomato;
+  padding: 10px 20px;
+}
+.list4 {
+  list-style: none;
+  padding: 0;
+  border: 1px solid darkgrey;
+}
+.list4 li {
+  padding: 8px 16px;
+  border-bottom: 1px solid darkgrey;
+}
+.list4 li:last-child {
+  border-bottom: none;
+}
