@@ -258,3 +258,36 @@ h3 {
 .list4 li:last-child {
   border-bottom: none;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+caption {
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 10px;
+  caption-side: bottom;
+}
+th,
+td {
+  border: 2px solid darkgrey;
+  padding: 8px 16px;
+}
+th {
+  padding: 15px;
+  background: #4521e7;
+  color: white;
+  font-size: 1.2em;
+}
+td:last-child {
+  text-align: center;
+}
+tr:nth-child(even) {
+  background: #e7b5e7;
+}
+tr:hover {
+  background: #f196f1;
+}
