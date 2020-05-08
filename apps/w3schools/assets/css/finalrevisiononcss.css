@@ -167,3 +167,56 @@ h3 {
   direction: rtl;
   unicode-bidi: bidi-override;
 }
+
+.a1:link {
+  color: #505050;
+  text-decoration: none;
+  cursor: zoom-in;
+}
+.a1:visited {
+  color: yellowgreen;
+  text-decoration: none;
+  cursor: zoom-in;
+}
+.a1:hover {
+  color: #9a06f0;
+  text-decoration: underline;
+  cursor: zoom-in;
+}
+.a1:active {
+  color: red;
+  text-decoration: underline;
+  cursor: zoom-in;
+}
+.a2:link,
+.a2:visited {
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: Verdana;
+  color: white;
+  background: #d805b5;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+.a2:hover,
+.a2:active {
+  background: #750162;
+  font-weight: bold;
+}
+.a3:link,
+.a3:visited {
+  display: inline-block;
+  color: #0f8d6d;
+  border: 2px solid #0f8d6d;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.a3:hover,
+.a3:active {
+  background: #0f8d6d;
+  color: white;
+  font-weight: bold;
+}
