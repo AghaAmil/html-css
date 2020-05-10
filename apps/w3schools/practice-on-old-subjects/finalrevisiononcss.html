@@ -458,6 +458,47 @@
     <br /><br />
 
     <h2>12. CSS Layout - The display Property</h2>
+    <p>
+      <strong>Note:</strong> Setting the display property of an element only changes
+      <strong>how the element is displayed</strong>, NOT what kind of element it is. So, an inline
+      element with <span class="sp1">display: block;</span> is not allowed to have other block
+      elements inside it.
+    </p>
+
+    <h3>Hide an Element - display:none or visibility:hidden?</h3>
+
+    <div class="container">
+      <div id="imgbox1">
+        <span class="sp1" style="letter-spacing: 1.4px;">display:none</span>
+        <img src="../assets/img/img_5terre.jpg" alt="img_5terre" />
+        <button onclick="remove()">Remove</button>
+      </div>
+      <div id="imgbox2" style="letter-spacing: 1.4px;">
+        <span class="sp1">visibility:hidden</span>
+        <img src="../assets/img/img_forest.jpg " alt="img_forest" />
+        <button onclick="hide()">Hide</button>
+      </div>
+      <div id="imgbox3" style="letter-spacing: 1.4px;">
+        <span class="sp1">Reset</span>
+        <img src="../assets/img/img_lights.jpg" alt="img_lights" />
+        <button onclick="reset()">Reset All</button>
+      </div>
+    </div>
+
+    <script>
+      function remove() {
+        document.getElementById('imgbox1').style.display = 'none';
+      }
+
+      function hide() {
+        document.getElementById('imgbox2').style.visibility = 'hidden';
+      }
+
+      function reset() {
+        document.getElementById('imgbox1').style.display = 'block';
+        document.getElementById('imgbox2').style.visibility = 'visible';
+      }
+    </script>
 
     <br />
   </body>

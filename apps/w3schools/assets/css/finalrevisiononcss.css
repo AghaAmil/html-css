@@ -21,6 +21,7 @@ h3 {
 .sp1 {
   color: red;
   font-weight: bold;
+  background: #eee;
 }
 
 .div1 {
@@ -290,4 +291,37 @@ tr:nth-child(even) {
 }
 tr:hover {
   background: #f196f1;
+}
+
+.container div {
+  width: 30%;
+  padding: 10px;
+  margin: 0 5px;
+  float: left;
+  text-align: center;
+  border: 2px solid lightgrey;
+}
+.container div img {
+  width: 100%;
+  margin: 10px 0;
+}
+.container div button {
+  width: 100%;
+  display: block;
+  padding: 10px 16px;
+  background: #2f8d09;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container div button:hover {
+  background: darkgrey;
+  color: #2f8d09;
+  font-weight: bolder;
+}
+.container {
+  clear: both;
+  content: '';
+  display: table;
 }
