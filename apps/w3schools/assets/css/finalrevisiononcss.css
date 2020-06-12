@@ -325,3 +325,32 @@ tr:hover {
   content: '';
   display: table;
 }
+
+.div9 {
+  position: static;
+  padding: 5px;
+  border: 1px solid palevioletred;
+}
+.div10 {
+  position: relative;
+  top: 10px;
+  left: 50px;
+  padding: 5px;
+  border: 1px solid palevioletred;
+}
+.div11 {
+  position: relative;
+  border: 5px solid #ce2102;
+  padding: 10px;
+  width: 500px;
+  height: 300px;
+}
+.div11 div {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  border: 3px solid blue;
+  padding: 5px;
+  width: 220px;
+  height: 90px;
+}
