@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: calibri;
+  font-size: 105%;
+}
+h1 {
+  font-size: 2.8em;
+  color: navy;
+  text-align: center;
+}
+h2 {
+  color: dodgerblue;
+  font-size: 1.9em;
+  font-family: 'Sofia';
+}
+h3 {
+  font-size: 140%;
+}
+.sp1 {
+  color: red;
+  font-weight: bold;
+  background: #eee;
+}
