@@ -74,3 +74,10 @@ h3 {
   background: #b4009e;
   padding-left: 20px;
 }
+
+#link_frame {
+  width: 80%;
+  height: 400px;
+  border: 1px solid darkgrey;
+  padding: 10px;
+}
