@@ -195,6 +195,153 @@
     <br />
 
     <h2>6. HTML Images</h2>
+    <p>Specify image size using HTML attribute.</p>
+    <img src="../assets/img/img_girl.jpg" alt="img_girl" width="500" height="600" />
+    <br />
+
+    <p>Here we use the style attribute to specify the width and height of an image:</p>
+    <img src="../assets/img/img_girl.jpg" alt="img_girl" style="width: 500px; height: 600px;" />
+    <br />
+    <img src="../assets/img/programming.gif" alt="programmer" width="48" height="48" />
+    <br />
+
+    <h3>Width/Height Attributes or Style?</h3>
+    <div class="div6">
+      <p>
+        The first image uses the width attribute (set to 128 pixels), but the style in the head
+        section overrides it, and sets the width to 100%.
+      </p>
+      <img src="../assets/img/html5.gif" alt="html5logo" width="128" height="128" />
+
+      <p>
+        The second image uses the style attribute to set the width to 128 pixels, this will not be
+        overridden by the style in the head section:
+      </p>
+      <img src="../assets/img/html5.gif" alt="html5logo" style="width: 128px; height: 128px;" />
+    </div>
+    <br />
+
+    <h3>Images on Another Server</h3>
+    <p>The address of the image is: https://www.w3schools.com/images/w3schools_green.jpg</p>
+    <img
+      src="https://www.w3schools.com/images/w3schools_green.jpg"
+      alt="W3Schools.com"
+      style="width: 104px; height: 142px;"
+    />
+    <br />
+
+    <h3>Floating Images</h3>
+    <h4>Float the image to the right:</h4>
+    <p>
+      <img
+        src="../assets/img/smiley.gif"
+        alt="smiley"
+        style="float: right; height: 42px; width: 42px;"
+      />
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a
+      floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+    <h4>Float the image to the left:</h4>
+    <p>
+      <img
+        src="../assets/img/smiley.gif"
+        alt="smiley"
+        style="float: left; height: 42px; width: 42px;"
+      />
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a
+      floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+    <br />
+
+    <h3>HTML Image Mapping</h3>
+    <img src="../assets/img/workplace.jpg" alt="workplace" usemap="#workplace" />
+
+    <map name="workplace">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="../html-images-computer.html"
+      />
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="../html-images-phone.html" />
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="../html-images-coffee.html" />
+    </map>
+    <br />
+
+    <p>
+      Another example of image mapping<br />
+      Click on the croissant to go to a new page and read more about the topic:
+    </p>
+
+    <img
+      src="../assets/img/frenchfood.jpg"
+      alt="frenchfood"
+      style="width: 450px; height: 675px;"
+      usemap="#food"
+    />
+
+    <map name="food">
+      <area
+        shape="poly"
+        coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+        href="../html-images-frenchfood.html"
+        alt="frenchfood"
+      />
+    </map>
+
+    <h3>Background Cover</h3>
+    <div class="div7">
+      Set the background-size property to "cover" and the background image will cover the entire
+      element, in this case the body element.
+    </div>
+    <br />
+
+    <h3>The HTML picture Element</h3>
+    <p>
+      Resize the browser to see different versions of the picture loading at different viewport
+      sizes. The browser looks for the first source element where the media query matches the user's
+      current viewport width, and fetches the image specified in the srcset attribute.
+      <br />
+      The img element is required as the last child tag of the picture declaration block. The img
+      element is used to provide backward compatibility for browsers that do not support the picture
+      element, or if none of the source tags matched.
+    </p>
+
+    <picture>
+      <source media="(min-width: 1000px)" srcset="../assets/img/flowers.jpg" />
+      <source media="(min-width: 600px)" srcset="../assets/img/img_pink_flowers.jpg" />
+      <img src="../assets/img/img_orange_flowers.jpg" alt="flowers" style="width: auto;" />
+    </picture>
+    <br>
+
+    <h2>7. HTML Tables</h2>
+
+    <h3>Table With Border</h3>
+    <p>Use the CSS border property to add a border to the table.</p>
+
+    <table style="width: 90%;" class="tb1">
+      <caption>Employees</caption>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Amirhossein</td>
+        <td>Moravveji</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>Mehrdad</td>
+        <td>Arefi</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>Faramarz</td>
+        <td>Arefi</td>
+        <td>35</td>
+      </tr>
+    </table>
 
 
     <br />

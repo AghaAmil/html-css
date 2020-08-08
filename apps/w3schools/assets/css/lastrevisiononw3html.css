@@ -111,3 +111,31 @@ h3 {
   font-size: 125%;
   font-weight: bold;
 }
+
+.div6 img {
+  width: 100%;
+}
+
+.div7 {
+  padding: 10px;
+  width: 80%;
+  height: 500px;
+  background-image: url('../img/img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.tb1 caption {
+  margin: 10px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.tb1 {
+  border-collapse: collapse;
+}
+.tb1 td,
+.tb1 th {
+  padding: 7px;
+  border: 1px solid black;
+}
