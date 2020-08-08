@@ -312,7 +312,7 @@
       <source media="(min-width: 600px)" srcset="../assets/img/img_pink_flowers.jpg" />
       <img src="../assets/img/img_orange_flowers.jpg" alt="flowers" style="width: auto;" />
     </picture>
-    <br>
+    <br />
 
     <h2>7. HTML Tables</h2>
 
@@ -320,7 +320,9 @@
     <p>Use the CSS border property to add a border to the table.</p>
 
     <table style="width: 90%;" class="tb1">
-      <caption>Employees</caption>
+      <caption>
+        Employees
+      </caption>
       <tr>
         <th>Firstname</th>
         <th>Lastname</th>
@@ -342,7 +344,121 @@
         <td>35</td>
       </tr>
     </table>
+    <br />
 
+    <h3>Horizontal Headings:</h3>
+    <table style="width: 90%;" class="tb1">
+      <caption>
+        Customer's Information
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Mobile Number</th>
+        <th>Home Number</th>
+      </tr>
+      <tr>
+        <td>Ehsan Dashti</td>
+        <td>0912 311 8818</td>
+        <td>021 22334455</td>
+      </tr>
+    </table>
+
+    <h3>Vertical Headings:</h3>
+    <table style="width: 90%;" class="tb1">
+      <caption>
+        Customer's Information
+      </caption>
+      <tr>
+        <th>Mobile Number</th>
+        <td>Ehsan Dashti</td>
+      </tr>
+      <tr>
+        <th>Mobile Number</th>
+        <td>0912 311 8818</td>
+      </tr>
+      <tr>
+        <th>Home Number</th>
+        <td>021 22334455</td>
+      </tr>
+    </table>
+    <br />
+
+    <table style="width: 90%;" class="tb1">
+      <caption>
+        Very Unique Table
+      </caption>
+      <tr>
+        <td>
+          <p>This is a paragraph</p>
+          <p>This is another paragraph</p>
+        </td>
+        <td>
+          This cell contains a table:
+          <table class="tb1">
+            <tr>
+              <td>A</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>D</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          This cell contains a list
+          <ul>
+            <li>Apple</li>
+            <li>Microsoft</li>
+            <li>Google</li>
+          </ul>
+        </td>
+        <td>Hello</td>
+      </tr>
+    </table>
+    <br />
+
+    <h3>The Final Design Table</h3>
+
+    <table class="tb2">
+      <caption>
+        1. Companies Details
+      </caption>
+      <tr>
+        <th>Company Name</th>
+        <th>Location</th>
+        <th>ID Code</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Apple Inc</td>
+        <td>Cupertino</td>
+        <td>10103304455</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Microsoft Inc</td>
+        <td>Washington DC</td>
+        <td colspan="2" style="text-align: center;">Information does not exist</td>
+      </tr>
+      <tr>
+        <td>Tecnotree Inc</td>
+        <td>Tehran</td>
+        <td>1313450184721</td>
+        <td rowspan="2">10</td>
+      </tr>
+      <tr>
+        <td>Amazon Inc</td>
+        <td>New York Office</td>
+        <td>100093488231</td>
+      </tr>
+      <td>Google</td>
+      <td>San Francisco</td>
+      <td>100022793401</td>
+      <td>30</td>
+    </table>
 
     <br />
   </body>

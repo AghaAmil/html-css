@@ -130,6 +130,7 @@ h3 {
   margin: 10px auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+  color: #25942e;
 }
 .tb1 {
   border-collapse: collapse;
@@ -138,4 +139,33 @@ h3 {
 .tb1 th {
   padding: 7px;
   border: 1px solid black;
+}
+.tb2 caption {
+  margin: 10px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #5c0d38;
+  caption-side: bottom;
+}
+.tb2 {
+  border-collapse: collapse;
+  width: 90%;
+}
+.tb2 th,
+.tb2 td {
+  border: 2px solid black;
+  padding: 7px;
+}
+.tb2 th {
+  padding: 10px;
+  background: #7612d3;
+  color: white;
+  font-weight: bold;
+}
+.tb2 tr:nth-child(even) {
+  background: #db80d7;
+}
+.tb2 tr:hover {
+  background: #d1738b;
 }
