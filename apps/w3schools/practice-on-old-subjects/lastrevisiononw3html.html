@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Last Practice of W3Schools HTML" />
+    <meta name="auther" content="Amirhossein Moravveji" />
     <title>Last Revision on W3Schools HTML or Leave This Dream</title>
     <link rel="stylesheet" href="../assets/css/lastrevisiononw3html.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
@@ -681,6 +684,64 @@
         }
 
         document.getElementById('mylamp').src = pic;
+      }
+    </script>
+
+    <h2>11. HTML Layout Elements and Techniques</h2>
+
+    <header class="head1">
+      <h3>Cities Information</h3>
+    </header>
+
+    <section class="sec1">
+      <nav>
+        <ul>
+          <li><button type="button" onclick="city1()">London</button></li>
+          <li><button type="button" onclick="city2()">Paris</button></li>
+          <li><button type="button" onclick="city3()">Tokyo</button></li>
+        </ul>
+      </nav>
+
+      <article class="art1">
+        <h3 id="h3java">London</h3>
+        <p id="p1java">
+          London is the capital and largest city of England and the United Kingdom.
+        </p>
+        <p id="p2java">
+          The city stands on the River Thames in the south-east of England, at the head of its
+          50-mile estuary leading to the North Sea, London has been a major settlement for two
+          millennia. Londinium was founded by the Romans.
+        </p>
+      </article>
+    </section>
+
+    <footer class="fot1">
+      <p>&copy;All rights reserved for AghaAmil.</p>
+    </footer>
+
+    <script>
+      function city1() {
+        document.getElementById('h3java').innerHTML = 'London';
+        document.getElementById('p1java').innerHTML =
+          'London is the capital and largest city of England and the United Kingdom.';
+        document.getElementById('p2java').innerHTML =
+          'The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea, London has been a major settlement for two millennia. Londinium was founded by the Romans.';
+      }
+
+      function city2() {
+        document.getElementById('h3java').innerHTML = 'Paris';
+        document.getElementById('p1java').innerHTML =
+          'Paris is the capital and most populous city of France, with an estimated population of 2,150,271 residents as of 2020, in an area of 105 square kilometres';
+        document.getElementById('p2java').innerHTML =
+          'Since the 17th century, Paris has been one of Europes major centres of finance, diplomacy, commerce, fashion, science and arts.';
+      }
+
+      function city3() {
+        document.getElementById('h3java').innerHTML = 'Tokyo';
+        document.getElementById('p1java').innerHTML =
+          'Tokyo, officially Tokyo Metropolis, is the capital and most populous prefecture of Japan.';
+        document.getElementById('p2java').innerHTML =
+          'Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japans main island, Honshu. Tokyo is the political and economic center of the country, as well as the seat of the Emperor of Japan and the national government.';
       }
     </script>
 

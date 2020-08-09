@@ -200,3 +200,55 @@ h3 {
   background-color: black;
   color: dodgerblue;
 }
+
+.head1 {
+  background: #414141;
+  color: tomato;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+.sec1 nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #9b9b9b;
+}
+.sec1 nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sec1 nav ul li button {
+  border: none;
+  background: #ee8e10;
+  padding: 15px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.sec1 .art1 {
+  float: left;
+  width: 70%;
+  height: 300px;
+  background: #888888;
+  padding: 0 15px;
+}
+.sec1 .art1 h3 {
+  font-size: 1.7em;
+}
+.sec1::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.fot1 {
+  background: #494949;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  
+}
