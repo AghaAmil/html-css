@@ -169,3 +169,34 @@ h3 {
 .tb2 tr:hover {
   background: #d1738b;
 }
+.tmain thead {
+  background: #ccc90a;
+}
+.tmain tbody {
+  background: #31cc0a;
+}
+.tmain tfoot {
+  background: #0abfcc;
+}
+
+.nav1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #414040;
+  overflow: hidden;
+}
+.nav1 li {
+  float: left;
+}
+.nav1 li a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+.nav1 li a:hover {
+  background-color: black;
+  color: dodgerblue;
+}
