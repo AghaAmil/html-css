@@ -250,5 +250,37 @@ h3 {
   padding: 15px;
   text-align: center;
   color: white;
-  
+}
+
+.divl {
+  float: left;
+  width: 25%;
+  padding: 30px;
+  background: #40b3df;
+  text-align: center;
+}
+.divc {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  background: #b8b8b8;
+  text-align: center;
+}
+.divr {
+  float: left;
+  width: 25%;
+  padding: 30px;
+  background: #53df40;
+  text-align: center;
+}
+.div8::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+@media screen and (max-width: 750px) {
+  .divl, .divc, .divr {
+    width: 100%;
+    text-align: left;
+  }
 }
