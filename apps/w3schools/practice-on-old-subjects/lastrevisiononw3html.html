@@ -611,6 +611,78 @@
       <a href="https://www.w3schools.com" target="frame1">Click</a> me to open W3Schools in the
       frame above.
     </p>
+    <br />
+
+    <h2>10. HTML JavaScript</h2>
+
+    <p>I wil focus on this area later when I'm done with HTML & CSS.</p>
+    <br />
+    <h3>Use JavaScript to Change Things</h3>
+
+    <button type="button" onclick="time()">Click me to display Date & Time</button>
+    <p id="d&t"></p>
+    <br />
+
+    <p>This example writes "Hello JavaScript!" into an HTML element</p>
+    <p id="text"></p>
+    <br />
+
+    <p>JavaScript can change the content of an HTML element:</p>
+    <button type="button" onclick="change()">Click Me!</button>
+    <p id="chg">Click on button above to make Javascript changes this text into ....</p>
+    <br />
+
+    <p id="syl">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="styl()">Click Me!</button>
+    <br />
+
+    <h3>My First Challanging JS Code</h3>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <img
+      src="../assets/img/pic_bulboff.gif"
+      alt="pic_bulboff"
+      width="100"
+      height="180"
+      id="mylamp"
+    />
+    <br /><br />
+    <button type="button" onclick="lamp(1)">Light On!</button>
+    <button type="button" onclick="lamp(0)">Light Off!</button>
+
+    <br />
+
+    <script>
+      function time() {
+        document.getElementById('d&t').innerHTML = Date();
+        document.getElementById('d&t').style.backgroundColor = 'yellow';
+      }
+
+      document.getElementById('text').innerHTML = 'Hello JavaScript!';
+
+      function change() {
+        document.getElementById('chg').innerHTML = 'Hello JavaScript!';
+      }
+
+      function styl() {
+        document.getElementById('syl').style.fontSize = '25px';
+        document.getElementById('syl').style.backgroundColor = 'lightblue';
+        document.getElementById('syl').style.color = 'blue';
+        document.getElementById('syl').style.fontFamily = 'Verdana';
+      }
+
+      function lamp(sw) {
+        var pic;
+
+        if (sw == 0) {
+          pic = '../assets/img/pic_bulboff.gif';
+        } else {
+          pic = '../assets/img/pic_bulbon.gif';
+        }
+
+        document.getElementById('mylamp').src = pic;
+      }
+    </script>
 
     <br />
   </body>
