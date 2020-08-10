@@ -3,12 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="description" content="Last Practice of W3Schools HTML" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="auther" content="Amirhossein Moravveji" />
     <title>Last Revision on W3Schools HTML or Leave This Dream</title>
     <link rel="stylesheet" href="../assets/css/lastrevisiononw3html.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+
+    <script>
+      function time() {
+        document.getElementById('d&t').innerHTML = Date();
+        document.getElementById('d&t').style.backgroundColor = 'yellow';
+      }
+
+      document.getElementById('text').innerHTML = 'Hello JavaScript!';
+
+      function change() {
+        document.getElementById('chg').innerHTML = 'Hello JavaScript!';
+      }
+
+      function styl() {
+        document.getElementById('syl').style.fontSize = '25px';
+        document.getElementById('syl').style.backgroundColor = 'lightblue';
+        document.getElementById('syl').style.color = 'blue';
+        document.getElementById('syl').style.fontFamily = 'Verdana';
+      }
+
+      function lamp(sw) {
+        var pic;
+
+        if (sw == 0) {
+          pic = '../assets/img/pic_bulboff.gif';
+        } else {
+          pic = '../assets/img/pic_bulbon.gif';
+        }
+
+        document.getElementById('mylamp').src = pic;
+      }
+
+      function city1() {
+        document.getElementById('h3java').innerHTML = 'London';
+        document.getElementById('p1java').innerHTML =
+          'London is the capital and largest city of England and the United Kingdom.';
+        document.getElementById('p2java').innerHTML =
+          'The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea, London has been a major settlement for two millennia. Londinium was founded by the Romans.';
+      }
+
+      function city2() {
+        document.getElementById('h3java').innerHTML = 'Paris';
+        document.getElementById('p1java').innerHTML =
+          'Paris is the capital and most populous city of France, with an estimated population of 2,150,271 residents as of 2020, in an area of 105 square kilometres';
+        document.getElementById('p2java').innerHTML =
+          'Since the 17th century, Paris has been one of Europes major centres of finance, diplomacy, commerce, fashion, science and arts.';
+      }
+
+      function city3() {
+        document.getElementById('h3java').innerHTML = 'Tokyo';
+        document.getElementById('p1java').innerHTML =
+          'Tokyo, officially Tokyo Metropolis, is the capital and most populous prefecture of Japan.';
+        document.getElementById('p2java').innerHTML =
+          'Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japans main island, Honshu. Tokyo is the political and economic center of the country, as well as the seat of the Emperor of Japan and the national government.';
+      }
+    </script>
   </head>
   <body>
     <h1>Last Revision on W3Schools HTML or Leave This Dream</h1>
@@ -655,38 +711,6 @@
 
     <br />
 
-    <script>
-      function time() {
-        document.getElementById('d&t').innerHTML = Date();
-        document.getElementById('d&t').style.backgroundColor = 'yellow';
-      }
-
-      document.getElementById('text').innerHTML = 'Hello JavaScript!';
-
-      function change() {
-        document.getElementById('chg').innerHTML = 'Hello JavaScript!';
-      }
-
-      function styl() {
-        document.getElementById('syl').style.fontSize = '25px';
-        document.getElementById('syl').style.backgroundColor = 'lightblue';
-        document.getElementById('syl').style.color = 'blue';
-        document.getElementById('syl').style.fontFamily = 'Verdana';
-      }
-
-      function lamp(sw) {
-        var pic;
-
-        if (sw == 0) {
-          pic = '../assets/img/pic_bulboff.gif';
-        } else {
-          pic = '../assets/img/pic_bulbon.gif';
-        }
-
-        document.getElementById('mylamp').src = pic;
-      }
-    </script>
-
     <h2>11. HTML Layout Elements and Techniques</h2>
 
     <header class="head1">
@@ -721,32 +745,6 @@
 
     <br />
 
-    <script>
-      function city1() {
-        document.getElementById('h3java').innerHTML = 'London';
-        document.getElementById('p1java').innerHTML =
-          'London is the capital and largest city of England and the United Kingdom.';
-        document.getElementById('p2java').innerHTML =
-          'The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea, London has been a major settlement for two millennia. Londinium was founded by the Romans.';
-      }
-
-      function city2() {
-        document.getElementById('h3java').innerHTML = 'Paris';
-        document.getElementById('p1java').innerHTML =
-          'Paris is the capital and most populous city of France, with an estimated population of 2,150,271 residents as of 2020, in an area of 105 square kilometres';
-        document.getElementById('p2java').innerHTML =
-          'Since the 17th century, Paris has been one of Europes major centres of finance, diplomacy, commerce, fashion, science and arts.';
-      }
-
-      function city3() {
-        document.getElementById('h3java').innerHTML = 'Tokyo';
-        document.getElementById('p1java').innerHTML =
-          'Tokyo, officially Tokyo Metropolis, is the capital and most populous prefecture of Japan.';
-        document.getElementById('p2java').innerHTML =
-          'Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japans main island, Honshu. Tokyo is the political and economic center of the country, as well as the seat of the Emperor of Japan and the national government.';
-      }
-    </script>
-
     <h2>12. HTML Responsive Web Design</h2>
 
     <h3>Media Queries</h3>
@@ -758,7 +756,58 @@
       <div class="divc">Main Content</div>
       <div class="divr">RightContent</div>
     </div>
+    <br />
+
+    <header class="head2">
+      <h3>Cinque Terre</h3>
+      <p>Resize the browser window</p>
+    </header>
+
+    <section class="sec2">
+      <nav>
+        <ul>
+          <li><a href="#">The Walk</a></li>
+          <li><a href="#">Transport</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h3 style="font-size: 1.7em;">The Walk</h3>
+        <p>
+          The walk from Monterosso to Riomaggiore will take you approximately two hours, give or
+          take an hour depending on the weather conditions and your physical shape.
+        </p>
+        <img src="../assets/img/img_5terre.jpg" alt="pic" style="max-width: 100%;" />
+      </article>
+
+      <aside>
+        <h3>What?</h3>
+        <p>
+          Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and
+          Riomaggiore. And they are all beautiful.
+        </p>
+        <h3>Where?</h3>
+        <p>
+          On the northwest cost of the Italian Riviera, north of the city La Spezia, you can locate
+          the city.
+        </p>
+        <h3>Price</h3>
+        <p>The Walk is free!</p>
+      </aside>
+    </section>
+
+    <footer class="fot2">
+      <p>
+        This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize
+        the browser window to see the content respond to the resizing.
+      </p>
+      <p>&copy; All rights reserved for AghaAmil</p>
+    </footer>
     <br>
+
+    <h2></h2>
 
     <br />
   </body>

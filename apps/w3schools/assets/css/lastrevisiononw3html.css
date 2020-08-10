@@ -278,9 +278,82 @@ h3 {
   content: '';
   display: table;
 }
+
+.head2 {
+  background: #c5c5c5;
+  color: #185fbd;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+.sec2 nav {
+  float: left;
+  width: 20%;
+}
+.sec2 nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 8px;
+}
+.sec2 nav ul li {
+  border-bottom: 1px solid #797979;
+  margin-bottom: 8px;
+}
+.sec2 nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px;
+}
+.sec2 article {
+  padding: 0 20px;
+  float: left;
+  width: 50%;
+}
+.sec2 aside {
+  float: left;
+  width: 30%;
+  margin-top: 8px;
+  background: #8ccbe0;
+  padding: 0 10px;
+}
+.fot2 {
+  background: #c5c5c5;
+  padding: 10px;
+  text-align: center;
+  margin-top: 8px;
+}
+.sec2::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
 @media screen and (max-width: 750px) {
-  .divl, .divc, .divr {
+  .divl,
+  .divc,
+  .divr {
     width: 100%;
     text-align: left;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sec2 article {
+    width: 80%;
+  }
+  .sec2 aside {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sec2 nav,
+  .sec2 article,
+  .sec2 aside {
+    width: 100%;
+  }
+  .sec2 article {
+    padding-left: 0;
   }
 }
