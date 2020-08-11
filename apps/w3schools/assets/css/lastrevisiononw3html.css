@@ -125,6 +125,20 @@ h3 {
   background-attachment: fixed;
   background-size: cover;
 }
+figure {
+  margin: auto;
+  border: 1px solid;
+  width: 100%;
+  padding: 7px;
+}
+figcaption {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: #505050;
+  padding: 10px;
+}
 
 .tb1 caption {
   margin: 10px auto;
