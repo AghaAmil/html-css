@@ -880,6 +880,175 @@
       &reg; &#128516;
     </p>
 
+    <h2>14. HTML Forms</h2>
+
+    <h3>Text Input Fields</h3>
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      method="post"
+      target="_blank"
+      autocomplete="on"
+    >
+      <label for="fname">First Name:</label><br />
+      <input type="text" name="fname" id="fname" value="John" /><br />
+      <label for="lname">Last Name:</label><br />
+      <input type="text" name="lname" id="lname" value="Jackson" />
+      <br /><br />
+      <input type="submit" value="Submit Form" />
+    </form>
+    <br />
+
+    <h3>Radio Buttons</h3>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label>
+      <br /><br />
+      <input type="submit" value="Submit Form" />
+    </form>
+    <br />
+
+    <h3>Checkboxes</h3>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <input type="checkbox" name="vehicle" id="bike" value="bike" />
+      <label for="bike">I have a bike</label><br />
+      <input type="checkbox" name="vehicle" id="car" value="car" />
+      <label for="car">I have a car</label><br />
+      <input type="checkbox" name="vehicle" id="boat" value="boat" />
+      <label for="boat">I have a boat</label>
+      <br /><br />
+      <input type="submit" value="Submit Form" />
+    </form>
+    <br />
+
+    <h3>Grouping Form Data with Fieldset</h3>
+    <p>
+      The fieldset element is used to group related data in a form, and the legend element defines a
+      caption for the fieldset element.
+    </p>
+
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      method="post"
+      target="_blank"
+      autocomplete="on"
+    >
+      <fieldset>
+        <legend>Personal Information</legend>
+        <br />
+        <label for="fname1">First Name:</label><br />
+        <input type="text" name="fname" id="fname1" value="John" /><br />
+        <label for="lname1">Last Name:</label><br />
+        <input type="text" name="lname" id="lname1" value="Jackson" />
+        <br /><br />
+        <input type="submit" value="Submit Form" />
+      </fieldset>
+    </form>
+    <br />
+
+    <h2>14. HTML Form Elements</h2>
+
+    <h3>The select Element</h3>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <fieldset>
+        <legend>Favorit Car</legend>
+        <br />
+        <label for="favcar">Choose a car you want to buy: &nbsp;</label>
+        <select name="favcar" id="favcar">
+          <option value="mercedes-benz">Mercedes-Benz</option>
+          <option value="lamborghini" selected>Lamborghini</option>
+          <option value="ferrari">Ferrari</option>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="volvo">Volvo</option>
+        </select>
+        <input type="submit" value="Submit Car!" />
+      </fieldset>
+    </form>
+    <br />
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <fieldset>
+        <legend>Favorit Car</legend>
+        <br />
+        <label for="favcar2">Choose a car you want to buy: </label>
+        <select id="favcar2" name="favcar2" size="3" multiple>
+          <option value="mercedes-benz">Mercedes-Benz</option>
+          <option value="lamborghini">Lamborghini</option>
+          <option value="bugatti">Bugatti</option>
+          <option value="ferrari">Ferrari</option>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="volvo">Volvo</option>
+        </select>
+        <br /><br />
+        <input type="submit" value="Submit Car!" />
+        <br /><br />
+        <p>
+          <strong>Note:</strong> Hold down the Ctrl (windows) / Command (Mac) button to select
+          multiple options.
+        </p>
+      </fieldset>
+    </form>
+    <br />
+
+    <h3>Textarea</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="GET" target="_blank">
+      <fieldset>
+        <legend>Write from the deepest part of your heart</legend>
+        <br />
+        <textarea name="textbox" id="textbox" cols="35" rows="10">
+        هر چه دله تنگت می‌خواهد بگو
+      </textarea
+        >
+        <br /><br />
+        <input type="submit" value="Submit Text!" />
+      </fieldset>
+    </form>
+    <br />
+
+    <form action="https://www.w3schools.com/action_page.php" method="GET" target="_blank">
+      <fieldset>
+        <legend>Same thing using style attributes</legend>
+        <br />
+        <textarea name="textbox" id="textbox" style="width: 350px; height: 220px;">
+        هر چه دله تنگت می‌خواهد بگو
+      </textarea
+        >
+        <br /><br />
+        <input type="submit" value="Submit Text!" />
+      </fieldset>
+    </form>
+    <br />
+
+    <h3>The datalist Element</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="GET" target="_blank">
+      <fieldset>
+        <legend>Browsers List</legend>
+        <p>
+          <strong>Note: </strong> datalist element specifies a list of pre-defined options for an
+          input element.
+        </p>
+        <br />
+        <label for="browser">Select Your Default Browser: </label>
+        <br /><br />
+        <input list="browsers" name="browser" />
+        <datalist id="browsers">
+          <option value="Internet Explorer"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+        <input type="submit" />
+      </fieldset>
+    </form>
+
     <br />
   </body>
 </html>
