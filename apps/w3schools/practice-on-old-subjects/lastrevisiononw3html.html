@@ -1254,6 +1254,84 @@
     </form>
     <br />
 
+    <h2>HTML Input Attributes</h2>
+
+    <h3>The form novalidate attribute</h3>
+    <p>
+      The novalidate attribute specifies that the form data should not be validated when submitted.
+    </p>
+
+    <h3>Email Field</h3>
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      method="post"
+      target="_blank"
+      novalidate
+    >
+      <label for="username2">Username:</label><br />
+      <input type="text" name="username" id="username2" /><br />
+      <label for="pwd2">Password</label><br />
+      <input type="text" name="pwd" id="pwd2" /><br />
+      <label for="email1">Enter your email:</label><br />
+      <input type="email" name="email" id="email1" /><br /><br />
+      <input type="submit" value="Submit!" />
+    </form>
+    <br />
+
+    <h3>The input form attribute</h3>
+    <p>The form attribute specifies the form an input element belongs to.</p>
+
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      method="post"
+      target="_blank"
+      id="form1"
+    >
+      <label for="fname3">Enter your firstname: </label><br />
+      <input type="text" name="fname" id="fname3" /><br /><br />
+      <input type="submit" value="Submit!" />
+    </form>
+
+    <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+
+    <label for="lname3">Enter your Lastname: </label><br />
+    <input type="text" name="lname" id="lname3" form="form1" />
+    <br />
+
+    <h3>The input formaction attribute</h3>
+    <p>
+      The formaction attribute specifies the URL of a file that will process the input when the form
+      is submitted.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="username3">Username:</label><br />
+      <input type="text" name="username" id="username3" /><br />
+      <label for="pwd3">Password</label><br />
+      <input type="text" name="pwd" id="pwd3" /><br />
+      <label for="email2">Enter your email:</label><br />
+      <input type="email" name="email" id="email2" /><br /><br />
+      <input type="submit" value="Submit!" />
+      <input
+        type="submit"
+        value="Submit As Admin!"
+        formaction="https://www.w3schools.com/action_page2.php"
+      />
+    </form>
+    <br />
+
+    <h3>The input formmethod Attribute</h3>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="username2">Username:</label><br />
+      <input type="text" name="username" id="username2" /><br />
+      <label for="pwd2">Password</label><br />
+      <input type="text" name="pwd" id="pwd2" /><br />
+      <label for="email1">Enter your email:</label><br />
+      <input type="email" name="email" id="email1" /><br /><br />
+      <input type="submit" value="Submit!" />
+    </form>
+    <br />
+
     <br />
   </body>
 </html>
