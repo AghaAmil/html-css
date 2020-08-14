@@ -1321,12 +1321,70 @@
     </form>
     <br />
 
+    <h3>The input pattern attribute</h3>
+    <p>
+      The pattern attribute specifies a regular expression that the input element's value is checked
+      against.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <label for="countrycode">Enter the Country Code: </label>
+      <input
+        type="text"
+        name="countrycode"
+        id="countrycode"
+        placeholder="3 Digits"
+        size="4"
+        maxlength="3"
+        pattern="[A-Za-z]{3}"
+      />
+      <br /><br />
+      <input type="submit" value="Submit Code!" />
+    </form>
+    <br />
+
+    <h3>The input height and width attributes (Input: Image)</h3>
+    <p>
+      The height and width attributes specify the height and width of an input type="image" element.
+    </p>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="username4">Username: </label>
+      <input type="text" name="username" id="username4" /><br /><br />
+      <label for="pwd3">Password: </label>
+      <input type="password" name="pwd" id="pwd3" /><br /><br />
+      <input
+        type="image"
+        src="../assets/img/img_submit.gif"
+        alt="submit-button"
+        width="48"
+        height="48"
+      />
+    </form>
+    <br />
+
+    <h3>The input list attribute</h3>
+    <p>
+      The list attribute refers to a datalist element that contains pre-defined options for an input
+      element.
+    </p>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <input list="applications" name="application" />
+      <datalist id="applications">
+        <option value="Microsoft Word"></option>
+        <option value="Microsoft Excel"></option>
+        <option value="Microsoft Powerpoint"></option>
+        <option value="Microsoft Access"></option>
+        <option value="Microsoft Teams"></option>
+      </datalist>
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
     <h3>The form novalidate attribute</h3>
     <p>
       The novalidate attribute specifies that the form data should not be validated when submitted.
     </p>
 
-    <h3>Email Field</h3>
     <form
       action="https://www.w3schools.com/action_page.php"
       method="post"
