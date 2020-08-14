@@ -1394,7 +1394,7 @@
       <label for="username2">Username:</label><br />
       <input type="text" name="username" id="username2" /><br />
       <label for="pwd2">Password</label><br />
-      <input type="text" name="pwd" id="pwd2" /><br />
+      <input type="password" name="pwd" id="pwd2" /><br />
       <label for="email1">Enter your email:</label><br />
       <input type="email" name="email" id="email1" /><br /><br />
       <input type="submit" value="Submit!" />
@@ -1430,8 +1430,8 @@
     <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
       <label for="username3">Username:</label><br />
       <input type="text" name="username" id="username3" /><br />
-      <label for="pwd3">Password</label><br />
-      <input type="text" name="pwd" id="pwd3" /><br />
+      <label for="pwd4">Password</label><br />
+      <input type="password" name="pwd" id="pwd4" /><br />
       <label for="email2">Enter your email:</label><br />
       <input type="email" name="email" id="email2" /><br /><br />
       <input type="submit" value="Submit!" />
@@ -1447,13 +1447,57 @@
     <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
       <label for="username2">Username:</label><br />
       <input type="text" name="username" id="username2" /><br />
-      <label for="pwd2">Password</label><br />
-      <input type="text" name="pwd" id="pwd2" /><br />
-      <label for="email1">Enter your email:</label><br />
-      <input type="email" name="email" id="email1" /><br /><br />
-      <input type="submit" value="Submit!" />
+      <label for="pwd5">Password</label><br />
+      <input type="password" name="pwd" id="pwd5" /><br />
+      <label for="email3">Enter your email:</label><br />
+      <input type="email" name="email" id="email3" /><br /><br />
+      <input type="submit" value="Submit using GET" formmethod="GET" />
+      <input type="submit" value="Submit using POST" formmethod="POST" />
     </form>
     <br />
+
+    <h3>The input formnovalidate attribute</h3>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="username5">Username:</label><br />
+      <input type="text" name="username" id="username5" /><br />
+      <label for="pwd6">Password</label><br />
+      <input type="password" name="pwd" id="pwd6" /><br />
+      <label for="email4">Enter your email:</label><br />
+      <input type="email" name="email" id="email4" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit Without Validation" formnovalidate />
+    </form>
+    <br />
+
+    <h3>The input formtarget attribute</h3>
+    <p>
+      The formtarget attribute specifies a name or a keyword that indicates where to display the
+      response that is received after submitting the form.
+    </p>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+      <label for="username6">Username:</label><br />
+      <input type="text" name="username" id="username6" /><br />
+      <label for="pwd7">Password</label><br />
+      <input type="password" name="pwd" id="pwd7" /><br />
+      <label for="email5">Enter your email:</label><br />
+      <input type="email" name="email" id="email5" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit to a new window/tab" formtarget="_blank" />
+    </form>
+    <br />
+
+    <h3>Input URL with datalist</h3>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="blank">
+      <label for="webpage">Enter the Webpage: </label>
+      <input type="url" name="webpage" id="webpage" list="pagelist" />
+      <datalist id="pagelist">
+        <option value="W3Schools" value="https://www.w3schools.com"></option>
+        <option value="Google" value="http://www.google.com"></option>
+        <option value="Udemy" value="https://www.udemy.com/"></option>
+        <option value="Udacity" value="https://www.udacity.com/"></option>
+      </datalist>
+      <input type="submit" value="Submit!" />
+    </form>
 
     <br />
   </body>
