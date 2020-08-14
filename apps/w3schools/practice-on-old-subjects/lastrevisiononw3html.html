@@ -1256,6 +1256,71 @@
 
     <h2>HTML Input Attributes</h2>
 
+    <h3>The input readonly attribute</h3>
+    <p>
+      The readonly attribute specifies that an input field should be read-only (cannot be changed):
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="lname4">Lastname: </label><br />
+      <input type="text" name="lname" id="lname4" /><br />
+      <label for="idnum">Enter your company ID number: </label><br />
+      <input type="text" name="idnum" id="idnum" value="CON1***" readonly /><br /><br />
+      <input type="submit" value="Submit!" />
+    </form>
+    <br />
+
+    <h3>The input disabled attribute</h3>
+    <p>
+      The disabled attribute specifies that an input field should be disabled (unusable and
+      un-clickable):
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="msisdn">Enter your MSISDN: </label><br />
+      <input type="text" name="msisdn" id="msisdn" /><br />
+      <label for="type">Contract Type: </label><br />
+      <input type="text" name="type" id="type" value="Postpaid Only" disabled /><br /><br />
+      <input type="submit" value="Submit!" />
+    </form>
+    <br />
+
+    <h3>The input size attribute</h3>
+    <p>The size attribute specifies the width (in characters) of an input field:</p>
+    <p>
+      <strong>Note:</strong> The size attribute works with the following input types: text, search,
+      tel, url, email, and password.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="fullname">Enter your complete name: </label><br />
+      <input type="text" name="fullname" id="fullname" size="25" /><br />
+      <label for="pin">Profile PIN: </label><br />
+      <input type="text" name="pin" id="pin" placeholder="4 Digits" size="4" maxlength="4" />
+      <br /><br />
+      <input type="submit" value="Submit!" />
+    </form>
+    <br />
+
+    <h3>The input multiple attributes</h3>
+    <p>
+      The multiple attribute specifies that the user is allowed to enter more than one value in an
+      input field.
+    </p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <label for="nextcar">Select the cars you wana buy in the future:</label>
+      <select name="nextcar" id="nextcar" size="2" multiple>
+        <option value="mb-amg-gt-black">Mercedes AMG-GT Black Series</option>
+        <option value="mb-s63-amg">Mercedes Benz S63 AMG</option>
+        <option value="la-voiture-noire">Bugatti La Voiture Noire</option>
+        <option value="lamborghini-sian">Lamborghini Sian</option>
+        <option value="koenigsegg-gemera">Koenigsegg Gemera</option>
+        <option value="bentley-bentayga-w12">Bentley-Bentayga W12</option>
+      </select>
+      <input type="submit" value="Submit!" />
+    </form>
+    <br />
+
     <h3>The form novalidate attribute</h3>
     <p>
       The novalidate attribute specifies that the form data should not be validated when submitted.
