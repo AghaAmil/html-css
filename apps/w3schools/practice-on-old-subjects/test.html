@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      figure {
+        border: 1px solid black;
+        padding: 10px;
+        margin: auto;
+        width: 100%;
+      }
+      figcaption {
+        color: white;
+        background: #444;
+        font-family: Vernada;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      table caption {
+        caption-side: bottom;
+        margin-top: 10px;
+        font-style: italic;
+        font-size: 18px;
+        color: rgb(121, 43, 15);
+      }
+    </style>
+  </head>
   <body>
-    <h1>The select element</h1>
+    <h1>Image mapping</h1>
+    <br />
 
-    <form action="https://www.w3schools.com/action_page.php" method="GET" target="_blank">
-      <label for="browser">Select your default browser: </label>
-      <input list="browlist" name="browser">
-      <datalist id="browlist">
-        <option value="Chrome"></option>
-        <option value="Safari"></option>
-        <option value="Mozila"></option>
-        <option value="Edge"></option>
-        <option value="Opera"></option>
-      </datalist>
-      <input type="submit">
-    </form>
+    <img src="../assets/img/workplace.jpg" alt="WorkDesk" width="400" height="379" usemap="#desk" />
+    <map name="desk">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" onclick="click1()" />
+      <area shape="rect" coords="290,172,333,250" alt="Phone" onclick="click2()" />
+      <area shape="circle" coords="337,300,44" alt="Coffee" onclick="click3()" />
+    </map>
 
-    </form>
+    <script>
+      function click1() {
+        alert('You clicked the Laptop Computer!');
+      }
+      function click2() {
+        alert('You clicked the Mobile Phone!');
+      }
+      function click3() {
+        alert('You clicked the Cup of Coffee!');
+      }
+    </script>
+    <br /><br />
+
+    <figure>
+      <img src="../assets/img/pic_trulli.jpg" alt="pic1" style="width: 100%" />
+      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+    <br /><br />
+
+    <table>
+      <caption>
+        Unique Table
+      </caption>
+
+      <tr>
+        <td>
+          <p>This is a paragraph</p>
+          <p>this is another paragraph</p>
+        </td>
+        <td>
+          This cell contains a table
+          <table>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>D</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          This cell contains a list:
+          <ul>
+            <li>Apple</li>
+            <li>Microsoft</li>
+            <li>Google</li>
+          </ul>
+        </td>
+        <td>Hello</td>
+      </tr>
+    </table>
+
+    <br />
   </body>
 </html>
