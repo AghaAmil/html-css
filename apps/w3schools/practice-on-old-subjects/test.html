@@ -4,54 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testing</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .div1 {
+        opacity: 0.5;
+        position: absolute;
+        background: #40b3df;
+        top: -30px;
+        left: 50px;
+        width: 300px;
+        height: 150px;
+      }
+      .div2 {
+        opacity: 0.3;
+        position: absolute;
+        background: #73ad21;
+        top: 20px;
+        left: 120px;
+        width: 100px;
+        height: 170px;
+      }
+      .div3 {
+        border: 10px solid #ee872a;
+        border-radius: 10px;
+        width: 370px;
+        height: 140px;
+        font-size: 2em;
+        padding: 20px;
+        margin-top: 30px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+      .div4 {
+        letter-spacing: 12px;
+        position: relative;
+        left: 25px;
+        top: 25px;
+        font-size: 16px;
+      }
+      .div5 {
+        letter-spacing: 12px;
+        position: relative;
+        left: 25px;
+        top: 30px;
+        color: #40b3df;
+        font-size: 16px;
+      }
+      .div5 span {
+        color: white;
+        background: #b4009e;
+        padding-left: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h1>HTML Formatting</h1>
-
-    <p>This is paragraph. This is paragraph. This is paragraph.</p>
-    <p>
-      <b>This is paragraph. This is paragraph. This is paragraph.</b><br />
-      <strong>This is paragraph. This is paragraph. This is paragraph.</strong>
-    </p>
-
-    <p>
-      <i>This is paragraph. This is paragraph. This is paragraph.</i><br />
-      <em>This is paragraph. This is paragraph. This is paragraph.</em>
-    </p>
-
-    <p>This is paragraph. This is paragraph. <mark>This</mark> is paragraph.</p>
-    <p>This is paragraph. This is paragraph. <del>This is paragraph.</del></p>
-    <p>This is paragraph. This is paragraph. <ins>This is paragraph.</ins></p>
-    <p>E = MC<sup>2</sup></p>
-    <p>H<sub>2</sub>O</p>
-    <br /><br />
-
-    <h1>HTML Quotation and Citation Elements</h1>
-
-    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-
-    <blockquote cite="https://www.wiki.com">
-      For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation
-      organization, WWF works in 100 countries and is supported by more than one million members in the
-      United States and close to five million globally.
-    </blockquote>
+    <h1>HTML Styles - CSS</h1>
+    <p>ultimate CSS example out of this lession. just to show how much I have learned HTML CSS.</p>
     <br />
 
-    <address>
-      Written by John Doe.<br />
-      Visit us at:<br />
-      Example.com<br />
-      Box 564, Disneyland<br />
-      USA
-    </address>
-    <br />
-
-    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-
-    <cite>The Service Management, Management by Soheil Asi in 2020.</cite>
-    <br />
-
-    <bdo dir="rtl">The direction of the text is changed to right-to-left</bdo>
+    <div style="position: relative; margin-bottom: 100px">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3">
+        <p>CSS = Style and Colors</p>
+        <div class="div4">Manipulate Text</div>
+        <div class="div5">
+          Colors,
+          <span>Boxes</span>
+        </div>
+      </div>
+    </div>
 
     <br />
   </body>
