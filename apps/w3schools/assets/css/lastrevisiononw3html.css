@@ -9,12 +9,12 @@ h1 {
   font-size: 2.8em;
   color: navy;
   text-align: center;
-  font-family: 'Sofia';
+  font-family: "Sofia";
 }
 h2 {
   color: dodgerblue;
   font-size: 1.9em;
-  font-family: 'Sofia';
+  font-family: "Sofia";
 }
 h3 {
   font-size: 140%;
@@ -51,7 +51,7 @@ h3 {
   font-size: 2em;
   padding: 20px;
   margin-top: 30px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
 .div4 {
@@ -120,7 +120,7 @@ h3 {
   padding: 10px;
   width: 80%;
   height: 500px;
-  background-image: url('../img/img_girl.jpg');
+  background-image: url("../img/img_girl.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -256,7 +256,7 @@ figcaption {
 }
 .sec1::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 .fot1 {
@@ -289,7 +289,7 @@ figcaption {
 }
 .div8::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -340,7 +340,7 @@ figcaption {
   margin-top: 8px;
 }
 .sec2::after {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }

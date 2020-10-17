@@ -113,7 +113,7 @@
     <h2>4. HTML Styles - CSS</h2>
     <p>ultimate CSS example out of this lession. just to show how much I have learned HTML CSS.</p>
 
-    <div class="main" style="position: relative; margin-top: 100px">
+    <div class="main" style="position: relative; margin: 100px 0">
       <div class="div1"></div>
       <div class="div2"></div>
       <div class="div3">
@@ -128,6 +128,170 @@
     <br />
 
     <h2>5. HTML Links</h2>
+
+    <h3>Introduction</h3>
+    <p>
+      By default, the linked page will be displayed in the current browser window. To change this, you must
+      specify another target for the link.
+    </p>
+    <p>The <span class="sp1">target</span> attribute specifies where to open the linked document.</p>
+    <p>The <span class="sp1">target</span> attribute can have one of the following values:</p>
+    <ul>
+      <li>
+        <span class="sp1">_self</span> - Default. Opens the document in the same window/tab as it was
+        clicked
+      </li>
+      <li><span class="sp1">_blank</span> - Opens the document in a new window or tab</li>
+      <li><span class="sp1">_parent</span> - Opens the document in the parent frame</li>
+      <li><span class="sp1">_top</span> - Opens the document in the full body of the window</li>
+    </ul>
+    <br />
+
+    <h3>Absolute URLs vs. Relative URLs</h3>
+    <a href="https://www.w3school.com">Enter W3Schools Website</a>
+    <a href="../html-attribute.html">HTML Attribute Tutorial</a>
+    <br />
+
+    <h3>HTML Links - Use an Image as a Link</h3>
+    <p>The image below is a link. Try to click on it.</p>
+    <a href="https://www.google.com" title="google.com" target="_blank">
+      <img src="../assets/img/smiley.gif" alt="smiley" width="42" height="42" />
+    </a>
+    <br />
+
+    <h3>Link to an Email Address</h3>
+    <p>
+      To create a link that opens in the user's email program (to let them send a new email), use mailto:
+      inside the href attribute:
+    </p>
+    <a href="mailto:amirhossein.mor@mtnirancell.ir">Send Mail:</a>
+    <br />
+
+    <h3>Button as a Link</h3>
+    <p>
+      To use an HTML button as a link, you have to add some JavaScript code.<br />
+      JavaScript allows you to specify what happens at certain events, such as a click of a button: Example
+    </p>
+    <p><b>Link to the internet</b></p>
+    <button type="button" onclick="location.href='https://www.google.com'">Google!</button>
+    <p><b>Link to local docs</b></p>
+    <button type="button" onclick="document.location='prac1.html'">prac1.html</button>
+    <br />
+
+    <h3>Link Colors</h3>
+    <a href="https://apple.com" class="a1">Welcome to Apple Website</a>
+    <br />
+
+    <h3>Link Buttons</h3>
+    <p>A link can also be styled as a button, by using CSS:</p>
+
+    <a href="https://apple.com" class="a2" target="_blank">Welcome to Apple Website</a>
+    <br />
+
+    <h2>6. HTML Images</h2>
+
+    <h3>Width/Height Attributes or Style?</h3>
+    <p>
+      The first image uses the width attribute (set to 128 pixels), but the style in the head section
+      overrides it, and sets the width to 100%.
+    </p>
+    <img src="../assets/img/html5.gif" alt="html5 logo" width="128" height="128" class="img1" />
+    <p>
+      The second image uses the style attribute to set the width to 128 pixels, this will not be overridden
+      by the style in the head section:
+    </p>
+    <img src="../assets/img/html5.gif" alt="html5 logo" style="width: 128px; height: 128px" class="img1" />
+    <br />
+
+    <h3>Images on Another Server</h3>
+    <p>The address of the image is: https://www.w3schools.com/images/w3schools_green.jpg</p>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3s logo" style="width: auto" />
+    <br />
+
+    <h3>Floating Images</h3>
+    <h4>Float the image to the right:</h4>
+    <p>
+      <img src="../assets/img/smiley.gif" alt="smiley" width="42" height="42" style="float: right" />
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating
+      image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+    <h4>Float the image to the left:</h4>
+    <p>
+      <img src="../assets/img/smiley.gif" alt="smiley" width="42" height="42" style="float: left" />
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating
+      image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+    <br />
+
+    <h3>HTML Image Mapping</h3>
+
+    <img src="../assets/img/workplace.jpg" alt="workplace" usemap="#desk" style="width: auto" />
+
+    <map name="desk">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="../html-images-computer.html" />
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="../html-images-phone.html" />
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="../html-images-coffee.html" />
+    </map>
+    <br />
+
+    <p>
+      Another example of image mapping<br />
+      Click on the croissant to go to a new page and read more about the topic:
+    </p>
+
+    <img
+      src="../assets/img/frenchfood.jpg"
+      alt="frenchfood"
+      style="width: 450px; height: 675px"
+      usemap="#food"
+    />
+
+    <map name="food">
+      <area
+        shape="poly"
+        coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+        href="../html-images-frenchfood.html"
+        alt="frenchfood"
+      />
+    </map>
+    <br />
+
+    <h3>Background Cover</h3>
+
+    <div class="div6">
+      Set the background-size property to "cover" and the background image will cover the entire element,
+      in this case the body element.
+    </div>
+    <br />
+
+    <h3>The HTML picture Element</h3>
+    <p>
+      Resize the browser to see different versions of the picture loading at different viewport sizes. The
+      browser looks for the first source element where the media query matches the user's current viewport
+      width, and fetches the image specified in the srcset attribute.<br />
+      The img element is required as the last child tag of the picture declaration block. The img element
+      is used to provide backward compatibility for browsers that do not support the picture element, or if
+      none of the source tags matched.
+    </p>
+
+    <picture>
+      <source media="(min-width: 1000px)" srcset="../assets/img/flowers.jpg" />
+      <source media="(min-width: 600px)" srcset="../assets/img/img_pink_flowers.jpg" />
+      <img src="../assets/img/img_orange_flowers.jpg" alt="flowers" style="width: auto" />
+    </picture>
+    <br />
+
+    <h3>HTML figure and figcaption Elements</h3>
+    <p>
+      Puglia's most famous sight is the unique conical houses (Trulli) found in the area around
+      Alberobello, a declared UNESCO World Heritage Site.
+    </p>
+    <figure>
+      <img src="../assets/img/pic_trulli.jpg" alt="trulli" style="width: 100%" />
+      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+    <br>
+    
 
     <br />
   </body>
