@@ -290,8 +290,263 @@
       <img src="../assets/img/pic_trulli.jpg" alt="trulli" style="width: 100%" />
       <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
     </figure>
-    <br>
-    
+    <br />
+
+    <h2>7. HTML Tables</h2>
+    <h3>Table With Border</h3>
+    <p>Use the CSS border property to add a border to the table.</p>
+
+    <table style="width: 80%; border-collapse: collapse" class="table1">
+      <caption class="cap1">
+        Employees
+      </caption>
+
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Amirhossein</td>
+        <td>Moravveji</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>Mehrdad</td>
+        <td>Arefi</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <td>Faramarz</td>
+        <td>Arefi</td>
+        <td>33</td>
+      </tr>
+    </table>
+    <br />
+
+    <h3>Horizontal Headings:</h3>
+
+    <table style="width: 80%; border-collapse: collapse" class="table1">
+      <caption class="cap1">
+        Customer's Information
+      </caption>
+
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Mobile Number</th>
+      </tr>
+      <tr>
+        <td>Ehsan Dashti</td>
+        <td>Account Manager</td>
+        <td>+98 912 311 7717</td>
+      </tr>
+    </table>
+    <br />
+
+    <h3>Vertical Headings:</h3>
+
+    <table style="width: 80%; border-collapse: collapse" class="table1">
+      <caption class="cap1">
+        Customer's Information
+      </caption>
+
+      <tr>
+        <th>Customer Name</th>
+        <td>Ehsan Dashti</td>
+      </tr>
+      <tr>
+        <th>Postion</th>
+        <td>Account Manager</td>
+      </tr>
+      <tr>
+        <th>Mobile Number</th>
+        <td>+98 912 311 7717</td>
+      </tr>
+    </table>
+    <br />
+
+    <table style="width: 80%; border-collapse: collapse" class="table1">
+      <caption class="cap1">
+        Customer's Information
+      </caption>
+
+      <tr>
+        <td>
+          <p>This is a paragraph</p>
+          <p>This is another paragraph</p>
+        </td>
+        <td>
+          <p>This cell contains a table:</p>
+          <table style="border-collapse: collapse">
+            <tr>
+              <td>A</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>D</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>This cell contains a list</p>
+          <ul>
+            <li>Apple</li>
+            <li>Microsft</li>
+            <li>Google</li>
+          </ul>
+        </td>
+        <td>Hello :*</td>
+      </tr>
+    </table>
+    <br />
+
+    <h3>The Final Design Table</h3>
+
+    <table style="width: 85%; border-collapse: collapse" class="table2">
+      <caption class="cap1 payin">
+        Customer's Information
+      </caption>
+
+      <tr>
+        <th>Company Name</th>
+        <th>Location</th>
+        <th>ID Code</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Apple Inc</td>
+        <td>Cupertino</td>
+        <td>10103304455</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Microsoft Inc</td>
+        <td>Washington DC</td>
+        <td colspan="2" style="text-align: center">Information does not exist</td>
+      </tr>
+      <tr>
+        <td>Tecnotree Inc</td>
+        <td>Tehran</td>
+        <td>1313450184721</td>
+        <td rowspan="2">10</td>
+      </tr>
+      <tr>
+        <td>Amazon Inc</td>
+        <td>New York Office</td>
+        <td>100093488231</td>
+      </tr>
+      <td>Google</td>
+      <td>San Francisco</td>
+      <td>100022793401</td>
+      <td>30</td>
+    </table>
+    <br />
+
+    <h3>The thead, tbody, and tfoot elements</h3>
+
+    <table style="width: 40%; border-collapse: collapse" class="table1 tmain">
+      <caption class="cap1">
+        Monthly Saving
+      </caption>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Saving</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Farvardin</td>
+          <td>$199</td>
+        </tr>
+        <tr>
+          <td>Ordibehesh</td>
+          <td>$101</td>
+        </tr>
+        <tr>
+          <td>Khordad</td>
+          <td>$300</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>$600</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+
+    <h3>The colgroup elemnt</h3>
+
+    <table style="width: 40%; border-collapse: collapse" class="table1">
+      <caption class="cap1">
+        Money Management
+      </caption>
+
+      <colgroup>
+        <col span="2" style="background: lightblue" />
+        <col style="background: red" />
+      </colgroup>
+
+      <tr>
+        <th>Month</th>
+        <th>Saving</th>
+        <th>Investment</th>
+      </tr>
+      <tr>
+        <td>Farvardin</td>
+        <td>$199</td>
+        <td>$250</td>
+      </tr>
+      <tr>
+        <td>Ordibehesh</td>
+        <td>$101</td>
+        <td>$250</td>
+      </tr>
+      <tr>
+        <td>Khordad</td>
+        <td>$300</td>
+        <td>$500</td>
+      </tr>
+      <tr>
+        <td>Sum</td>
+        <td>$600</td>
+        <td>$1000</td>
+      </tr>
+    </table>
+    <br />
+
+    <h2>8. 8. HTML Lists</h2>
+
+    <h3>A Description List</h3>
+
+    <dl>
+      <dt>Coffee</dt>
+      <dd>-blank hot drink</dd>
+      <dt>Milk</dt>
+      <dd>-white cold drink</dd>
+      <dt>Hot Chocolate</dt>
+      <dd>- melted chocolate drink</dd>
+    </dl>
+    <br />
+
+    <h3>Navigation Menu</h3>
+    <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+    <ul class="nav1">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <br />
+
+    <h2>9. HTML ifarame</h2>
 
     <br />
   </body>

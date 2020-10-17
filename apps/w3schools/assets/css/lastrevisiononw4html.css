@@ -147,3 +147,80 @@ figure figcaption {
   background: #505050;
   padding: 10px;
 }
+
+.table1 th,
+.table1 td {
+  border: 1px solid black;
+  padding: 10px;
+}
+.cap1 {
+  margin: 15px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  color: cadetblue;
+  font-weight: bold;
+}
+
+.table1 th,
+.table1 td {
+  border: 1px solid black;
+  padding: 10px;
+}
+.cap1 {
+  margin: 15px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  color: cadetblue;
+  font-weight: bold;
+}
+.payin {
+  caption-side: bottom;
+}
+.table2 th,
+.table2 td {
+  border: 2px solid black;
+  padding: 10px;
+}
+.table2 th {
+  color: white;
+  background: #082fb1;
+  font-size: 110%;
+}
+.table2 tr:nth-child(even) {
+  background: lightblue;
+}
+.table2 tr:hover {
+  background: #318af0;
+  color: white;
+}
+.tmain thead {
+  background: #ccc90a;
+}
+.tmain tbody {
+  background: #31cc0a;
+}
+.tmain tfoot {
+  background: #0abfcc;
+}
+
+.nav1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #414040;
+  overflow: hidden;
+}
+.nav1 li {
+  float: left;
+}
+.nav1 li a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+.nav1 li a:hover {
+  background-color: black;
+  color: dodgerblue;
+}
