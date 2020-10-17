@@ -9,6 +9,56 @@
     <title>Final Revision on HTML</title>
     <link rel="stylesheet" href="../assets/css/lastrevisiononw4html.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+
+    <script>
+      function time() {
+        document.getElementById("d&t").innerHTML = Date();
+        document.getElementById("d&t").style.backgroundColor = "lightblue";
+      }
+
+      function change() {
+        document.getElementById("text_change").innerHTML = "Hello JavaScript!";
+      }
+
+      function styl() {
+        document.getElementById("style_change").style.fontSize = "20px";
+        document.getElementById("style_change").style.backgroundColor = "lightgrey";
+      }
+
+      function bulb(sw) {
+        var pic;
+
+        if (sw == 0) {
+          pic = "../assets/img/pic_bulboff.gif";
+        } else {
+          pic = "../assets/img/pic_bulbon.gif";
+        }
+
+        document.getElementById("bulb_img").src = pic;
+      }
+
+      function city1() {
+        document.getElementById("cityh3").innerHTML = "London";
+        document.getElementById("cityp1").innerHTML =
+          "London is the capital and largest city of England and the United Kingdom.";
+        document.getElementById("cityp2").innerHTML =
+          "The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea, London has been a major settlement for two millennia. Londinium was founded by the Romans.";
+      }
+      function city2() {
+        document.getElementById("cityh3").innerHTML = "Paris";
+        document.getElementById("cityp1").innerHTML =
+          "Paris is the capital and most populous city of France, with an estimated population of 2,150,271 residents as of 2020, in an area of 105 square kilometres.";
+        document.getElementById("cityp2").innerHTML =
+          "Since the 17th century, Paris has been one of Europes major centres of finance, diplomacy, commerce, fashion, science and arts.";
+      }
+      function city3() {
+        document.getElementById("cityh3").innerHTML = "Tokyo";
+        document.getElementById("cityp1").innerHTML =
+          "Tokyo, officially Tokyo Metropolis, is the capital and most populous prefecture of Japan.";
+        document.getElementById("cityp2").innerHTML =
+          "Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japans main island, Honshu. Tokyo is the political and economic center of the country, as well as the seat of the Emperor of Japan and the national government.";
+      }
+    </script>
   </head>
   <body>
     <h1>Last Revision on W3Schools HTML or Leave This Dream - For Real This time</h1>
@@ -548,6 +598,92 @@
 
     <h2>9. HTML ifarame</h2>
 
+    <h3>HTML Iframes</h3>
+    <p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+
+    <iframe src="lastrevisiononw3html.html" frameborder="0" class="frame1" name="frame1"></iframe>
+    <br />
+
+    <p>
+      <a href="https://www.google.com" target="frame1">Click Me!</a> to open Google in the frame above.
+    </p>
+    <br />
+
+    <h2>10. HTML JavaScript</h2>
+    <p>I wil focus on this area later when I'm done with HTML & CSS.</p>
+    <br />
+
+    <h3>Use JavaScript to Change Things</h3>
+    <button type="button" onclick="time()">Click me to display Date & Time</button>
+    <p id="d&t"></p>
+    <br />
+
+    <p>This example writes "Hello JavaScript!" into an HTML element</p>
+    <p id="text"></p>
+    <p><strong>Note: </strong>Do not put the JS code in the head for this example</p>
+    <br />
+
+    <p>JavaScript can change the content of an HTML element:</p>
+    <button type="button" onclick="change()">Click Me</button>
+    <p id="text_change">Click on button above to make Javascript changes this text into ....</p>
+    <br />
+
+    <p id="style_change">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="styl()">Click Me</button>
+    <br />
+
+    <h3>My First Challanging JS Code</h3>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <img src="../assets/img/pic_bulboff.gif" alt="pic_bulboff" width="100" height="180" id="bulb_img" />
+    <br /><br />
+    <button type="button" onclick="bulb(1)">Light On!</button>
+    <button type="button" onclick="bulb(0)">Light Off!</button>
+    <br />
+
+    <h2>11. HTML Layout Elements and Techniques</h2>
+
+    <header class="head1">
+      <h3>Cities Information</h3>
+    </header>
+
+    <main class="main1">
+      <nav>
+        <ul>
+          <li><button type="button" onclick="city1()">London</button></li>
+          <li><button type="button" onclick="city2()">Paris</button></li>
+          <li><button type="button" onclick="city3()">Tokyo</button></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h3 id="cityh3">London</h3>
+        <p id="cityp1">London is the capital and largest city of England and the United Kingdom.</p>
+        <p id="cityp2">
+          The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80
+          km) estuary leading to the North Sea, London has been a major settlement for two millennia.
+          Londinium was founded by the Romans.
+        </p>
+      </article>
+    </main>
+
+    <footer class="foot1">
+      <p>&copy;All rights reserved for AghaAmil.</p>
+    </footer>
+
+    <br />
+
+    <h2>12. HTML Responsive Web Design</h2>
+
+    <h3>Media Queries</h3>
+    <p>
+      Resize the browser window.<br />
+      Make sure you reach the breakpoint at 750px when resizing this frame.
+    </p>
+
+    <script>
+      document.getElementById("text").innerHTML = "Hello JavaScript!";
+    </script>
     <br />
   </body>
 </html>
