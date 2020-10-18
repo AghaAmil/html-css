@@ -370,3 +370,21 @@ figure figcaption {
     text-align: left;
   }
 }
+@media screen and (max-width: 800px) {
+  .main2 aside {
+    width: 100%;
+  }
+  .main2 article {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main2 nav,
+  .main2 aside,
+  .main2 article {
+    width: 100%;
+  }
+  .main2 article {
+    padding: 0;
+  }
+}
