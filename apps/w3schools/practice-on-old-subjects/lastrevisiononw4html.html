@@ -794,7 +794,47 @@
     </p>
     <br />
 
-    <h2>15.</h2>
+    <h2>15. HTML Forms</h2>
+
+    <h3>Text Input Fields</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="fname">First Name:</label><br />
+      <input type="text" name="firstname" id="fname" value="John" /><br />
+      <label for="lname">Last Name:</label><br />
+      <input type="text" name="lastname" id="lname" value="Jackson" /><br /><br />
+      <input type="submit" value="Submit Form" />
+    </form>
+    <br />
+
+    <h3>Radio Buttons</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <input type="radio" name="gender" id="male" value="Male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" value="Female" />
+      <label for="female">Female</label><br />
+      <input type="radio" name="gender" id="other" value="Other" />
+      <label for="other">Other</label><br /><br />
+      <input type="submit" value="Submit Form" />
+    </form>
+    <br />
+
+    <h3>Checkboxes</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <input type="checkbox" name="vehicle1" id="bike" value="Bike" />
+      <label for="bike"> I have a bike</label><br />
+      <input type="checkbox" name="vehicle2" id="car" value="Car" />
+      <label for="car"> I have a car</label><br />
+      <input type="checkbox" name="vehicle3" id="boat" value="Boat" />
+      <label for="boat"> I have a boat</label><br /><br />
+      <input type="submit" value="Submit Form" />
+    </form>
+    <p>
+      <span class="sp1">Note:</span> As multiple options can be selected for checkbox form, therefore for
+      each item a unique name parameter is define unlike radio form which passes only one option
+    </p>
 
     <script>
       document.getElementById("text").innerHTML = "Hello JavaScript!";
