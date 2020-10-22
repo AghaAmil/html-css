@@ -1023,13 +1023,91 @@
 
     <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
       <label for="date1">Enter a date before 1980-01-01: </label>
-      <input type="date" name="Date" id="date1" max="1979-12-31" /><br><br>
+      <input type="date" name="Date" id="date1" max="1979-12-31" /><br /><br />
       <label for="date2">Enter a date after 2000-01-01: </label>
-      <input type="date" name="Date" id="date2" min="2000-01-02" /><br><br>
+      <input type="date" name="Date" id="date2" min="2000-01-02" /><br /><br />
       <input type="submit" value="Submit" />
     </form>
-    <br>
+    <br />
 
+    <h3>Show a Color Picker</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="favcolor">Select your favorite color: </label>
+      <input type="color" name="Color" id="favcolor" value="#444444" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Range Field</h3>
+    <p>Depending on browser support: The input type "range" can be displayed as a slider control.</p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="range">Volume (between 0 and 100): </label>
+      <input type="range" name="Range" id="range" min="0" max="100" value="20" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Month Field</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="month">Birthday (month and year): </label>
+      <input type="month" name="birthday_month" id="month" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Display a Week Input Control</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="week">Select a week: </label>
+      <input type="week" name="Week" id="week" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Show a Time Input Control</h3>
+    <p>If the browser supports it, a time picker pops up when entering the input field.</p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="time">Select a time: </label>
+      <input type="time" name="time" id="time" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Datetime</h3>
+    <p>
+      Depending on browser support:<br />
+      A date picker can pop-up when you enter the input field.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="datetime">Birthday (date and time): </label>
+      <input type="datetime" name="datetime" id="datetime" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Local Date Field</h3>
+    <p>Datetime-local specifies a date and time input field, with no time zone.</p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="datetime">Birthday (date and time): </label>
+      <input type="datetime-local" name="datetime-local" id="datetime-local" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Email Field</h3>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="uname">Username:</label><br />
+      <input type="text" name="username" id="uname" /><br />
+      <label for="pass">Password:</label><br />
+      <input type="password" name="password" id="pass" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
     
 
     <script>
