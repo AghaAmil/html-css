@@ -1105,10 +1105,51 @@
       <label for="uname">Username:</label><br />
       <input type="text" name="username" id="uname" /><br />
       <label for="pass">Password:</label><br />
-      <input type="password" name="password" id="pass" /><br /><br />
+      <input type="password" name="password" id="pass" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" name="Email" id="email" /><br /><br />
       <input type="submit" value="Submit" />
     </form>
-    
+    <br />
+
+    <h3>Search Field</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="search">Search Google: </label>
+      <input type="search" name="Search" id="search" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Telephone Field</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="tel">Enter a phone number: </label><br /><br />
+      <input
+        type="tel"
+        name="telnum"
+        id="tel"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        required
+      />
+      <small>Format: 123-45-678</small><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>Display a URL Input Field</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="url">Add your homepage: </label>
+      <input type="url" name="homepage" id="url" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>18. HTML Input Attributes</h3>
+
+    <h3></h3>
 
     <script>
       document.getElementById("text").innerHTML = "Hello JavaScript!";
