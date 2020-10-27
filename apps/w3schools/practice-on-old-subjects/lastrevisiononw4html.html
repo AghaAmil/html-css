@@ -1147,9 +1147,144 @@
     </form>
     <br />
 
-    <h3>18. HTML Input Attributes</h3>
+    <h2>18. HTML Input Attributes</h2>
 
-    <h3></h3>
+    <h3>The input readonly attribute</h3>
+    <p>The readonly attribute specifies that an input field should be read-only (cannot be changed):</p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="employeeid">Enter you Employee ID:</label><br />
+      <input type="tel" name="id" id="employeeid" placeholder="Starts with CON..." /><br />
+      <label for="company">Company: </label><br />
+      <input type="text" name="company" id="company" value="Tecnotree" readonly /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>The input disabled attribute</h3>
+    <p>
+      The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):
+    </p>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="msisdn">Enter your MSISDN: </label><br />
+      <input type="tel" name="msisdn" id="msisdn" placeholder="98..." pattern="[0-9]{12}" required /><br />
+      <label for="type">Contract Type: </label><br />
+      <input type="text" name="ServiceType" id="type" value="Postpaid" disabled /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>The input size attribute</h3>
+    <p>The size attribute specifies the width (in characters) of an input field:</p>
+    <p>
+      <strong>Note: </strong> The size attribute works with the following input types: text, search, tel,
+      url, email, and password.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="fullname">Enter your full name: </label><br />
+      <input type="text" name="name" id="fullname" size="30" /><br />
+      <label for="PIN">Profile PIN:</label><br />
+      <input type="text" name="PIN" id="PIN" placeholder="4 Digits" size="4" maxlength="4" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>The input multiple attributes</h3>
+    <p>
+      The multiple attribute specifies that the user is allowed to enter more than one value in an input
+      field.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="favcar2">Select the cars you wana buy in the future:</label>
+      <select name="DreamCar" id="favcar2" size="3" multiple>
+        <option value="mb-amg-gt-black">Mercedes AMG-GT Black Series</option>
+        <option value="mb-s63-amg">Mercedes Benz S63 AMG</option>
+        <option value="la-voiture-noire">Bugatti La Voiture Noire</option>
+        <option value="lamborghini-sian">Lamborghini Sian</option>
+        <option value="koenigsegg-gemera">Koenigsegg Gemera</option>
+        <option value="bentley-bentayga-w12">Bentley-Bentayga W12</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>The input pattern attribute</h3>
+    <p>
+      The pattern attribute specifies a regular expression that the input element's value is checked
+      against.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="countrycode">Enter the Country Code: </label>
+      <input
+        type="text"
+        name="CountryCode"
+        id="countrycode"
+        placeholder="3 Digits"
+        size="3"
+        pattern="[A-Za-z]{3}"
+      />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>The input height and width attributes (Input: Image)</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="uname1">Username:</label><br />
+      <input type="text" name="username" id="uname1" /><br />
+      <label for="pass1">Password:</label><br />
+      <input type="password" name="password" id="pass1" /><br /><br />
+      <input type="image" src="../assets/img/img_submit.gif" alt="submit-button" width="48" height="48" />
+    </form>
+    <br />
+
+    <h3>The input list attribute</h3>
+    <p>
+      The list attribute refers to a datalist element that contains pre-defined options for an input
+      element.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <input list="Office" name="Office Products" />
+      <datalist id="Office">
+        <option value="Microsoft Word"></option>
+        <option value="Microsoft Excel"></option>
+        <option value="Microsoft Powerpoint"></option>
+        <option value="Microsoft Access"></option>
+        <option value="Microsoft Teams"></option>
+      </datalist>
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>The form novalidate attribute</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank" novalidate>
+      <label for="uname">Username:</label><br />
+      <input type="text" name="username" id="uname" /><br />
+      <label for="pass">Password:</label><br />
+      <input type="password" name="password" id="pass" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" name="Email" id="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+
+    <h3>The input form attribute</h3>
+    <p>The form attribute specifies the form an input element belongs to.</p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank" novalidate>
+      <label for="uname">Username:</label><br />
+      <input type="text" name="username" id="uname" /><br />
+      <label for="pass">Password:</label><br />
+      <input type="password" name="password" id="pass" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" name="Email" id="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
 
     <script>
       document.getElementById("text").innerHTML = "Hello JavaScript!";
