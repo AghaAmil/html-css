@@ -1263,12 +1263,12 @@
     <h3>The form novalidate attribute</h3>
 
     <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank" novalidate>
-      <label for="uname">Username:</label><br />
-      <input type="text" name="username" id="uname" /><br />
-      <label for="pass">Password:</label><br />
-      <input type="password" name="password" id="pass" /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" name="Email" id="email" /><br /><br />
+      <label for="uname3">Username:</label><br />
+      <input type="text" name="username" id="uname3" /><br />
+      <label for="pass3">Password:</label><br />
+      <input type="password" name="password" id="pass3" /><br />
+      <label for="email1">Email:</label><br />
+      <input type="email" name="Email" id="email1" /><br /><br />
       <input type="submit" value="Submit" />
     </form>
     <br />
@@ -1276,15 +1276,100 @@
     <h3>The input form attribute</h3>
     <p>The form attribute specifies the form an input element belongs to.</p>
 
-    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank" novalidate>
-      <label for="uname">Username:</label><br />
-      <input type="text" name="username" id="uname" /><br />
-      <label for="pass">Password:</label><br />
-      <input type="password" name="password" id="pass" /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" name="Email" id="email" /><br /><br />
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank" id="form1">
+      <label for="uname2">Username:</label><br />
+      <input type="text" name="username" id="uname2" /><br /><br />
       <input type="submit" value="Submit" />
     </form>
+
+    <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+
+    <label for="pass2">Password:</label><br />
+    <input type="password" name="password" id="pass2" form="form1" /><br />
+
+    <h3>The input formaction attribute</h3>
+    <p>
+      The formaction attribute specifies the URL of a file that will process the input when the form is
+      submitted.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="uname4">Username:</label><br />
+      <input type="text" name="username" id="uname4" /><br />
+      <label for="pass4">Password:</label><br />
+      <input type="password" name="password" id="pass4" /><br />
+      <label for="email2">Email:</label><br />
+      <input type="email" name="Email" id="email2" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        value="Submit as Admin"
+        formaction="https://www.w3schools.com/action_page2.php"
+      />
+    </form>
+    <br />
+
+    <h3>The input formmethod Attribute</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <label for="uname4">Username:</label><br />
+      <input type="text" name="username" id="uname4" /><br />
+      <label for="pass4">Password:</label><br />
+      <input type="password" name="password" id="pass4" /><br />
+      <label for="email2">Email:</label><br />
+      <input type="email" name="Email" id="email2" /><br /><br />
+      <input type="submit" value="Submit using GET" formmethod="GET" />
+      <input type="submit" value="Submit using POST" formmethod="POST" />
+    </form>
+    <br />
+
+    <h3>The input formnovalidate attribute</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+      <label for="uname5">Username:</label><br />
+      <input type="text" name="username" id="uname5" /><br />
+      <label for="pass5">Password:</label><br />
+      <input type="password" name="password" id="pass5" /><br />
+      <label for="email3">Email:</label><br />
+      <input type="email" name="Email" id="email3" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit Without Validation" formnovalidate />
+    </form>
+    <br />
+
+    <h3>The input formtarget attribute</h3>
+
+    <p>
+      The formtarget attribute specifies a name or a keyword that indicates where to display the response
+      that is received after submitting the form.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+      <label for="uname6">Username:</label><br />
+      <input type="text" name="username" id="uname6" /><br />
+      <label for="pass6">Password:</label><br />
+      <input type="password" name="password" id="pass6" /><br />
+      <label for="email4">Email:</label><br />
+      <input type="email" name="Email" id="email4" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit to a new window/tab" formtarget="_blank" />
+    </form>
+    <br />
+
+    <h3>Input URL with datalist</h3>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="blank">
+      <label for="webpage">Enter the Webpage: </label>
+      <input type="url" name="webpage" id="webpage" list="pagelist" />
+      <datalist id="pagelist">
+        <option label="W3Schools" value="https://www.w3schools.com"></option>
+        <option label="Google" value="http://www.google.com"></option>
+        <option label="Udemy" value="https://www.udemy.com/"></option>
+        <option label="Udacity" value="https://www.udacity.com/"></option>
+      </datalist>
+      <input type="submit" value="Submit!" />
+    </form>
+    <br />
 
     <script>
       document.getElementById("text").innerHTML = "Hello JavaScript!";
