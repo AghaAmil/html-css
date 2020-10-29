@@ -362,6 +362,10 @@ figure figcaption {
   display: table;
 }
 
+.cava1 {
+  border: 1 solid black;
+}
+
 @media screen and (max-width: 750px) {
   .divl,
   .divc,
