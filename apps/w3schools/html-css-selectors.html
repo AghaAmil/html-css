@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" name="Amirhossein Moravveji" />
+    <meta name="description" content="CSS Tutorial Introduction" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Tutorial, Practice, W3Schools" />
+    <title>W3Schools CSS Tutorial (Selectors)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: calibri;
+        font-size: 105%;
+      }
+      h1 {
+        font-size: 2.8em;
+        color: navy;
+        text-align: center;
+        font-family: "Sofia";
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 1.9em;
+        font-family: "Sofia";
+      }
+      h3 {
+        font-size: 140%;
+      }
+      .sp1 {
+        color: red;
+        font-weight: bold;
+        background: #eee;
+      }
+
+      #p1 {
+        color: #0948bd;
+        background: #f5f5f5;
+      }
+      .p2 {
+        color: #036b3b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <hr />
+    <br />
+
+    <h2>CSS Selectors</h2>
+    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+    <p>We can divide CSS selectors into five categories:</p>
+
+    <ul>
+      <li><span class="sp1">Simple selectors</span> (select elements based on name, id, class)</li>
+      <li>
+        <span class="sp1">Combinator selectors</span> (select elements based on a specific relationship
+        between them)
+      </li>
+      <li><span class="sp1">Pseudo-class selectors</span> (select elements based on a certain state)</li>
+      <li><span class="sp1">Pseudo-elements selectors</span> (select and style a part of an element)</li>
+      <li>
+        <span class="sp1">Attribute selectors</span> (select elements based on an attribute or attribute
+        value)
+      </li>
+    </ul>
+    <br />
+
+    <h2>Simple Selectors</h2>
+    <p>We already know about this. So there would be not much to cover.</p>
+    <p id="p1">This paragraph is styled by CSS using id selector.</p>
+    <p class="p2">This paragraph is styled by CSS using id selector.</p>
+    <br />
+
+    <h2>CSS Combinators</h2>
+    <p>
+      A CSS selector can contain more than one simple selector. Between the simple selectors, we can
+      include a combinator.
+    </p>
+    <p>There are four different combinators in CSS:</p>
+    <ul>
+      <li>descendant selector (space)</li>
+      <li>child selector (>)</li>
+      <li>adjacent sibling selector (+)</li>
+      <li>general sibling selector (~)</li>
+    </ul>
+
+    <br />
+  </body>
+</html>
