@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CSS Tutorial Introduction" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Tutorial, Practice, W3Schools" />
+    <title>W3Schools CSS Tutorial (Backgrounds)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: calibri;
+        font-size: 105%;
+      }
+      h1 {
+        font-size: 2.8em;
+        color: navy;
+        text-align: center;
+        font-family: "Sofia";
+      }
+      h2 {
+        color: dodgerblue;
+        font-size: 1.9em;
+        font-family: "Sofia";
+      }
+      h3 {
+        font-size: 140%;
+      }
+      .sp1 {
+        color: red;
+        font-weight: bold;
+        background: #eee;
+      }
+
+      .div1 {
+        border: 1px solid black;
+        padding: 0 15px;
+      }
+
+      .main1 div {
+        float: left;
+        width: 25%;
+        padding: 45px;
+        background-color: green;
+        text-align: center;
+      }
+      .main1::after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+
+      .divimg {
+        background-image: url("assets/img/paper.gif");
+        width: 80%;
+        padding: 20px;
+      }
+
+      .divrept {
+        background-image: url("assets/img/gradient_bg.png");
+        width: 90%;
+        height: 350px;
+        padding: 10px;
+        border: 1px solid darkgrey;
+      }
+      .bird {
+        background-image: url("assets/img/img_tree.png");
+        background-repeat: no-repeat;
+        padding-left: 200px;
+        height: 400px;
+      }
+
+      .divattach {
+        width: 100%;
+        height: 450px;
+        padding: 10px;
+        border: 1px solid darkgrey;
+        background-image: url("assets/img/img_tree.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+      }
+      .divattach > p {
+        margin-right: 200px;
+      }
+
+      .new {
+        height: auto;
+        background-attachment: fixed;
+      }
+
+      .main2 {
+        width: 100%;
+        height: 400px;
+        background: #5d9ab2 url("assets/img/img_tree.png") no-repeat left top;
+        border: 1px solid black;
+        padding-left: 200px;
+        padding-top: 30px;
+      }
+      .main2 div {
+        background: #d0f0f6;
+        padding: 10px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Backgrounds</h1>
+    <hr />
+    <br />
+
+    <h2>Intro to background</h2>
+
+    <div class="div1">
+      <p>The CSS background properties are used to define the background effects for elements.</p>
+      <p>In these chapters, you will learn about the following CSS background properties:</p>
+      <ul>
+        <li>Background-color</li>
+        <li>Background-image</li>
+        <li>Background-repeat</li>
+        <li>Background-attachment</li>
+        <li>Background-position</li>
+      </ul>
+    </div>
+    <br />
+
+    <h2>Background Color</h2>
+    <h3>Opacity / Transparency</h3>
+    <p>
+      The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 -
+      1.0. The lower value, the more transparent:
+    </p>
+
+    <div class="main1">
+      <div style="opacity: 1">Opacity 1</div>
+      <div style="opacity: 0.8">Opacity 0.8</div>
+      <div style="opacity: 0.5">Opacity 0.5</div>
+      <div style="opacity: 0.3">Opacity 0.3</div>
+    </div>
+
+    <br />
+
+    <h3>Transparency using RGBA</h3>
+    <p>
+      If you do not want to apply opacity to child elements, like in our example above, use RGBA color
+      values. The following example sets the opacity for the background color and not the text:
+    </p>
+
+    <div class="main1">
+      <div style="background-color: rgb(0, 128, 0, 1)">Opacity 100%</div>
+      <div style="background-color: rgb(0, 128, 0, 0.8)">Opacity 80%</div>
+      <div style="background-color: rgb(0, 128, 0, 0.5)">Opacity 50%</div>
+      <div style="background-color: rgb(0, 128, 0, 0.3)">Opacity 30%</div>
+    </div>
+    <br />
+
+    <h2>Backgrounds Image</h2>
+
+    <div class="divimg">
+      <h4>Hello World!</h4>
+      <p>This page has an image as the background!</p>
+    </div>
+    <br />
+
+    <h2>Background Repeat</h2>
+
+    <div class="divrept">
+      <h4>Hello World!</h4>
+      <p>Strange background image...</p>
+    </div>
+    <br />
+
+    <div class="divrept" style="background-repeat: repeat-x">
+      <h4>Hello World!</h4>
+      <p>Here, a background image is repeated only horizontally!</p>
+    </div>
+    <br />
+
+    <div class="divrept bird">
+      <h4>Hello World!</h4>
+      <p>W3Schools background image example.</p>
+      <p>
+        The background image is only showing once, but it is disturbing the reader! but not anymore, cause
+        I used padding left 200px
+      </p>
+    </div>
+    <br />
+
+    <h2>Background Attachment</h2>
+
+    <div class="divattach">
+      <h3>Hello World!</h3>
+      <p>W3Schools background no-repeat, set position example.</p>
+      <p>Now the background image is only shown once, and positioned away from the text.</p>
+      <p>
+        In this example we have also added a margin on the right side, so the background image will never
+        disturb the text. In this case of me, margin right is given to DIV tag's childs. (Not to the DIV
+        itself)
+      </p>
+    </div>
+    <br />
+
+    <div class="divattach new">
+      <h3>The background-attachment Property</h3>
+      <p>
+        The background-attachment property specifies whether the background image should scroll or be fixed
+        (will not scroll with the rest of the page).
+      </p>
+      <p><b>Tip:</b> If you do not see any scrollbars, try to resize the browser window.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+      <p>The background-image is fixed. Try to scroll down the page.</p>
+    </div>
+    <br />
+
+    <h2>Advance Background Example</h2>
+
+    <div class="main2">
+      <div>
+        <h3>Hello World!</h3>
+        <p>
+          This example contains some advanced CSS methods you may not have learned yet. But, we will
+          explain these methods in a later chapter in the tutorial.
+        </p>
+      </div>
+    </div>
+
+    <br />
+  </body>
+</html>
