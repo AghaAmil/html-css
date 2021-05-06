@@ -73,3 +73,52 @@ h3 {
   background: #b4009e;
   padding-left: 20px;
 }
+
+.a1:link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: #1e9191;
+}
+.a1:visited {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: #1cf14a;
+}
+.a1:hover {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #15812c;
+}
+.a1:active {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #01a9f7;
+}
+.a2:link,
+.a2:visited {
+  background: #e93fe0;
+  padding: 20px 25px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-weight: bold;
+}
+.a2:hover,
+.a2:active {
+  background: #6a14b1;
+  color: white;
+}
+
+.navlink {
+  color: black;
+  text-decoration: none;
+}
+
+.img1 {
+  width: 100%;
+}

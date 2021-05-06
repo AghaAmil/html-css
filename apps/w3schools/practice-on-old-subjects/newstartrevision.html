@@ -13,8 +13,21 @@
     <hr />
     <br />
 
-    <h2>1. Introduction To The World</h2>
-    <br />
+    <h2>0. Navigation</h2>
+    <p>
+      HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+    </p>
+
+    <h3><a href="#c1" class="navlink">1. Introduction To The World </a></h3>
+    <h3><a href="#c2" class="navlink">2. HTML Formatting </a></h3>
+    <h3><a href="#c3" class="navlink">3. HTML Quotation and Citation Elements </a></h3>
+    <h3><a href="#c4" class="navlink">4. HTML Styles - CSS </a></h3>
+    <h3><a href="#c5" class="navlink">5. HTML Links </a></h3>
+    <h3><a href="#c6" class="navlink">6. HTML Images </a></h3>
+
+    <br /><br />
+
+    <h2 id="c1">1. Introduction To The World</h2>
 
     <h3>HTML Links</h3>
     <a href="http://www.google.com">Click on me to take to Google</a>
@@ -70,9 +83,9 @@
     </p>
 
     <br />
-
-    <h2>2. HTML Formatting</h2>
     <br />
+
+    <h2 id="c2">2. HTML Formatting</h2>
 
     <p>
       This is a text. this is a text. this is a text. this is a text.<br />
@@ -96,9 +109,9 @@
     <p>H<sub>2</sub>O</p>
 
     <br />
-
-    <h2>3. HTML Quotation and Citation Elements</h2>
     <br />
+
+    <h2 id="c3">3. HTML Quotation and Citation Elements</h2>
 
     <h3>Quotation</h3>
     <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
@@ -131,9 +144,9 @@
 
     <bdo dir="rtl">This text will be written from right to left</bdo>
     <br />
-
-    <h2>4. HTML Styles - CSS</h2>
     <br />
+
+    <h2 id="c4">4. HTML Styles - CSS</h2>
 
     <div class="cssMain" style="position: relative; margin: 100px 0 200px 0">
       <div class="div1"></div>
@@ -157,10 +170,11 @@
       from left 25px and top 30px - #40b3df - #b4009e
     </p>
     <br />
-
-    <h2>5. HTML Links</h2>
     <br />
 
+    <h2 id="c5">5. HTML Links</h2>
+
+    <h3>Inroduction</h3>
     <p>
       By default, the linked page will be displayed in the current browser window. To change this, you must
       specify another target for the link.
@@ -170,7 +184,7 @@
     <ul>
       <li>
         <span class="sp1">_self</span>
-        - Default. Opens the document in the same window/tab as it was clicked
+        - <b>Default</b>. Opens the document in the same window/tab as it was clicked
       </li>
       <li>
         <span class="sp1">_blank</span>
@@ -185,6 +199,67 @@
         - Opens the document in the full body of the window
       </li>
     </ul>
+
+    <h3>Absolute URLs vs. Relative URLs</h3>
+    <p><a href="http://www.google.com" target="_blank">Google</a></p>
+    <p><a href="../html-basic.html" target="_blank">HTML Basic Course.</a></p>
+
+    <h3>Image as a Link.</h3>
+    <p>The image below is a link. Try to click on it.</p>
+
+    <a href="http://www.google.com" target="_blank">
+      <img src="../assets/img/smiley.gif" alt="smiley" width="42" height="42" />
+    </a>
+
+    <h3>Link to an Email Address</h3>
+    <p>
+      To create a link that opens in the user's email program (to let them send a new email), use mailto:
+      inside the href attribute:
+    </p>
+
+    <p><a href="mailto:amirhossein.mor@mtnirancell.ir">Send Mail:</a> amirhossein.mor@mtnirancell.ir</p>
+
+    <h3>Button as a Link</h3>
+    <p>
+      To use an HTML button as a link, you have to add some JavaScript code.<br />
+      JavaScript allows you to specify what happens at certain events, such as a click of a button: Example
+    </p>
+
+    <p><b>Link a page in the internet.</b></p>
+    <button type="button" onclick="location.href='https://www.google.com'">Take Me to Google</button>
+    <p><b>Link to a local document</b></p>
+    <button type="button" onclick="document.location='../html-attribute.html'">HTML Attributes</button>
+
+    <h3>Colored Link</h3>
+
+    <a
+      href="https://www.apple.com"
+      target="_blank"
+      class="a1"
+      title="Visiting Apple website to shop products"
+      >Apple Website</a
+    >
+
+    <h3>Link Buttons</h3>
+    <p>A link can also be styled as a button, by using CSS:</p>
+
+    <a href="http://www.apple.com" target="_blank" class="a2">Enter Apple Website</a>
+    <br />
+    <br />
+
+    <h2 id="c6">6. HTML Images</h2>
+
+    <h3>Width/Height Attributes or Style?</h3>
+    <p>
+      The first image uses the width attribute (set to 128 pixels), but the style in the head section
+      overrides it, and sets the width to 100%.
+    </p>
+    <img src="../assets/img/html5.gif" alt="html5logo" width="128" height="128" class="img1" />
+    <p>
+      The second image uses the style attribute to set the width to 128 pixels, this will not be overridden
+      by the style in the head section:
+    </p>
+    <img src="../assets/img/html5.gif" alt="html5logo" style="width: 128px; height: 128px" class="img1" />
 
     <br />
   </body>
